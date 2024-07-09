@@ -1,0 +1,662 @@
+{
+  "COMMON": {
+    "DATE": {
+      "en": "Date",
+      "zh": "日期",
+      "ja": "日付"
+    },
+    "DAY": {
+      "en": "Day",
+      "zh": "天",
+      "ja": "日"
+    },
+    "DAYS": {
+      "en": "Days",
+      "zh": "天数",
+      "ja": "日"
+    },
+    "HOUR": {
+      "en": "Hour",
+      "zh": "小时",
+      "ja": "時間"
+    },
+    "HOURS": {
+      "en": "Hours",
+      "zh": "小时数",
+      "ja": "時間"
+    },
+    "ITEM": {
+      "en": "Item",
+      "zh": "项目",
+      "ja": "アイテム"
+    },
+    "ITEMS": {
+      "en": "Items",
+      "zh": "项目",
+      "ja": "アイテム"
+    },
+    "MIN": {
+      "en": "Min",
+      "zh": "分钟",
+      "ja": "分"
+    },
+    "MINUTE": {
+      "en": "Minute",
+      "zh": "分钟",
+      "ja": "分"
+    },
+    "MINUTES": {
+      "en": "Minutes",
+      "zh": "分钟",
+      "ja": "分"
+    },
+    "PROCESS": {
+      "en": "Process",
+      "zh": "工作步骤名称",
+      "ja": "プロセス："
+    },
+    "STATUS": {
+      "en": "Status",
+      "zh": "状态",
+      "ja": "ステータス"
+    },
+    "WORK_TYPE": {
+      "en": "Work Type",
+      "zh": "工作类型",
+      "ja": "作業タイプ"
+    }
+  },
+  "BUTTONS": {
+    "CANCEL": {
+      "en": "Cancel",
+      "zh": "取消",
+      "ja": "Cancel"
+    },
+    "CLEAR": {
+      "en": "Clear",
+      "zh": "创建",
+      "ja": "Clear"
+    },
+    "CLOSE": {
+      "en": "Close",
+      "zh": "关闭",
+      "ja": "閉じる"
+    },
+    "CONTINUE": {
+      "en": "Continue",
+      "zh": "继续",
+      "ja": "続行"
+    },
+    "CREATE": {
+      "en": "Create",
+      "zh": "创建",
+      "ja": "作成"
+    },
+    "DELETE": {
+      "en": "Delete",
+      "zh": "删除",
+      "ja": "Delete"
+    },
+    "LAUNCH": {
+      "en": "Launch",
+      "zh": "启动",
+      "ja": "起動"
+    },
+    "OKAY": {
+      "en": "Okay",
+      "zh": "确定",
+      "ja": "OK"
+    },
+    "SAVE": {
+      "en": "Save",
+      "zh": "保存",
+      "ja": "保存"
+    },
+    "APPLY_FILTERS": {
+      "en": "Apply Filters",
+      "zh": "应用过滤器",
+      "ja": "フィルターを適用"
+    },
+    "RESET": {
+      "en": "Reset",
+      "zh": "重置",
+      "ja": "リセット"
+    },
+    "REFRESH": {
+      "en": "Refresh",
+      "zh": "刷新",
+      "ja": "更新"
+    },
+    "RUN_SELECTED": {
+      "en": "Run Selected",
+      "zh": "运行选定的",
+      "ja": "選択したものを実行"
+    },
+    "RESUME": {
+      "en": "Resume",
+      "zh": "恢复",
+      "ja": "再開"
+    },
+    "RESUME_IN_ANOTHER_PROCESS": {
+      "en": "Resume in Another Process",
+      "zh": "在另一个进程中恢复",
+      "ja": "別のプロセスで再開"
+    },
+    "RESTART_IN_ANOTHER_WORK_STEP": {
+      "en": "Restart in Another Work Step",
+      "zh": "在另一个工作步骤中重新启动",
+      "ja": "別の作業ステップで再開"
+    },
+    "RESTART_WORK_STEPS": {
+      "en": "Restart Workstep",
+      "zh": "重新启动工作步骤",
+      "ja": "作業ステップを再開"
+    },
+    "PAUSE": {
+      "en": "Pause",
+      "zh": "暂停",
+      "ja": "Pause"
+    },
+    "MOVE": {
+      "en": "Move",
+      "zh": "移动",
+      "ja": "移動"
+    },
+    "RESTART": {
+      "en": "Restart",
+      "zh": "重新开始",
+      "ja": "再起動"
+    },
+    "NEXT": {
+      "en": "Next",
+      "zh": "下一个",
+      "ja": "次へ"
+    },
+    "RUN": {
+      "en": "Run",
+      "zh": "跑步",
+      "ja": "実行"
+    },
+    "EXPORT": {
+      "en": "Export",
+      "zh": "出口",
+      "ja": "エクスポート"
+    },
+    "YES": {
+      "en": "Yes",
+      "zh": "是的",
+      "ja": "はい"
+    },
+    "NO": {
+      "en": "No",
+      "zh": "不",
+      "ja": "×"
+    },
+    "OK": {
+      "en": "OK",
+      "zh": "好的",
+      "ja": "OK"
+    },
+    "UNASSIGN": {
+      "en": "Unassign",
+      "zh": "取消分配",
+      "ja": "割り当て解除"
+    },
+    "EXPORT_TO_CSV": {
+      "en": "Export to CSV",
+      "zh": "导出为 CSV",
+      "ja": "Export to CSV"
+    },
+    "UNLOCK": {
+      "en": "Unlock",
+      "zh": "开锁",
+      "ja": "Unlock"
+    },
+    "CHANGE_STATUS": {
+      "en": "Change Status",
+      "zh": "更改状态",
+      "ja": "Change Status"
+    }
+  },
+  "LABELS": {
+    "SHOW_SUB_SERVICE_TASKS": {
+      "en": "Show Sub Service Task",
+      "zh": "显示子服务任务",
+      "ja": "サブサービスタスクを表示"
+    },
+    "SHOW_WORK_STEPS": {
+      "en": "Show Work Steps",
+      "zh": "显示工作步骤",
+      "ja": "作業ステップを表示"
+    },
+    "FILTER_BY_ERROR_CODE": {
+      "en": "Filter by Error Code",
+      "zh": "按错误代码过滤",
+      "ja": "エラーコードでフィルタリング"
+    },
+    "EXPORT_SELECTED_HISTORY": {
+      "en": "Export Selected History",
+      "zh": "导出选定的历史记录",
+      "ja": "選択した履歴をエクスポート"
+    },
+    "BUSINESS_AREA": {
+      "en": "Business Area",
+      "zh": "业务范围",
+      "ja": "ビジネスエリア"
+    },
+    "USER": {
+      "en": "User",
+      "zh": "业务范围",
+      "ja": "ユーザー"
+    },
+    "ASSIGN": {
+      "en": "Assign",
+      "zh": "业务范围",
+      "ja": "割り当て"
+    },
+    "SELECT_ALL": {
+      "en": "Select All",
+      "zh": "全选",
+      "ja": "すべて選択"
+    },
+    "ALL": {
+      "en": "All",
+      "zh": "全部",
+      "ja": "すべて"
+    },
+    "SELECT_PLACEHOLDER": {
+      "en": "Please select...",
+      "zh": "请选择...",
+      "ja": "選択してください..."
+    },
+    "TYPE": {
+      "en": "Type",
+      "zh": "类型",
+      "ja": "タイプ"
+    },
+    "CATEGORY": {
+      "en": "Category",
+      "zh": "类别",
+      "ja": "カテゴリー"
+    },
+    "CATEGORY_PLACEHOLDER": {
+      "en": "All categories",
+      "zh": "所有类别",
+      "ja": "すべてのカテゴリー"
+    },
+    "SEARCH_PLACEHOLDER": {
+      "en": "Search",
+      "zh": "搜索",
+      "ja": "検索"
+    },
+    "SEARCH_BY_OBJECT_KEY": {
+      "en": "Search by Object Key",
+      "zh": "按对象键搜索",
+      "ja": "Search by Object Key"
+    },
+    "ALL_MODELS": {
+      "en": "All models",
+      "zh": "所有型号",
+      "ja": "すべてのモデル"
+    },
+    "ACTIVE_MODELS": {
+      "en": "Active models",
+      "zh": "活跃型号",
+      "ja": "アクティブなモデル"
+    },
+    "DEPRECATED_MODELS": {
+      "en": "Deprecated models",
+      "zh": "已弃用的型号",
+      "ja": "廃止されたモデル"
+    },
+    "SEARCH_BY_PROCESS_NAME": {
+      "en": "Search by process name",
+      "zh": "按进程名称搜索",
+      "ja": "プロセス名で検索"
+    },
+    "HISTORY_DETAILS": {
+      "en": "Details",
+      "zh": "细节",
+      "ja": "詳細"
+    },
+    "AUTOMATION_SERVICE": {
+      "en": "Automation Service",
+      "zh": "自动化服务",
+      "ja": "自動化サービス"
+    },
+    "PRESENTATION_FLOW": {
+      "en": "Presentation Flow",
+      "zh": "演示流程",
+      "ja": "プレゼンテーションフロー"
+    },
+    "SAMPLING_SERVICE": {
+      "en": "Sampling Service",
+      "zh": "抽样服务",
+      "ja": "サンプリングサービス"
+    },
+    "UX_SERVICE": {
+      "en": "Ux Service",
+      "zh": "UX服务",
+      "ja": "Uxサービス"
+    },
+    "DESIGN_DETAILS_SEARCH_PLACEHOLDER": {
+      "en": "Search by Name",
+      "zh": "按名称搜索",
+      "ja": "名前で検索"
+    },
+    "SHOW_STEP_ID": {
+      "en": "Show Step ID",
+      "zh": "顯示步驟 ID",
+      "ja": "ステップIDを表示"
+    },
+    "GROUP_BY_ORIGINAL": {
+      "en": "Group by original",
+      "zh": "按原件分组",
+      "ja": "オリジナルでグループ化"
+    },
+    "RESULTS": {
+      "en": "Results",
+      "zh": "结果",
+      "ja": "結果"
+    },
+    "ITEMS": {
+      "en": "Items",
+      "zh": "项目",
+      "ja": "アイテム"
+    },
+    "SELECT_PROCESS_TO_RESUME_WORK": {
+      "en": "Please select a process in which to resume the work.",
+      "zh": "请选择恢复工作的流程",
+      "ja": "作業を再開するプロセスを選択してください。"
+    },
+    "COMPLETED_WORK_OBJECTS": {
+      "en": "Completed Work objects",
+      "zh": "已完成的工作对象",
+      "ja": "完了したワークオブジェクト"
+    },
+    "PROCESS_NAME": {
+      "en": "Process Name",
+      "zh": "进程名称",
+      "ja": "プロセス名"
+    },
+    "VERSION": {
+      "en": "Version",
+      "zh": "版本",
+      "ja": "バージョン"
+    },
+    "FROM_DATE": {
+      "en": "From Date",
+      "zh": "从日期",
+      "ja": "開始日"
+    },
+    "TO_DATE": {
+      "en": "To Date",
+      "zh": "迄今为止",
+      "ja": "終了日"
+    },
+    "WORK_TYPE": {
+      "en": "Work Type",
+      "zh": "工作类型",
+      "ja": "作業タイプ"
+    },
+    "ERROR": {
+      "en": "Error",
+      "zh": "错误",
+      "ja": "エラー"
+    },
+    "ASSIGNED": {
+      "en": "Assigned",
+      "zh": "割り当てられた",
+      "ja": "Assigned"
+    },
+    "LOCKED": {
+      "en": "Locked",
+      "zh": "ロックされています",
+      "ja": "Locked"
+    },
+    "PAUSE_WORK": {
+      "en": "What type of work do you want to pause ?",
+      "zh": "您想暂停什么类型的工作？",
+      "ja": "What type of work do you want to pause ?"
+    },
+    "NEW_WORK_ONLY": {
+      "en": "New work only",
+      "zh": "仅限新作品",
+      "ja": "New work only"
+    },
+    "NEW_AND_EXISTING_WORK": {
+      "en": "New and existing work",
+      "zh": "新的和现有的工作",
+      "ja": "New and existing work"
+    },
+    "NEW_WORK_STEP": {
+      "en": "New work (Step)",
+      "zh": "新作品（步骤)",
+      "ja": "新作（ステップ)"
+    },
+    "EXISTING_WORK_ITEM": {
+      "en": "Existing work (Item)",
+      "zh": "现有工作（项目)",
+      "ja": "既存作品（アイテム)"
+    },
+    "STATUS": {
+      "en": "*Status",
+      "zh": "*地位",
+      "ja": "Status"
+    }
+  },
+  "MESSAGES": {
+    "NO_RECORDS_FOUND": {
+      "en": "No records found",
+      "zh": "没有找到记录",
+      "ja": "レコードが見つかりません"
+    },
+    "SESSION_TIMEOUT_MESSAGE": {
+      "en": "Your session will time out in {{countdown}} seconds due to inactivity. Click continue to continue your session.",
+      "zh": "你的会话将在{{countdown}}秒内超时。点击继续来继续会话。",
+      "ja": "非アクティブなためセッションは{{countdown}}秒後にタイムアウトします。続行をクリックするとセッションを続行します。"
+    },
+    "ERROR_TO_DATE": {
+      "en": "'To Date' must not be greater than today's date",
+      "zh": "截止日期不能大于今天",
+      "ja": "［終了日］を今日の日付より後にすることはできません"
+    },
+    "ERROR_FROM_DATE": {
+      "en": "The 'From Date' cannot be later than the 'To Date'.",
+      "zh": "起始日期”不能晚于“截止日期",
+      "ja": "［開始日］を［終了日］より後にすることはできません。"
+    },
+    "ERROR_DATE_RANGE": {
+      "en": "The selected date range should not exceed 31 days.",
+      "zh": "所选日期范围不能超过31天",
+      "ja": "選択した日付範囲は31日を超えてはなりません。"
+    },
+    "CANCEL_CONFIRMATION": {
+      "en": "Are you sure you want to cancel?",
+      "zh": "你确定要取消？",
+      "ja": "取り消しますか？"
+    },
+    "DO_NOT_SHOW_MSG": {
+      "en": "Do not show this message again.",
+      "zh": "不要再显示此消息",
+      "ja": "このメッセージを今後表示しない。"
+    },
+    "OF": {
+      "en": "of",
+      "zh": "的",
+      "ja": "of"
+    },
+    "ITEMS_SELECTED": {
+      "en": " items selected",
+      "zh": "已选择的项目",
+      "ja": " items selected"
+    },
+    "WARNING": {
+      "en": "Warning",
+      "zh": "警告",
+      "ja": "Warning"
+    },
+    "UNLOCKER_WARNING_MSG": {
+      "en": "You can unlock or unassign up to 250 work objects at a time.",
+      "zh": "您一次最多可以解锁或取消分配 250 个工作对象。",
+      "ja": "You can unlock or unassign up to 250 work objects at a time."
+    },
+    "PAUSE_ICON_DELETE_ALERT_MSG": {
+      "en": "Removing the Global Pause allows future work to be executed through this step. It does not resume paused work. To resume paused work, click the Resume in selected process button. Would you like to continue? ",
+      "zh": "取消暂停功能使今后的工作可以在这个步骤被执行。它将不会使已经暂停的工作恢复。要恢复暂停的工作, 在选择的处理按钮上点击恢复。你要继续块？",
+      "ja": "Removing the Global Pause allows future work to be executed through this step. It does not resume paused work. To resume paused work, click the Resume in selected process button. Would you like to continue? "
+    },
+    "SOMETHING_WENT_WRONG": {
+      "en": "Something went wrong",
+      "zh": "出了些问题",
+      "ja": "Something went wrong"
+    },
+    "SUCCESSFULLY_COMPLETED": {
+      "en": "Successfully completed",
+      "zh": "成功完成",
+      "ja": "Successfully completed"
+    },
+    "RESUME_TOOLTIP": {
+      "en": "Use the Move button to activate an aborted or paused item in the selected step. Model differences(inputs,variables,data sources)may still result in a failed activation.",
+      "zh": "使用“移动”按钮激活所选步骤中已中止或暂停的项目。模型差异（输入、变量、数据源）仍可能导致激活失败。",
+      "ja": "選択したステップで中止または一時停止された項目をアクティブにするには、「移動」ボタンを使用します。モデルの違い (入力、変数、データ ソース) により、アクティベーションが失敗する可能性があります"
+    },
+    "MOVE_BTN_TOOLTIP": {
+      "en": "Use the Move button to select a different process and version before resuming your items.",
+      "zh": "在恢复项目之前，使用“移动”按钮选择不同的流程和版本",
+      "ja": "アイテムを再開する前に、[移動] ボタンを使用して別のプロセスとバージョンを選択します"
+    },
+    "FILTER_TOOLTIP": {
+      "en": "Show Filters",
+      "zh": "显示过滤器",
+      "ja": "フィルターを表示"
+    }
+  },
+  "TITLE": {
+    "ABORTED": {
+      "en": "Aborted",
+      "zh": "已中止",
+      "ja": "中止"
+    },
+    "ACTIVE": {
+      "en": "Active",
+      "zh": "活动",
+      "ja": "アクティブ"
+    },
+    "PAUSED": {
+      "en": "Paused",
+      "zh": "已暂停",
+      "ja": "時停止"
+    },
+    "PROCESS_MONITOR_ABORTED": {
+      "en": "Process Monitor - Aborted",
+      "zh": "进程监视器 - 已中止",
+      "ja": "プロセスモニター - 中止"
+    },
+    "PROCESS_MONITOR_ACTIVE": {
+      "en": "Process Monitor - Active",
+      "zh": "过程监视器 - 活动",
+      "ja": "プロセスモニター - アクティブ"
+    },
+    "PROCESS_MONITOR_PAUSED": {
+      "en": "Process Monitor - Paused",
+      "zh": "进程监视器 - 已暂停",
+      "ja": "プロセスモニター - 一時停止"
+    },
+    "SERVICE_ANALYSIS": {
+      "en": "Channel Support - Service Analysis",
+      "zh": "渠道支持 - 服务分析",
+      "ja": "サービス分析"
+    },
+    "SERVICE_MONITOR_INTEROPERABILITY": {
+      "en": "Service Monitor - Interoperability",
+      "zh": "服务监视器 - 互操作性",
+      "ja": "サービスモニターの相互運用性"
+    },
+    "SESSION_TIMEOUT": {
+      "en": "Session Timeout",
+      "zh": "绘话超时",
+      "ja": "セッションタイムアウト"
+    },
+    "RESUME_IN_ANOTHER_PROCESS": {
+      "en": "Resume in Another Process",
+      "zh": "在另一个进程中恢复",
+      "ja": "別のプロセスで再開"
+    },
+    "PROCESS_HISTORY_EXTRACT": {
+      "en": "Channel Support - Process Extract",
+      "zh": "渠道支持 - 流程摘录",
+      "ja": "履歴分析 - プロセス履歴抽出"
+    },
+    "UNLOCKER-USERS": {
+      "en": "Unlocker - Users",
+      "zh": "解锁器 - 用户",
+      "ja": "Unlocker-Users"
+    },
+    "GLOBAL_PAUSE": {
+      "en": "Global Pause",
+      "zh": "全局暂停",
+      "ja": "Global Pause"
+    },
+    "GLOBAL_RESUME": {
+      "en": "Global Resume",
+      "zh": "全球简历",
+      "ja": "Global Resume"
+    },
+    "CHANGE_STATUS": {
+      "en": "Change Status",
+      "zh": "更改状态",
+      "ja": "Change Status"
+    },
+    "MOVE": {
+      "en": "Move",
+      "zh": "移动",
+      "ja": "Move"
+    },
+    "PROCESS_MONITOR": {
+      "en": "Process Monitor",
+      "zh": "过程监视器",
+      "ja": "プロセスモニター"
+    },
+    "SERVICE_MONITOR": {
+      "en": "Service Monitor",
+      "zh": "服务监控",
+      "ja": "サービスモニター"
+    },
+    "UNLOCKER": {
+      "en": "Unlocker",
+      "zh": "解锁器",
+      "ja": "ロック解除者"
+    },
+    "CHANNEL_SUPPORT": {
+      "en": "Channel Support",
+      "zh": "渠道支持",
+      "ja": "チャネルサポート"
+    },
+    "INTEROPERABILITY": {
+      "en": "Interoperability",
+      "zh": "互操作性",
+      "ja": "相互運用性"
+    },
+    "USERS": {
+      "en": "Users",
+      "zh": "用户",
+      "ja": "ユーザー"
+    },
+    "PROCESS_EXTRACT": {
+      "en": "Process Extract",
+      "zh": "工艺摘录",
+      "ja": "プロセス抽出物"
+    },
+    "PROCESS_INTELLIGENCE": {
+      "en": "Process Intelligence",
+      "zh": "过程智能",
+      "ja": "プロセスインテリジェンス"
+    },
+    "PROCESS_INTELLIGENCE_HISTORY_EXTRACT": {
+      "en": "Process Intelligence - Process Extract",
+      "zh": "过程智能 - 流程摘录",
+      "ja": "プロセスインテリジェンス - プロセス履歴抽出"
+    }
+  }
+}

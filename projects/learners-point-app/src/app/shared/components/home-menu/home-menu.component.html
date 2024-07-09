@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark" id="navbar-css-style" >
+    <div class="container-fluid">
+      <a class="active" [routerLink]="['home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> Home</a> 
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" (click)="isShown = !isShown">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" [ngClass]="{ show: isShown }">
+        <ul class="navbar-nav" id="nav-list-style">
+          <li class="nav-item active">
+            <button pButton pRipple type="button" label="Encoders" class="p-button-text" (click)="navigateBase64Link()"></button>
+          
+          </li>
+          <li class="nav-item active">
+            <button pButton pRipple type="button" label="Converters" class="p-button-secondary p-button-text" (click)="navigateXmlConversionLink()"></button>
+          </li>
+
+          <li class="nav-item active">
+            <button pButton pRipple type="button" label="Formatters" class="p-button-secondary p-button-text" (click)="navigateBaseFormatter()"></button>
+          </li>
+
+          <li class="nav-item active">
+            <button pButton pRipple type="button" label="Generate" class="p-button-secondary p-button-text" (click)="navigateBaseGenerator()"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

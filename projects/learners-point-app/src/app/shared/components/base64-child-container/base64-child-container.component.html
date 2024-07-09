@@ -1,0 +1,24 @@
+<p-panel>
+  <ng-template pTemplate="header" >
+    {{ this.headerTitle }}
+  </ng-template>
+  <ng-template pTemplate="content">
+    <div id="request">
+      <span class="p-float-label">
+        <textarea pInputTextarea [autoResize]="true" [(ngModel)]="textareaValue"></textarea>
+        <label for="float-input">Simply enter your data then push the {{ label }} button.</label>
+      </span>
+    </div>
+    <div id="response" *ngIf="showResponse">
+      <textarea pInputTextarea [autoResize]="true" id="textarea-css-style" [value]="responseData" #resultArea ></textarea>
+      <button pButton pRipple type="button" icon="pi pi-copy" class="p-button-rounded" (click)="copyText()"></button>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <button pButton type="button" [label]="label" (click)="getResponse()"></button>
+    <div style="float:right">
+      <p>Review results:<p-rating [(ngModel)]="rating" (onRate)="getRating($event)"></p-rating>
+    </div>
+  </ng-template>
+</p-panel>

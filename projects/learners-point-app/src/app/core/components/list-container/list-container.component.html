@@ -1,0 +1,4 @@
+<div #listContainer class="list-container" (scroll)="onScroll()" (onResize)="onResize()"
+  [class.has-scrollbar]="isScrollbarVisible">
+  <ng-content></ng-content>
+</div>

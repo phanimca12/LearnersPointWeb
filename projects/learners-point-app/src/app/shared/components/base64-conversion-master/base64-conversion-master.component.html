@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2">
+      <p-panel>
+        <ng-template pTemplate="header" >Base64 Conversion</ng-template>
+        <div class="list-group">
+          <button
+            #sencode
+            pButton
+            pRipple
+            type="button"
+            label="String Encode"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadBase64Child(sencode)"
+          ></button>
+<br>
+          <button
+            #sdecode
+            pButton
+            pRipple
+            type="button"
+            label="String Decode"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadBase64Child(sdecode)"
+          ></button>
+          <br>
+          <button
+            #uencode
+            pButton
+            pRipple
+            type="button"
+            label="URL Encode"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadBase64Child(uencode)"
+          ></button>
+          <br>
+          <button
+            #udecode
+            pButton
+            pRipple
+            type="button"
+            label="URL Decode"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadBase64Child(udecode)"
+          ></button>
+        </div>
+      </p-panel>
+    </div>
+    <div class="col-sm-10">
+      <app-base64-child-container [childLabel]="childLabel"></app-base64-child-container>
+    </div>
+  </div>
+</div>

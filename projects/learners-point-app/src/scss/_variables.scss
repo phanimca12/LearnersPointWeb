@@ -1,0 +1,148 @@
+// LAYOUT
+$ui-header-height: 50px;
+$ui-minimized-cards-menu-height: 80px;
+$ui-action-toolbar-width: 125px;
+$ui-action-toolbar-compact-width: 75px;
+$ui-footer-height: 25px;
+$ui-side-menu-width: 320px;
+
+// COLORS
+$light-gray: #eceff1;
+$medium-gray: #546e7a !default;
+$dark-gray: #263238;
+$gray-200: #5a748c;
+$gray-300: #dce3ef;
+$gray-400: #849cb3;
+$gray-500: #c8c8c8;
+$gray-600: #f9f9f9;
+$gray-700: #f4f4f4;
+$gray-800: #333333;
+$white: #ffffff;
+$icon-bg: #00a396;
+$gray-border: #dee2e6;
+$disabled: #90a4ae;
+$lignt-blue: #7fbae3;
+$gray-light: #9e9e9e;
+$red: #cc0000;
+$blue-100: #dce3ef;
+$blue-200: #005b9f;
+$blue-gray: #4a5f72;
+$dark-gray-blue: #718699;
+$pale-blue-gray: #bac5db;
+$dark-blue: #0068ae;
+$smoke-dark-blue: #1b3a9229;
+
+// $dark-gray                     : #263238;
+// $gray-base                    : #546E7A !default;
+// $gray-darker                  : lighten($gray-base, 13.5%) !default;
+// $gray-dark                    : lighten($gray-base, 20%) !default;
+// $gray                         : lighten($gray-base, 33.5%) !default;
+// $gray-light                   : lighten($gray-base, 46.7%) !default;
+// $gray-lighter                 : lighten($gray-base, 93.5%) !default;
+
+$brand-primary: #0077c8 !default;
+$brand-secondary: #ebf5ff !default;
+$brand-success: #0eb07b !default;
+$brand-warning: #ef6c00 !default;
+$brand-error: #c60000 !default;
+$brand-disabled: #eceff1;
+$tooltip-bg: #424c65;
+
+// TYPOGRAPHY
+$font-size-base: 14px !default;
+$line-height-base: 21px !default;
+
+// Buttons
+$btn-font-weight: 500 !default;
+$btn-font-size: 14px !default;
+$btn-line-height: 21px !default;
+$btn-height: 34px !default;
+
+$btn-padding-vertical: 0px !default;
+$btn-padding-horizontal: 16px !default;
+
+$btn-primary-color: #ffffff !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: $brand-primary !default;
+$btn-primary-border-radius: 34px !default;
+$btn-primary-width: 96px !default;
+
+$btn-secondary-color: #0077C8 !default;
+$btn-secondary-bg: #FFFFFF !default;
+$btn-secondary-border: #7FBAE3 !default;
+$btn-secondary-border-radius: 21px !default;
+$btn-secondary-width: 118px !default;
+
+
+$btn-tertiary-color: #0077C8 !default;
+$btn-tertiary-bg: #FFFFFF !default;
+$btn-tertiary-border: transparent !default;
+$btn-tertiary-border-radius: 23px !default;
+$btn-tertiary-width: 55px !default;
+
+$btn-disabled-color: darken($brand-disabled, 20%) !default;
+$btn-disabled-bg: rgba($brand-disabled, 75%) !default;
+$btn-disabled-border: $brand-disabled !default;
+
+// Inputs
+$input-border-radius: 6px !default;
+$input-padding-horizontal: 15px !default;
+$input-padding-vertical: 9px !default;
+$input-font-weight: 400 !default;
+$input-font-size: $font-size-base;
+
+$input-base-color: #37474f !default;
+$input-base-border: #b8cce1 !default;
+
+$input-focused-border: #0077c8 !default;
+$input-invalid-border: $brand-error;
+$input-invalid-color: $brand-error;
+
+$input-label-font-size: $font-size-base - 2px;
+$input-label-color: $input-focused-border;
+$input-label-font-weight: 500;
+
+$input-help-font-size: $input-font-size - 2px;
+$input-help-padding-horizontal: $input-padding-horizontal - 5px;
+$input-help-color: #556f7b;
+$input-help-invalid-color: $brand-error;
+
+// Dropdowns
+$dropdown-item-color: $input-base-color;
+$dropdown-item-focused-color: $input-label-color;
+$dropdown-item-focused-bg: $brand-secondary;
+$dropdown-item-focused-border: lighten($brand-primary, 50%);
+
+// Misc
+$cursor-disabled: not-allowed !default;
+$cursor-pointer: pointer !default;
+
+$management-console-navigation-border-color: $blue-100;
+
+//Loader ...
+$loader-color: #1976d2;
+$loader-text-color: lightgray;
+
+$design-details-table-data-color: $blue-gray;
+$design-details-table-head-color: $input-base-color;
+$design-details-table-header-border-color: $blue-100;
+$design-details-search-icon-color: $dark-gray-blue;
+$design-details-search-placeholder-color: $dark-gray-blue;
+$design-details-input-focus-color: $input-focused-border;
+$design-details-input-border-color: $pale-blue-gray;
+$design-details-filter-icon-background-color: $brand-secondary;
+$design-details-filter-option-background-color: $brand-secondary;
+$design-details-filter-icon-color: $dark-gray-blue;
+$design-details-filter-icon-active-color: $dark-blue;
+$design-details-filter-box-shadow-color: $smoke-dark-blue;
+
+$work-steps-search-icon-color: $dark-gray-blue;
+$work-steps-search-placeholder-color: $dark-gray-blue;
+$work-steps-input-focus-color: $input-focused-border;
+$work-steps-input-border-color: $pale-blue-gray;
+$work-steps-filter-icon-background-color: $brand-secondary;
+$work-steps-filter-option-background-color: $brand-secondary;
+$work-steps-filter-icon-color: $dark-gray-blue;
+$work-steps-filter-icon-active-color: $dark-blue;
+$work-steps-filter-box-shadow-color: $smoke-dark-blue;
+$work-steps-column-resizer-color: $blue-100;

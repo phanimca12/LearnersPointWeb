@@ -1,0 +1,21 @@
+
+
+<ngx-codemirror 
+  [options]="{
+    lineNumbers: true,
+    theme: 'idea',
+    mode: 'xml',
+    gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter', 'CodeMirror-lint-markers'],
+    foldGutter: true,
+    autoCloseBrackets: true,
+    matchBrackets: true,
+    lineWrapping: true,
+    lint: true,
+    indentWithTabs: true,
+    tabSize: 4
+  }"
+  [(ngModel)]="xmlString"
+  (ngModelChange)="setEditorContent($event)"
+>
+</ngx-codemirror>
+

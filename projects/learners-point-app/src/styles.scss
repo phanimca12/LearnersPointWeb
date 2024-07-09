@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import '~codemirror/lib/codemirror.css';
+@import '~codemirror/theme/idea.css';
+@import '~codemirror/addon/fold/foldgutter.css';
+@import '~codemirror/addon/lint/lint.css';
+@import "~@angular/cdk/overlay-prebuilt.css";
+@import "scss/variables";
+@import "scss/fonts";
+@import "scss/pbutton";
+@import "primeicons/primeicons.css";
+
+
+body {
+  .dragging {
+    cursor: move;
+  }
+
+  .dragging-divider {
+    cursor: ns-resize !important;
+  }
+
+  margin: 0;
+}
+
+.p-grid {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #ffff
+}
+a {
+  color: rgb(245, 255, 105);
+  display: inline-block;
+   font-weight:lighter;
+}
+a:hover {
+  color: rgb(229, 8, 8);
+}

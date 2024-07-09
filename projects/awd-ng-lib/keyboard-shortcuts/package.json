@@ -1,0 +1,14 @@
+{
+  "name": "@awd-ng-lib/keyboard-shortcuts",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "npm --version"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/core": "^10.0.0",
+    "@angular/common": "^10.0.0"
+  }
+}

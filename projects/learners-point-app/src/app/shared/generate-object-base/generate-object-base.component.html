@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+        <p-panel>
+          <ng-template pTemplate="header" >Generate java class</ng-template>
+          <div class="list-group">
+            <button
+              #sencode
+              pButton
+              pRipple
+              type="button"
+              label="XML to Java class"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(sencode)"
+            ></button>
+  <br>
+            <button
+              #sdecode
+              pButton
+              pRipple
+              type="button"
+              label="JSON to Java Class"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(sdecode)"
+            ></button>
+           
+          </div>
+        </p-panel>
+      </div>
+      <div class="col-sm-10">
+        <app-generate-object-child [childLabel]="childLabel"></app-generate-object-child>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+        <p-panel>
+          <ng-template pTemplate="header">Formatters</ng-template>
+          <div class="list-group">
+            <button
+              #xmlf
+              pButton
+              pRipple
+              type="button"
+              label="XML Formatter"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadChild(xmlf)"
+            ></button>
+            <br />
+            <button
+            #jsonf
+            pButton
+            pRipple
+            type="button"
+            label="JSON Formatter"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadChild(jsonf)"
+          ></button>
+          <br />
+          <button
+          #htmlf
+          pButton
+          pRipple
+          type="button"
+          label="HTML Formatter"
+          class="p-button-outlined p-button-rounded"
+          (click)="loadChild(htmlf)"
+        ></button>
+        <br />
+              <button
+        #sqlf
+        pButton
+        pRipple
+        type="button"
+        label="SQL Formatter"
+        class="p-button-outlined p-button-rounded"
+        (click)="loadChild(sqlf)"
+      ></button>
+      
+  
+          </div>
+        </p-panel>
+      </div>
+      <div class="col-sm-10">
+        <div>
+          <app-formatterchild [childLabel]="childLabel"></app-formatterchild>
+        </div>
+      </div>
+    </div>
+  </div>
+  

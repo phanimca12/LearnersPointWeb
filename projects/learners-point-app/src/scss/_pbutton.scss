@@ -1,0 +1,34 @@
+@import 'variables';
+
+:host ::ng-deep .p-button {
+ // font-size: $btn-font-size;
+ font-size:24px!important;
+  font-weight: $btn-font-weight;
+  line-height: $line-height-base;
+  height: $btn-height;
+  font-family: 'Poppins Regular' !important;
+  min-width: auto;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0 4px;
+  white-space: nowrap;
+ 
+  cursor: $cursor-pointer;
+  outline: none;
+  letter-spacing: 0.22px;
+  opacity: 1;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+:host ::ng-deep .p-panel .p-panel-header {
+  background: rgb(238, 245, 196) !important;
+  font-family: 'Poppins Regular' !important;
+  font-size: 45px;
+  font-weight: bolder;
+}
+:host ::ng-deep .p-panel .p-panel-content {
+  color: black !important;
+  font-family: 'Poppins Regular' !important;
+  font-size: 13px;
+}

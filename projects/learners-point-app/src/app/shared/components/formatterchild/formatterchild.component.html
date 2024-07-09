@@ -1,0 +1,47 @@
+<p-scrollPanel [style]="{ width: '100%', height: '500px' }" styleClass="custombar1">
+  <p-panel>
+    <ng-template pTemplate="header">
+      {{ this.headerTitle }}
+    </ng-template>
+    <ng-template pTemplate="content">
+      <div id="request">
+        <span class="p-float-label">
+          <textarea pInputTextarea rows="5" cols="30" [(ngModel)]="textareaValue"></textarea>
+          <label for="float-input"> Simply copy-paste xml/json data then push the {{ label }} button.</label>
+        </span>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+      <button pButton type="button" [label]="label" (click)="getResponse()"></button>
+      <div style="float: right">
+        <p id="para">Review results:</p>
+        <p-rating [(ngModel)]="rating" (onRate)="getRating($event)"></p-rating>
+      </div>
+    </ng-template>
+  </p-panel>
+  <br />
+  <div id="response" *ngIf="showResponse">
+    <button pButton pRipple type="button" icon="pi pi-copy" class="p-button-rounded" (click)="copyText()"></button>
+    <ngx-codemirror
+      class="CodeMirror cm-s-idea CodeMirror-wrap"
+      [options]="{
+        lineNumbers: true,
+        theme: 'idea',
+        mode: this.mode,
+        gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter', 'CodeMirror-lint-markers'],
+        foldGutter: true,
+        autoCloseBrackets: true,
+        matchBrackets: true,
+        lineWrapping: true,
+        lint: true,
+        indentWithTabs: true,
+        tabSize: 4
+      }"
+      [(ngModel)]="responseData"
+    >
+    </ngx-codemirror>
+    <br>
+
+      </div>
+</p-scrollPanel>

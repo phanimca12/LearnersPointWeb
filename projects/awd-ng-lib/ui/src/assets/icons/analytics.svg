@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="#FFFFFF">
+  <defs>
+    <filter id="shadow" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="1px" dy="2px" flood-color="#000000" flood-opacity="0.2" stdDeviation="2" />
+    </filter>
+  </defs>
+  <path
+    d="M19,3H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5A2,2,0,0,0,19,3ZM9,16.57a.43.43,0,0,1-.43.43H7.43A.43.43,0,0,1,7,16.57V13.43A.43.43,0,0,1,7.43,13H8.57a.43.43,0,0,1,.43.43Zm4,0a.43.43,0,0,1-.43.43H11.43a.43.43,0,0,1-.43-.43V7.43A.43.43,0,0,1,11.43,7h1.14a.43.43,0,0,1,.43.43Zm4,0a.43.43,0,0,1-.43.43H15.43a.43.43,0,0,1-.43-.43V10.43a.43.43,0,0,1,.43-.43h1.14a.43.43,0,0,1,.43.43Z"
+    transform="translate(-3 -3)" style="filter:url(#shadow);" />
+</svg>

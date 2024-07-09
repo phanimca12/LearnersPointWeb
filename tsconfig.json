@@ -1,32 +1,37 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ]
-  },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@awd-ng-lib/awd-job-api-client": [
+        "dist/awd-ng-lib/job-api/awd-ng-lib-awd-job-api-client",
+        "dist/awd-ng-lib/awd-job-api-client"
+      ],
+      "@awd-ng-lib/session": [
+        "dist/awd-ng-lib/session/awd-ng-lib-session",
+        "dist/awd-ng-lib/session"
+      ],
+      "@awd-ng-lib/keyboard-shortcuts": [
+        "dist/awd-ng-lib/keyboard-shortcuts/awd-ng-lib-keyboard-shortcuts",
+        "dist/awd-ng-lib/keyboard-shortcuts"
+      ],
+      "@awd-ng-lib/ui": ["dist/awd-ng-lib/ui/awd-ng-lib-ui", "dist/awd-ng-lib/ui"],
+      "@awd-ng-lib/rest": ["dist/awd-ng-lib/rest/awd-ng-lib-rest", "dist/awd-ng-lib/rest"],
+      "@awd-ng-lib/util": ["dist/awd-ng-lib/util/awd-ng-lib-util", "dist/awd-ng-lib/util"],
+      "@awd-ng-lib/parser": ["dist/awd-ng-lib/parser/awd-ng-lib-parser", "dist/awd-ng-lib/parser"],
+      "@processor-app/*": ["./projects/processor-app/src/app/*"],
+      "@package-migration-app/*": ["./projects/package-migration-app/src/app/*"],
+    }
   }
 }

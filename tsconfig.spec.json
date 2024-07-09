@@ -8,8 +8,8 @@
     ]
   },
   "files": [
-    "src/test.ts",
-    "src/polyfills.ts"
+    "projects/learners-point-app/src/test.ts",
+    "projects/learners-point-app/src/polyfills.ts"
   ],
   "include": [
     "src/**/*.spec.ts",
