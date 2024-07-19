@@ -1,0 +1,11 @@
+<div class="tool-header">
+<h1 class="tool__header__title">{{ headerTitle }}</h1>
+<h2 class="tool__header__subtitle">{{ subTitle}} </h2>
+<p-fileUpload #fileUpload pTooltip="users can process up to 6 files per task" name="myfile[]" customUpload="true" (uploadHandler)="uploadFile($event)" (onClear)="onFileCancel()"
+multiple="multiple" accept={{acceptedFiles}} maxFileSize="1000000">
+</p-fileUpload>
+<p-toast></p-toast>
+<div *ngIf="showSpinner" class="spinner-container">
+    <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s"></p-progressSpinner>
+  </div>
+</div>

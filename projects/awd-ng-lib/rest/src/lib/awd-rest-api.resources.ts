@@ -72,7 +72,33 @@ const BASE64_RESOURCES = {
 
 };
 
+//----
+
+const PDF_CONVERSION_RESOURCES = {
+  convertWordToPDF: {
+    urlTemplate: 'pdfconversion/wordtopdf',
+    methods: [HttpMethods.POST]
+  },
+  convertJpegToPDF: {
+    urlTemplate: 'pdfconversion/jpegtopdf',
+    methods: [HttpMethods.POST]
+  },
+  convertHtmlToPDF: {
+    urlTemplate: 'pdfconversion/htmltopdf',
+    methods: [HttpMethods.POST]
+  },
+  convertExcelToPDF: {
+    urlTemplate: 'pdfconversion/exceltopdf',
+    methods: [HttpMethods.POST]
+  },
+  convertPowerPointToPDF: {
+    urlTemplate: 'pdfconversion/pptopdf',
+    methods: [HttpMethods.POST]
+  }
+};
+
 export const AWD_REST_RESOURCES: IAwdRestResources = {
   base64Resources: BASE64_RESOURCES,
-  xmlConversionResources:XML_CONVERSION_RESOURCES
+  xmlConversionResources:XML_CONVERSION_RESOURCES,
+  pdfConversionResources:PDF_CONVERSION_RESOURCES
 };

@@ -1,0 +1,38 @@
+@import 'variables';
+
+::ng-deep .customProgress .p-progressbar-value {
+    background: #77c29a;
+    color: #fff;
+  } 
+  #customRow
+{
+  height: 100px;
+  
+}
+#bttnStyle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+:host ::ng-deep .p-button {
+    // font-size: $btn-font-size;
+    font-size:$btn-font-size;
+     font-weight: $btn-font-weight;
+     line-height: $line-height-base;
+     height: $btn-height;
+     font-family: 'Poppins' !important;
+     min-width: auto;
+     border-width: 1px;
+     border-style: solid;
+     margin: 0 4px;
+     white-space: nowrap;
+     cursor: $cursor-pointer;
+     outline: none;
+     letter-spacing: 0.22px;
+     opacity: 1;
+     background-origin: padding-box;
+     background-repeat: no-repeat;
+   
+   }

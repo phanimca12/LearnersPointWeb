@@ -6,5 +6,8 @@ export enum Base64Headers {
     DECODE = 'Decode',
     ENCODE_URL_TO_ENCODED_FORMAT = 'Encode to URL-encoded format',
     DECODE_FROM_URL_ENCODED_FORMAT = 'Decode from URL-encoded format',
-    STRING_ENCODE = 'String Encode'
+    STRING_ENCODE = 'String Encode',
+   URL_ENCODE='URL Encode',
+   URL_DECODE='URL Decode',
+   STRING_DECODE='String Decode'
 }

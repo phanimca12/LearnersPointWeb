@@ -34,4 +34,9 @@ export class HomeMenuComponent implements OnInit {
   {
     this.router.navigate(['/basegenerator']);
   }
+
+  navigateBasePDF()
+  {
+    this.router.navigate(['/basepdfConverter']);
+  }
 }

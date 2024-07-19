@@ -28,6 +28,9 @@ import { FormatterComponent } from './components/formatter/formatter.component';
 import { FormatterchildComponent } from './components/formatterchild/formatterchild.component';
 import { GenerateObjectBaseComponent } from './generate-object-base/generate-object-base.component';
 import { GenerateObjectChildComponent } from './generate-object-child/generate-object-child.component';
+import { PDFConversionMasterComponent } from './components/pdfconversion-master/pdfconversion-master.component';
+import { PDFConversionChildComponent } from './components/pdfconversion-child/pdfconversion-child.component';
+import { ProgresscontainerComponent } from './components/progresscontainer/progresscontainer.component';
 
 
 @NgModule({
@@ -55,7 +58,10 @@ import { GenerateObjectChildComponent } from './generate-object-child/generate-o
     FormatterComponent,
     FormatterchildComponent,
     GenerateObjectBaseComponent,
-    GenerateObjectChildComponent
+    GenerateObjectChildComponent,
+    PDFConversionMasterComponent,
+    PDFConversionChildComponent,
+    ProgresscontainerComponent
   
   ],
   exports: [

@@ -36,7 +36,13 @@ import { GenerateObjectChildComponent } from './shared/generate-object-child/gen
 import {TabViewModule} from 'primeng/tabview';
 import {RatingModule} from 'primeng/rating';
 import { ClipboardModule } from 'ngx-clipboard';
-
+import { PDFConversionMasterComponent } from './shared/components/pdfconversion-master/pdfconversion-master.component';
+import { PDFConversionChildComponent } from './shared/components/pdfconversion-child/pdfconversion-child.component';
+import {ToastModule} from 'primeng/toast';
+import {DynamicDialogModule} from 'primeng/dynamicdialog';
+import { ProgresscontainerComponent } from './shared/components/progresscontainer/progresscontainer.component';
+import {ProgressBarModule} from 'primeng/progressbar';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +60,9 @@ import { ClipboardModule } from 'ngx-clipboard';
     FormatterchildComponent,
     GenerateObjectBaseComponent,
     GenerateObjectChildComponent,
+    PDFConversionMasterComponent,
+    PDFConversionChildComponent,
+    ProgresscontainerComponent
     
   ],
   imports: [
@@ -71,7 +80,10 @@ import { ClipboardModule } from 'ngx-clipboard';
     FileUploadModule,
     TabViewModule,
     RatingModule,
-    ClipboardModule
+    ClipboardModule,
+    ToastModule,
+    DynamicDialogModule,
+    ProgressBarModule
   
 
    

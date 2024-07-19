@@ -25,14 +25,14 @@ export class GenerateObjectChildComponent implements OnInit {
 	type: String = XmlConstants.XML_TO_JAVA_CLASS;
 	jsonMode = 'application/ld+json';
 	xmlMode = 'application/xml';
-	mode = '';
+	mode: String = '';
 	unescapedString: SafeHtml;
 	csvFile: any = '';
 	showTextArea = true;
 	showFileUpload = false;
 	showButton = true;
 	tabs: objectModel[] = [];
-rating:number;
+	rating: number;
 	objectList: objectModel[] = [
 		{ objectName: '', objectDescription: '' }
 	];
@@ -41,7 +41,7 @@ rating:number;
 	constructor(private xmlConversionService: XMLConversionService, sanitizer: DomSanitizer) { }
 
 	ngOnInit(): void {
-		this.headerTitle = this.getHeaderTitle(this.childLabel);
+		this.headerTitle = XmlConstants.XML_TO_JAVA_CLASS;
 		this.type = this.childLabel;
 		this.isDisabled = true;
 		this.responseData = '';
@@ -49,38 +49,24 @@ rating:number;
 		this.mode = 'application/xml'
 	}
 	ngOnChanges(changes: SimpleChanges): void {
-		if (changes.childLabel.currentValue)
-			this.headerTitle = this.getHeaderTitle(changes.childLabel.currentValue);
-		this.showResponse = false;
-		this.responseData = '';
-		this.textareaValue = '';
-		this.type = changes.childLabel.currentValue;
-		this.csvFile = '';
-		setTimeout(() => { }, 0);
-		this.rating=null;
+		if (changes.childLabel.currentValue) {
+			this.headerTitle = this.getHeaders().get(changes.childLabel.currentValue);
+			this.label = this.getLabels().get(changes.childLabel.currentValue);
+			this.mode = this.getFileModes().get(changes.childLabel.currentValue);
+			this.showFileUpload = false;
+			this.showTextArea = true;
+			this.showButton = true;
+			this.showResponse = false;
+			this.responseData = '';
+			this.textareaValue = '';
+			this.type = changes.childLabel.currentValue;
+			this.csvFile = '';
+			setTimeout(() => { }, 0);
+			this.rating = null;
+		}
 	}
 
-	getHeaderTitle(title: String): String {
-		if (title === 'XML to Java class') {
-			this.label = XmlConstants.GENERATE_JAVA_CLASS
-			this.mode = 'application/xml'
-			this.showFileUpload = false;
-			this.showTextArea = true;
-			this.showButton = true;
-			return this.headerTitle = XmlConstants.XML_TO_JAVA_CLASS
-		}
-		else if (title === 'JSON to Java Class') {
-			this.label = XmlConstants.GENERATE_JAVA_CLASS
-			this.mode = 'application/ld+json'
-			this.showFileUpload = false;
-			this.showTextArea = true;
-			this.showButton = true;
-			return this.headerTitle = XmlConstants.JSON_TO_JAVA_CLASS
-		}
-		else {
-			return this.headerTitle = XmlConstants.XML_TO_JAVA_CLASS;
-		}
-	}
+
 
 	processRequest(type, payload) {
 		this.dataList = [];
@@ -109,20 +95,41 @@ rating:number;
 	getObservableOfResponse(type, body): Observable<any> {
 		if (body) {
 			type = !type ? XmlConstants.XML_TO_JAVA_CLASS : type;
-
-			if (type === 'XML to Java class') {
-				return this.xmlConversionService.convertXmlToClass(body);
-			}
-			else if (type === 'JSON to Java Class') {
-			return this.xmlConversionService.convertJSONToClass(body);
-			}
-			return null;
+			return this.xmlConversionService[`${this.getApi().get(this.type)}`](body);
 		}
-
 	}
 
 	getRating(event) {
 		console.log(event.value);
 		this.rating = event.value;
+	}
+
+	getHeaders() {
+		return new Map<String, String>([
+			[XmlConstants.XML_TO_JAVA_CLASS, XmlConstants.XML_TO_JAVA_CLASS],
+			[XmlConstants.JSON_TO_JAVA_CLASS, XmlConstants.JSON_TO_JAVA_CLASS],
+
+		]);
+	}
+	getLabels() {
+		return new Map<String, String>([
+			[XmlConstants.XML_TO_JAVA_CLASS, XmlConstants.GENERATE_JAVA_CLASS],
+			[XmlConstants.JSON_TO_JAVA_CLASS, XmlConstants.GENERATE_JAVA_CLASS],
+
+		]);
+	}
+
+	getFileModes() {
+		return new Map<String, String>([
+			[XmlConstants.XML_TO_JAVA_CLASS, 'application/xml'],
+			[XmlConstants.XML_TO_JAVA_CLASS, 'application/ld+json'],
+
+		]);
+	}
+	getApi() {
+		return new Map<String, String>([
+			[XmlConstants.XML_TO_JAVA_CLASS, 'convertXmlToClass'],
+			[XmlConstants.XML_TO_JAVA_CLASS, 'convertJSONToClass'],
+		]);
 	}
 }

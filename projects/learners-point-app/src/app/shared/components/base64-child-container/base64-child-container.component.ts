@@ -29,40 +29,21 @@ export class Base64ChildContainerComponent implements OnInit, OnChanges {
 	ngOnChanges(changes: SimpleChanges): void {
 		console.log(changes);
 		this.rating = null;
-		if (changes.childLabel.currentValue)
-			this.headerTitle = this.getHeaderTitle(changes.childLabel.currentValue);
-		this.showResponse = false;
-		this.type = changes.childLabel.currentValue;
+		if (changes.childLabel.currentValue) {
+			this.headerTitle = this.getHeaders().get(changes.childLabel.currentValue);
+			this.label = this.getLabels().get(changes.childLabel.currentValue);
+			this.showResponse = false;
+			this.type = changes.childLabel.currentValue;
+		}
 	}
 
 	ngOnInit(): void {
-
-		this.headerTitle = this.getHeaderTitle(this.childLabel);
-		this.type = this.childLabel;
+		this.headerTitle = Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT;
+		this.type = !this.childLabel ? Base64Headers.STRING_ENCODE: this.childLabel;
 		this.isDisabled = true;
+		this.label= Base64Headers.ENCODE;
 	}
-	getHeaderTitle(title: String): String {
-		if (title === 'String Encode') {
-			this.label = Base64Headers.ENCODE;
 
-			return this.headerTitle = Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT;
-		}
-		else if (title === 'String Decode') {
-			this.label = Base64Headers.DECODE;
-			return this.headerTitle = Base64Headers.DECODE_FROM_BASE64_FORMAT
-		}
-		else if (title === 'URL Encode') {
-			this.label = Base64Headers.ENCODE;
-			return this.headerTitle = Base64Headers.ENCODE_URL_TO_ENCODED_FORMAT;
-		}
-		else if (title === 'URL Decode') {
-			this.label = Base64Headers.DECODE
-			return this.headerTitle = Base64Headers.DECODE_FROM_URL_ENCODED_FORMAT;
-		}
-		else {
-			return this.headerTitle = Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT;
-		}
-	}
 	getResponse() {
 		const payload =
 		{
@@ -95,20 +76,7 @@ export class Base64ChildContainerComponent implements OnInit, OnChanges {
 	getObservableOfResponse(type, body): Observable<string> {
 		if (body) {
 			type = !type ? Base64Headers.STRING_ENCODE : type;
-
-			if (type === 'String Encode') {
-				return this.base64ConversionService.encodeStringToBase64(body);
-			}
-			else if (type === 'String Decode') {
-				return this.base64ConversionService.decodeStringToBase64(body);
-			}
-			else if (type === 'URL Encode') {
-				return this.base64ConversionService.encodeURLToBase64(body);
-			}
-			else if (type === 'URL Decode') {
-				return this.base64ConversionService.decodeURLToBase64(body);
-			}
-			return null;
+			return this.base64ConversionService[`${this.getApi().get(this.type)}`](body);
 		}
 
 	}
@@ -122,5 +90,30 @@ export class Base64ChildContainerComponent implements OnInit, OnChanges {
 		this.resultArea.nativeElement.select();
 		document.execCommand('copy')
 	}
+	getHeaders() {
+		return new Map<String, String>([
+			[Base64Headers.STRING_ENCODE, Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT],
+			[Base64Headers.STRING_DECODE, Base64Headers.DECODE_FROM_BASE64_FORMAT],
+			[Base64Headers.URL_ENCODE, Base64Headers.ENCODE_URL_TO_ENCODED_FORMAT],
+			[Base64Headers.URL_DECODE, Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT],
 
+		]);
+	}
+	getLabels() {
+		return new Map<String, String>([
+			[Base64Headers.STRING_ENCODE, Base64Headers.ENCODE],
+			[Base64Headers.STRING_DECODE, Base64Headers.DECODE],
+			[Base64Headers.URL_ENCODE, Base64Headers.ENCODE],
+			[Base64Headers.URL_DECODE, Base64Headers.DECODE],
+		]);
+	}
+
+	getApi() {
+		return new Map<String, String>([
+			[Base64Headers.STRING_ENCODE, 'encodeStringToBase64'],
+			[Base64Headers.STRING_DECODE, 'decodeStringToBase64'],
+			[Base64Headers.URL_ENCODE, 'encodeURLToBase64'],
+			[Base64Headers.URL_DECODE, 'decodeURLToBase64'],
+		]);
+	}
 }

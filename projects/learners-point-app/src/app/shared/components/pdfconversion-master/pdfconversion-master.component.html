@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+        <p-panel>
+          <ng-template pTemplate="header" >Convert To PDF</ng-template>
+          <div class="list-group">
+            <button
+              #jpgtopdf
+              pButton
+              pRipple
+              type="button"
+              label="JPG To PDF"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(jpgtopdf)"
+            ></button>
+  <br>
+            <button
+              #wordtopdf
+              pButton
+              pRipple
+              type="button"
+              label="WORD TO PDF"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(wordtopdf)"
+            ></button>
+            <br>
+            <button
+              #ptopdf
+              pButton
+              pRipple
+              type="button"
+              label="POWERPOINT TO PDF"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(ptopdf)"
+            ></button>
+            <br>
+            <button
+              #extopdf
+              pButton
+              pRipple
+              type="button"
+              label="EXCEL TO PDF"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(extopdf)"
+            ></button>
+
+            <br>
+            <button
+              #htopdf
+              pButton
+              pRipple
+              type="button"
+              label="HTML TO PDF"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(htopdf)"
+            ></button>
+          </div>
+        </p-panel>
+      </div>
+      <div class="col-sm-10">
+        <app-pdfconversion-child [childLabel]="childLabel"></app-pdfconversion-child>
+      </div>
+    </div>
+  </div>
+  

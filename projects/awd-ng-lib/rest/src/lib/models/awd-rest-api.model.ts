@@ -30,4 +30,12 @@ export interface IAwdRestApi {
 		postConvertJSONToClass: IRestApiFunction;
   }
 
+  pdfConversionResources: {
+    postConvertWordToPDF: IRestApiFunction;
+		postConvertJpegToPDF: IRestApiFunction;
+		postConvertHtmlToPDF: IRestApiFunction;
+		postConvertExcelToPDF: IRestApiFunction;
+		postConvertPowerPointToPDF: IRestApiFunction;
+  }
+
 }
