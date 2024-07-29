@@ -31,8 +31,8 @@ import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {FileUploadModule} from 'primeng/fileupload';
 import { FormatterComponent } from './shared/components/formatter/formatter.component';
 import { FormatterchildComponent } from './shared/components/formatterchild/formatterchild.component';
-import { GenerateObjectBaseComponent } from './shared/generate-object-base/generate-object-base.component';
-import { GenerateObjectChildComponent } from './shared/generate-object-child/generate-object-child.component';
+import { GenerateObjectBaseComponent } from './shared/components/generate-object-base/generate-object-base.component';
+import { GenerateObjectChildComponent } from './shared/components/generate-object-child/generate-object-child.component';
 import {TabViewModule} from 'primeng/tabview';
 import {RatingModule} from 'primeng/rating';
 import { ClipboardModule } from 'ngx-clipboard';
@@ -43,6 +43,8 @@ import {DynamicDialogModule} from 'primeng/dynamicdialog';
 import { ProgresscontainerComponent } from './shared/components/progresscontainer/progresscontainer.component';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import { MergePdfContainerComponent } from './shared/components/merge-pdf-container/merge-pdf-container.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +64,8 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     GenerateObjectChildComponent,
     PDFConversionMasterComponent,
     PDFConversionChildComponent,
-    ProgresscontainerComponent
+    ProgresscontainerComponent,
+    MergePdfContainerComponent
     
   ],
   imports: [
@@ -83,7 +86,8 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     ClipboardModule,
     ToastModule,
     DynamicDialogModule,
-    ProgressBarModule
+    ProgressBarModule,
+    PdfViewerModule
   
 
    

@@ -55,7 +55,7 @@ export class PDFConversionChildComponent implements OnInit {
 		if (this.uploadedWordFiles.length > 6)
 			this.showFileExceedErr();
 		else {
-			this.uploadedWordFiles.length > 1 ? this.processRequest(this.type, this.uploadedWordFiles, 'zip') : this.processRequest(this.type, this.uploadedWordFiles, 'pdf');
+			this.uploadedWordFiles.length > 1 ? this.processRequest(this.type, this.uploadedWordFiles, 'zip') : this.processRequest(this.type, this.uploadedWordFiles, this.getDownloadFileTypes().get(this.type));
 			this.fileUpload.clear();
 		}
 	}
@@ -116,8 +116,27 @@ export class PDFConversionChildComponent implements OnInit {
 			[PdfConstants.HTML_TO_PDF, "text/html"],
 			[PdfConstants.EXCEL_TO_PDF, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"],
 			[PdfConstants.POWERPOINT_TO_PDF, "application/vnd.ms-powerpoint"],
+			[PdfConstants.PDF_TO_WORD, "application/pdf"],
+			[PdfConstants.PDF_TO_JPG, "application/pdf"],
+			[PdfConstants.PDF_TO_EXCEL, "application/pdf"],
+			[PdfConstants.PDF_TO_POWERPOINT, "application/pdf"]
 		]);
 	}
+
+	getDownloadFileTypes() {
+		return new Map<String, String>([
+			[PdfConstants.WORD_TO_PDF, "pdf"],
+			[PdfConstants.JPG_TO_PDF, "pdf"],
+			[PdfConstants.HTML_TO_PDF, "pdf"],
+			[PdfConstants.EXCEL_TO_PDF, "pdf"],
+			[PdfConstants.POWERPOINT_TO_PDF, "pdf"],
+			[PdfConstants.PDF_TO_WORD, "docx"],
+			[PdfConstants.PDF_TO_JPG, "jpg"],
+			[PdfConstants.PDF_TO_EXCEL, "xlsx"],
+			[PdfConstants.PDF_TO_POWERPOINT, "pptx"]
+		]);
+	}
+
 	getApi() {
 		return new Map<String, String>([
 			[PdfConstants.WORD_TO_PDF, 'convertWordToPdf'],
@@ -125,6 +144,10 @@ export class PDFConversionChildComponent implements OnInit {
 			[PdfConstants.HTML_TO_PDF, "convertHtmlToPdf"],
 			[PdfConstants.EXCEL_TO_PDF, "convertExcelToPdf"],
 			[PdfConstants.POWERPOINT_TO_PDF, "convertPowerPointToPdf"],
+			[PdfConstants.PDF_TO_WORD, "convertPDFToWord"],
+			[PdfConstants.PDF_TO_JPG, "convertPDFToJpg"],
+			[PdfConstants.PDF_TO_EXCEL, "convertPDFToExcel"],
+			[PdfConstants.PDF_TO_POWERPOINT, "convertPDFToPpt"]
 		]);
 	}
 	getHeaders() {
@@ -134,6 +157,10 @@ export class PDFConversionChildComponent implements OnInit {
 			[PdfConstants.HTML_TO_PDF, PdfConstants.HTML_TO_PDF_HEADER],
 			[PdfConstants.EXCEL_TO_PDF, PdfConstants.EXCEL_TO_PDF_HEADER],
 			[PdfConstants.POWERPOINT_TO_PDF, PdfConstants.POWERPOINT_TO_PDF_HEADER],
+			[PdfConstants.PDF_TO_JPG, PdfConstants.PDF_TO_JPG_HEADER],
+			[PdfConstants.PDF_TO_WORD, PdfConstants.PDF_TO_WORD_HEADER],
+			[PdfConstants.PDF_TO_POWERPOINT, PdfConstants.PDF_TO_POWERPOINT_HEADER],
+			[PdfConstants.PDF_TO_EXCEL, PdfConstants.PDF_TO_EXCEL_HEADER],
 		]);
 	}
 	getSubHeaders() {
@@ -143,6 +170,10 @@ export class PDFConversionChildComponent implements OnInit {
 			[PdfConstants.HTML_TO_PDF, PdfConstants.HTML_TO_PDF_SUB_HEADER],
 			[PdfConstants.EXCEL_TO_PDF, PdfConstants.EXCEL_TO_PDF_SUB_HEADER],
 			[PdfConstants.POWERPOINT_TO_PDF, PdfConstants.POWERPOINT_TO_PDF_SUB_HEADER],
+			[PdfConstants.PDF_TO_JPG, PdfConstants.PDF_TO_JPG_SUB_HEADER],
+			[PdfConstants.PDF_TO_WORD, PdfConstants.PDF_TO_WORD_SUB_HEADER],
+			[PdfConstants.PDF_TO_POWERPOINT, PdfConstants.PDF_TO_POWERPOINT_SUB_HEADER],
+			[PdfConstants.PDF_TO_EXCEL, PdfConstants.PDF_TO_EXCEL_SUB_HEADER],
 		]);
 	}
 	getAcceptedFileTypes() {
@@ -152,6 +183,10 @@ export class PDFConversionChildComponent implements OnInit {
 			[PdfConstants.HTML_TO_PDF, ".html"],
 			[PdfConstants.EXCEL_TO_PDF, ".xls,.xlsx"],
 			[PdfConstants.POWERPOINT_TO_PDF, ".ppt,.pptx,.pps,.ppsx"],
+			[PdfConstants.PDF_TO_JPG, ".pdf"],
+			[PdfConstants.PDF_TO_WORD, ".pdf"],
+			[PdfConstants.PDF_TO_POWERPOINT,".pdf"],
+			[PdfConstants.PDF_TO_EXCEL, ".pdf"],
 		]);
 	}
 }

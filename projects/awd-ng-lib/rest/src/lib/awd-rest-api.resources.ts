@@ -94,6 +94,26 @@ const PDF_CONVERSION_RESOURCES = {
   convertPowerPointToPDF: {
     urlTemplate: 'pdfconversion/pptopdf',
     methods: [HttpMethods.POST]
+  },
+  convertPDFToWord: {
+    urlTemplate: 'pdfconversion/pdftoword',
+    methods: [HttpMethods.POST]
+  },
+  convertPDFToJpg: {
+    urlTemplate: 'pdfconversion/pdftojpg',
+    methods: [HttpMethods.POST]
+  },
+  convertPDFToPPT: {
+    urlTemplate: 'pdfconversion/pdftoppt',
+    methods: [HttpMethods.POST]
+  },
+  convertPDFToExcel: {
+    urlTemplate: 'pdfconversion/pdftoexcel',
+    methods: [HttpMethods.POST]
+  },
+  convertMergePDF: {
+    urlTemplate: 'pdfconversion/mergepdf',
+    methods: [HttpMethods.POST]
   }
 };
 

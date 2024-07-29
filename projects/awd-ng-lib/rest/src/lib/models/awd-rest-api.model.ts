@@ -36,6 +36,11 @@ export interface IAwdRestApi {
 		postConvertHtmlToPDF: IRestApiFunction;
 		postConvertExcelToPDF: IRestApiFunction;
 		postConvertPowerPointToPDF: IRestApiFunction;
+		postConvertPDFToWord: IRestApiFunction;
+		postConvertPDFToJpg: IRestApiFunction;
+		postConvertPDFToPPT: IRestApiFunction;
+		postConvertPDFToExcel: IRestApiFunction;
+		postConvertMergePDF: IRestApiFunction;
   }
 
 }

@@ -1,3 +1,4 @@
+import { FileData } from './../../shared/interfaces/FileData';
 import { Injectable } from '@angular/core';
 import { AwdRestApiService } from 'projects/awd-ng-lib/rest/src/public-api';
 import { NotificationService } from './notification.service';
@@ -17,7 +18,8 @@ export class PdfconversionService {
 		const formData = new FormData();
 		// Append each file to the formData
 		files.forEach(file => {
-			formData.append('files', file, file.name);
+		
+			formData.append('files', file ,file.name);
 		});
 		return this.awdRestApi.resources.pdfConversionResources.postConvertWordToPDF({
 			body: formData,
@@ -126,4 +128,117 @@ export class PdfconversionService {
 			);
 	}
 
+	convertPDFToWord(files: File[]): Observable<Blob> {
+		const formData = new FormData();
+		// Append each file to the formData
+		files.forEach(file => {
+			formData.append('files', file, file.name);
+		});
+		return this.awdRestApi.resources.pdfConversionResources.postConvertPDFToWord({
+			body: formData,
+			headers: { 'Content-Type': 'multipart/form-data', 'Accept': 'application/json' },
+			responseType: 'blob'
+		})
+			.pipe(
+				map((response) => {
+					return response;
+				}
+				),
+				catchError(err => {
+					this.notificationService.showError('Something went wrong,' + err);
+					return err;
+				})
+			);
+	}
+
+	convertPDFToJpg(files: File[]): Observable<Blob> {
+		const formData = new FormData();
+		// Append each file to the formData
+		files.forEach(file => {
+			formData.append('files', file, file.name);
+		});
+		return this.awdRestApi.resources.pdfConversionResources.postConvertPDFToJpg({
+			body: formData,
+			headers: { 'Content-Type': 'multipart/form-data', 'Accept': 'application/json' },
+			responseType: 'blob'
+		})
+			.pipe(
+				map((response) => {
+					return response;
+				}
+				),
+				catchError(err => {
+					this.notificationService.showError('Something went wrong,' + err);
+					return err;
+				})
+			);
+	}
+	convertPDFToPpt(files: File[]): Observable<Blob> {
+		const formData = new FormData();
+		// Append each file to the formData
+		files.forEach(file => {
+			formData.append('files', file, file.name);
+		});
+		return this.awdRestApi.resources.pdfConversionResources.postConvertPDFToPPT({
+			body: formData,
+			headers: { 'Content-Type': 'multipart/form-data', 'Accept': 'application/json' },
+			responseType: 'blob'
+		})
+			.pipe(
+				map((response) => {
+					return response;
+				}
+				),
+				catchError(err => {
+					this.notificationService.showError('Something went wrong,' + err);
+					return err;
+				})
+			);
+	}
+
+	convertPDFToExcel(files: File[]): Observable<Blob> {
+		const formData = new FormData();
+		// Append each file to the formData
+		files.forEach(file => {
+			formData.append('files', file, file.name);
+		});
+		return this.awdRestApi.resources.pdfConversionResources.postConvertPDFToExcel({
+			body: formData,
+			headers: { 'Content-Type': 'multipart/form-data', 'Accept': 'application/json' },
+			responseType: 'blob'
+		})
+			.pipe(
+				map((response) => {
+					return response;
+				}
+				),
+				catchError(err => {
+					this.notificationService.showError('Something went wrong,' + err);
+					return err;
+				})
+			);
+	}
+
+	mergePDF(files: File[]): Observable<Blob> {
+		const formData = new FormData();
+		// Append each file to the formData
+		files.forEach(file => {
+			formData.append('files', file, file.name);
+		});
+		return this.awdRestApi.resources.pdfConversionResources.postConvertMergePDF({
+			body: formData,
+			headers: { 'Content-Type': 'multipart/form-data', 'Accept': 'application/json' },
+			responseType: 'blob'
+		})
+			.pipe(
+				map((response) => {
+					return response;
+				}
+				),
+				catchError(err => {
+					this.notificationService.showError('Something went wrong,' + err);
+					return err;
+				})
+			);
+	}
 }

@@ -1,0 +1,32 @@
+<p-scrollPanel [style]="{ width: '100%', height: '500px' }" styleClass="custombar1">
+    <p-panel>
+      <ng-template pTemplate="header">
+        {{ this.headerTitle }}
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div id="request">
+          <span class="p-float-label">
+            <textarea pInputTextarea rows="5" cols="30" [(ngModel)]="textareaValue"></textarea>
+            <label for="float-input"> Simply copy-paste xml/json data then push the {{ label }} button. This will generate java classes as per the xml schema structure.</label>
+          </span>
+        </div>
+      </ng-template>
+  
+      <ng-template pTemplate="footer">
+        <button pButton type="button" [label]="label" (click)="getResponse()" *ngIf="showButton"></button>
+        <div style="float:right">
+          <p id="para">Review results:<p-rating [(ngModel)]="rating" (onRate)="getRating($event)"></p-rating>
+        </div>
+      </ng-template>
+    </p-panel>
+    <br />
+    <div id="response" *ngIf="showResponse">
+        <p>Please find below generated java classes for provided XML/JSON schema </p>
+        <p-tabView>
+            <p-tabPanel [header]="tab.objectName" *ngFor="let tab of dataList" [selected]="i == 0">
+             <pre>  {{tab.objectDescription}}</pre> 
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+  </p-scrollPanel>
+  

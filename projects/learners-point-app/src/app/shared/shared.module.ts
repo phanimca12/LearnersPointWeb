@@ -26,11 +26,12 @@ import { XmlViewerComponent } from './components/xml-viewer/xml-viewer.component
 import { XmlConversionMasterComponent } from './components/xml-conversion-master/xml-conversion-master.component';
 import { FormatterComponent } from './components/formatter/formatter.component';
 import { FormatterchildComponent } from './components/formatterchild/formatterchild.component';
-import { GenerateObjectBaseComponent } from './generate-object-base/generate-object-base.component';
-import { GenerateObjectChildComponent } from './generate-object-child/generate-object-child.component';
+import { GenerateObjectBaseComponent } from './components/generate-object-base/generate-object-base.component';
+import { GenerateObjectChildComponent } from './components/generate-object-child/generate-object-child.component';
 import { PDFConversionMasterComponent } from './components/pdfconversion-master/pdfconversion-master.component';
 import { PDFConversionChildComponent } from './components/pdfconversion-child/pdfconversion-child.component';
 import { ProgresscontainerComponent } from './components/progresscontainer/progresscontainer.component';
+import { MergePdfContainerComponent } from './components/merge-pdf-container/merge-pdf-container.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { ProgresscontainerComponent } from './components/progresscontainer/progr
     GenerateObjectChildComponent,
     PDFConversionMasterComponent,
     PDFConversionChildComponent,
-    ProgresscontainerComponent
+    ProgresscontainerComponent,
+    MergePdfContainerComponent
   
   ],
   exports: [

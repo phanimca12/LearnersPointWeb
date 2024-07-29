@@ -39,4 +39,8 @@ export class HomeMenuComponent implements OnInit {
   {
     this.router.navigate(['/basepdfConverter']);
   }
+  navigateMergePDF()
+  {
+    this.router.navigate(['/mergePDFContainer']);
+  }
 }

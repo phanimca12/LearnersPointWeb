@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <div class="row">
+		<div class="col-sm-2">
+      <div class="file-upload">
+        <input
+          type="file"
+          id="fileInput"
+          class="file-input"
+          (change)="onFileSelected($event)"
+          accept=".pdf"
+          multiple
+        />
+        <label for="fileInput" class="file-upload-button">
+          <i class="fa fa-plus"></i>
+        </label>
+				<span>
+					<label for="add">Attach files</label>
+				</span>
+      </div>
+		</div>
+    <div class="col-sm-8">
+      <p>
+        To change the order of your PDFs, drag and drop the files as you want.
+      </p>
+      <div
+        cdkDropList
+             class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div *ngIf="filesData.length > 0">
+          <ul style="display: inline">
+            <li
+              *ngFor="let pdfSrc of filesData; let i = index"
+                        >
+												<label for="name">{{ pdfSrc.file.name }}</label>
+              <div class="example-box" cdkDrag>
+                <div class="preview-container">
+                  <button
+                    id="top-right"
+                    pTooltip="remove"
+                    pButton
+                    pRipple
+                    type="button"
+                    icon="pi pi-times"
+                    class="p-button-rounded p-button-danger"
+                    (click)="removeItem(i)"
+                  ></button>
+                  <pdf-viewer
+                    [src]="pdfSrc.arrayBuffer"
+                    [render-text]="true"
+                    [show-all]="false"
+                    [page]="1"
+                    [original-size]="false"
+                    [fit-to-page]="false"
+                    [autoresize]="false"
+                  ></pdf-viewer>
+                </div>
+              </div>
+              <br />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+
+      <div class="merge-button" *ngIf="showMerge">
+        <button
+          pButton
+          pRipple
+          type="button"
+          label="Merge PDF"
+          class="p-button-rounded p-button-success"
+				       (click)="mergePDF()"
+					></button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p-progressBar mode="indeterminate" [style]="{'height': '6px'}" *ngIf="showProgress"></p-progressBar>
+    </div>
+  </div>
+</div>

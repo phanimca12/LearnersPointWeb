@@ -56,6 +56,53 @@
             ></button>
           </div>
         </p-panel>
+        <br>
+        <p-panel>
+          <ng-template pTemplate="header" >Convert From PDF</ng-template>
+          <div class="list-group">
+            <button
+              #pdftojpg
+              pButton
+              pRipple
+              type="button"
+              label="PDF TO JPG"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(pdftojpg)"
+            ></button>
+  <br>
+            <button
+              #pdftoword
+              pButton
+              pRipple
+              type="button"
+              label="PDF TO WORD"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(pdftoword)"
+            ></button>
+            <br>
+            <button
+              #pdftoppt
+              pButton
+              pRipple
+              type="button"
+              label="PDF TO POWERPOINT"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(pdftoppt)"
+            ></button>
+            <br>
+            <button
+              #pdftoexcel
+              pButton
+              pRipple
+              type="button"
+              label="PDF TO EXCEL"
+              class="p-button-outlined p-button-rounded"
+              (click)="loadBase64Child(pdftoexcel)"
+            ></button>
+
+            <br>
+          </div>
+        </p-panel>
       </div>
       <div class="col-sm-10">
         <app-pdfconversion-child [childLabel]="childLabel"></app-pdfconversion-child>
