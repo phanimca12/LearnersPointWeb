@@ -45,6 +45,10 @@ import {ProgressBarModule} from 'primeng/progressbar';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import { MergePdfContainerComponent } from './shared/components/merge-pdf-container/merge-pdf-container.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { EditPdfComponent } from './shared/components/edit-pdf/edit-pdf.component';
+import { WebViewerComponent } from './webviewer/webviewer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +69,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     PDFConversionMasterComponent,
     PDFConversionChildComponent,
     ProgresscontainerComponent,
-    MergePdfContainerComponent
+    MergePdfContainerComponent,
+    EditPdfComponent,
+    WebViewerComponent
     
   ],
   imports: [
@@ -87,7 +93,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ToastModule,
     DynamicDialogModule,
     ProgressBarModule,
-    PdfViewerModule
+    PdfViewerModule,
+    
   
 
    

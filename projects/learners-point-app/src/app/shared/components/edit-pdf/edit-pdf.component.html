@@ -1,0 +1,9 @@
+<div>
+    <input type="file" (change)="handleFileInput($event)" accept=".pdf" />
+   
+  </div>
+
+  <br>
+  <br>
+
+<app-web-viewer [file]="this.selectedFile"></app-web-viewer>

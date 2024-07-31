@@ -43,4 +43,8 @@ export class HomeMenuComponent implements OnInit {
   {
     this.router.navigate(['/mergePDFContainer']);
   }
+  navigateEditPDF()
+  {
+    this.router.navigate(['/editPDFContainer']);
+  }
 }

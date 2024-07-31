@@ -32,6 +32,8 @@ import { PDFConversionMasterComponent } from './components/pdfconversion-master/
 import { PDFConversionChildComponent } from './components/pdfconversion-child/pdfconversion-child.component';
 import { ProgresscontainerComponent } from './components/progresscontainer/progresscontainer.component';
 import { MergePdfContainerComponent } from './components/merge-pdf-container/merge-pdf-container.component';
+import { EditPdfComponent } from './components/edit-pdf/edit-pdf.component';
+import { WebViewerComponent } from './components/web-viewer/web-viewer.component';
 
 
 @NgModule({
@@ -63,7 +65,9 @@ import { MergePdfContainerComponent } from './components/merge-pdf-container/mer
     PDFConversionMasterComponent,
     PDFConversionChildComponent,
     ProgresscontainerComponent,
-    MergePdfContainerComponent
+    MergePdfContainerComponent,
+    EditPdfComponent,
+    WebViewerComponent
   
   ],
   exports: [

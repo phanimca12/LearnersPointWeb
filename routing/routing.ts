@@ -12,6 +12,7 @@ import { XmlViewerComponent } from 'projects/learners-point-app/src/app/shared/c
 import { GenerateObjectBaseComponent } from 'projects/learners-point-app/src/app/shared/components/generate-object-base/generate-object-base.component';
 import { GenerateObjectChildComponent } from 'projects/learners-point-app/src/app/shared/components/generate-object-child/generate-object-child.component';
 import { MergePdfContainerComponent } from 'projects/learners-point-app/src/app/shared/components/merge-pdf-container/merge-pdf-container.component';
+import { EditPdfComponent } from 'projects/learners-point-app/src/app/shared/components/edit-pdf/edit-pdf.component';
 
 export const ApplicationRoutes = [
 	{
@@ -44,6 +45,11 @@ export const ApplicationRoutes = [
 	{
 		path: 'mergePDFContainer',
 		component: MergePdfContainerComponent,
+		children: [{ path: 'pdfchild', component: PDFConversionChildComponent }]
+	},
+	{
+		path: 'editPDFContainer',
+		component: EditPdfComponent,
 		children: [{ path: 'pdfchild', component: PDFConversionChildComponent }]
 	},
 ];

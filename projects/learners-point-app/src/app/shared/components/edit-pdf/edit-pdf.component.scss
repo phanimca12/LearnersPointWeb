@@ -1,0 +1,13 @@
+canvas {
+  border: 1px solid #000;
+  margin: 10px 0; /* Add some margin between pages */
+}
+.controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 10px;
+}

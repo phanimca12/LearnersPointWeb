@@ -259,7 +259,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/learners-point-app/src/favicon.ico",
-              "projects/learners-point-app/src/assets"
+              "projects/learners-point-app/src/assets",
+              "projects/learners-point-app/src/wv-resources/lib"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -268,10 +269,12 @@
               "node_modules/primeflex/primeflex.css",
               "node_modules/primeicons/primeicons.css",
               "projects/learners-point-app/src/styles.scss"
+            
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "projects/learners-point-app/src/wv-resources/lib/webviewer.min.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

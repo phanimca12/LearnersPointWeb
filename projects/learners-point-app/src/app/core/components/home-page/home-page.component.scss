@@ -45,3 +45,13 @@ font-style: italic;
     margin: 0;
   
 }
+
+.logo-class
+{
+    color: #007bff;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Poppins Bold' !important;
+    font-size: 25px;
+    font-weight: $btn-font-weight;
+    line-height: $line-height-base;
+}
