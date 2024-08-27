@@ -1,0 +1,60 @@
+{
+  "_from": "@pdftron/webviewer@latest",
+  "_id": "@pdftron/webviewer@10.11.1",
+  "_inBundle": false,
+  "_integrity": "sha512-Y7Fn13pOknpipYVFhczdE7EhJz40JUiC1T5NIvzc3La/8TYSkZ5CObXw9ywmmihnPLhizoJRtRAb7MEHp0yucw==",
+  "_location": "/@pdftron/webviewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@pdftron/webviewer@latest",
+    "name": "@pdftron/webviewer",
+    "escapedName": "@pdftron%2fwebviewer",
+    "scope": "@pdftron",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@pdftron/webviewer/-/webviewer-10.11.1.tgz",
+  "_shasum": "c96bd9deba7ad55c4d2049c4d79fe0e303304b4f",
+  "_spec": "@pdftron/webviewer@latest",
+  "_where": "C:\\phani_awd\\Projects\\LearnersPoint_Web_GitHub\\LearnersPointWeb",
+  "author": {
+    "name": "Apryse"
+  },
+  "build": "MTU3NTkzMDE2ODA2OC02LjAuMC1iZXRhLTM=",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "[WebViewer](https://www.apryse.com/webviewer) is a powerful JavaScript Document SDK and UI Component Library that is a part of the [Apryse PDF SDK](https://www.apryse.com). It provides a slick, out-of-the-box responsive UI that interacts with the core library to view, annotate, and edit PDF, DOCX, XLSX, PPTX, images, videos, audio and CAD. It can be easily embedded into any [JS project](https://docs.apryse.com/documentation/web/get-started/npm/) and is compatible with frameworks like [React](https://docs.apryse.com/documentation/web/get-started/react/), [Angular](https://docs.apryse.com/documentation/web/get-started/angular/new-project/), [Vue](https://docs.apryse.com/documentation/web/get-started/vue/), [Next.js](https://docs.apryse.com/documentation/web/get-started/nextjs/), [Nuxt](https://docs.apryse.com/documentation/web/get-started/nuxt/), [Electron](https://docs.apryse.com/documentation/web/get-started/electron/), [Svelte](https://docs.apryse.com/documentation/web/get-started/electron/). WebViewer can also be integrated into [Salesforce](https://docs.apryse.com/documentation/salesforce/), [Mendix](https://docs.apryse.com/documentation/web/get-started/mendix/), [Appian](https://docs.apryse.com/documentation/appian/), [OutSystems](https://docs.apryse.com/documentation/web/get-started/outsystems/), and [SharePoint](https://docs.apryse.com/documentation/web/get-started/sharepoint/).",
+  "homepage": "https://docs.apryse.com/documentation/web/",
+  "keywords": [
+    "PDF SDK",
+    "WebViewer",
+    "View PDF",
+    "Annotate PDF",
+    "Annotate MS Office",
+    "JavaScript PDF SDK",
+    "JS PDF SDK",
+    "Edit PDF",
+    "Sign PDF",
+    "Manipulate PDF",
+    "PDF Form",
+    "Annotate doc",
+    "Annotate docx",
+    "Annotate ppt",
+    "Annotate pptx",
+    "CAD SDK"
+  ],
+  "main": "webviewer.min.js",
+  "name": "@pdftron/webviewer",
+  "scripts": {
+    "optimize": "node scripts/optimize-for-prod.js"
+  },
+  "types": "./types.d.ts",
+  "version": "10.11.1"
+}

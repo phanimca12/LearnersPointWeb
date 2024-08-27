@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-primary navbar-dark" id="navbar-css-style" >
     <div class="container-fluid">
-      <a class="active" [routerLink]="['home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> Home</a> 
+      <button pButton pRipple type="button" icon="pi pi-home" class="p-button-rounded" (click)="navigateHome()" pTooltip="Home"></button>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" (click)="isShown = !isShown">
         <span class="navbar-toggler-icon"></span>
       </button> 
@@ -29,6 +29,9 @@
           </li>
           <li class="nav-item active">
             <button pButton pRipple type="button" label="Edit PDF" class="p-button-secondary p-button-text" (click)="navigateEditPDF()"></button>
+          </li>
+          <li class="nav-item active" >
+            <button pButton pRipple type="button" label="Report Issue" class="p-button-secondary p-button-text" (click)="showForm()" style="color:rgb(235, 239, 16)"></button>
           </li>
         </ul>
       </div>

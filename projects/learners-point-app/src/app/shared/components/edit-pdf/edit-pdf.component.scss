@@ -1,3 +1,4 @@
+@import 'variables';
 canvas {
   border: 1px solid #000;
   margin: 10px 0; /* Add some margin between pages */
@@ -10,4 +11,24 @@ canvas {
 
 button {
   margin-right: 10px;
+}
+.file-dialouge
+{
+  float: left;
+  align-items: center;
+  margin-top: 20px;
+  background: rgb(238, 245, 196) !important; 
+  height: 100%;
+  width:100%;
+
+  input
+  {
+    font-family: 'Poppins Bold' !important;
+    font-size: 15px;
+    font-weight: $btn-font-weight;
+    line-height: $line-height-base;
+    direction: ltr;
+    height: auto;
+color:rgb(91, 122, 243) !important;
+  }
 }

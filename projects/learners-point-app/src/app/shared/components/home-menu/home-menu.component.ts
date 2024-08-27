@@ -4,6 +4,9 @@ import {FieldsetModule} from 'primeng/fieldset'
 import {PanelModule} from 'primeng/panel';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import { Router } from '@angular/router';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { MessageService } from 'primeng/api';
+import { ReportIssueComponent } from '../report-issue/report-issue.component';
 @Component({
   selector: 'app-home-menu',
   templateUrl: './home-menu.component.html',
@@ -12,8 +15,9 @@ import { Router } from '@angular/router';
 export class HomeMenuComponent implements OnInit {
   property:any='';
   isShown = false;
+  ref: DynamicDialogRef;
 
-  constructor(public router:Router) { }
+  constructor(public router:Router,public dialogService: DialogService, public messageService: MessageService) { }
 
   ngOnInit(): void {
   }
@@ -47,4 +51,26 @@ export class HomeMenuComponent implements OnInit {
   {
     this.router.navigate(['/editPDFContainer']);
   }
+  navigateHome()
+  {
+    this.router.navigate(['/home']);
+  }
+  showForm()
+  {
+    this.ref = this.dialogService.open(ReportIssueComponent, {
+      header: 'Report an issue',
+      width: '70%',
+      contentStyle: {"max-height": "500px", "overflow": "auto"},
+      baseZIndex: 10000
+  });
+
+
+  }
+
+  ngOnDestroy() {
+    if (this.ref) {
+        this.ref.close();
+    }
+}
+
 }

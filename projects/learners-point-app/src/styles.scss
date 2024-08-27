@@ -1,15 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
-@import '~codemirror/lib/codemirror.css';
-@import '~codemirror/theme/idea.css';
-@import '~codemirror/addon/fold/foldgutter.css';
-@import '~codemirror/addon/lint/lint.css';
+@import "~codemirror/lib/codemirror.css";
+@import "~codemirror/theme/idea.css";
+@import "~codemirror/addon/fold/foldgutter.css";
+@import "~codemirror/addon/lint/lint.css";
 @import "~@angular/cdk/overlay-prebuilt.css";
 @import "scss/variables";
 @import "scss/fonts";
 @import "scss/pbutton";
-@import "primeicons/primeicons.css";
-
 
 body {
   .dragging {
@@ -42,13 +40,155 @@ body {
 }
 
 body {
-  background: #ffff
+  background: #ffff;
 }
 a {
   color: rgb(245, 255, 105);
   display: inline-block;
-   font-weight:lighter;
+  font-weight: lighter;
 }
 a:hover {
   color: rgb(229, 8, 8);
 }
+
+.p-panel {
+  width: auto;
+}
+.p-button {
+  padding:$btn-padding !important;
+  font-weight: $btn-font-weight !important;
+  font-size: $btn-font-size !important;
+
+  line-height: 1.5 !important;
+  height: 40px !important;
+  width: auto !important;
+  font-family: "Poppins Medium" !important;
+  display: inline-flex !important; /* Ensure height applies */
+  align-items: center !important; /* Center text vertically */
+  justify-content: center !important; /* Center text horizontally */
+
+  min-width: 44px !important; /* Minimum width for touch targets */
+  min-height: 44px !important; /* Minimum height for touch targets */
+
+  border-width: 1px;
+  border-style: solid;
+  margin: 0 4px;
+
+  white-space: nowrap;
+  cursor: $cursor-pointer;
+  outline: none;
+  letter-spacing: 0.22px;
+  opacity: 1;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+
+
+}
+
+.p-panel .p-panel-header {
+  background: rgb(238, 245, 196) !important;
+  font-family: "Poppins Semi Bold" !important;
+  font-size: 15px;
+  font-weight: $btn-font-weight;
+  line-height: $line-height-base;
+  text-align: center;
+}
+.p-panel .p-panel-content {
+  color: black !important;
+  font-family: "Poppins Semi Bold" !important;
+  font-size: 13px;
+}
+
+.footer {
+
+  padding: 20px !important;
+  text-align: center !important;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer p {
+  margin: 0;
+  color: #ffff !important;
+  font-size: 14px !important;
+  font-family: "Poppins Semi Bold" !important;
+}
+
+
+/* Responsive adjustments */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footer{
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+  .p-button
+  {
+  font-size: 11px !important;
+  height: 32px !important;
+  padding: 6px 16px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .footer{
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+
+  .p-button
+  {
+  font-size: 13px !important;
+  height: 36px !important;
+  padding: 10px 20px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footer{
+    padding: 10px !important;
+    font-size: 13px !important;
+  }
+
+  .p-button
+  {
+  font-size: 13px !important;
+  height: 38px !important;
+  padding: 10px 20px !important;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footer{
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .p-button
+  {
+  font-size: 13px !important;
+  height: 38px !important;
+  padding: 10px 20px !important;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .footer{
+    padding: 10px;
+    font-size: 14px;
+  }
+
+
+  .p-button
+  {
+  font-size: 14px !important;
+  height: 40px !important;
+  padding: 10px 20px !important;
+  }
+}
+

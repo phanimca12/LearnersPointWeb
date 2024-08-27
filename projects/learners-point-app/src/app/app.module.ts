@@ -47,6 +47,10 @@ import { MergePdfContainerComponent } from './shared/components/merge-pdf-contai
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { EditPdfComponent } from './shared/components/edit-pdf/edit-pdf.component';
 import { WebViewerComponent } from './webviewer/webviewer.component';
+import WebViewer from '@pdftron/webviewer'
+import {DataViewModule} from 'primeng/dataview';
+import { ReportIssueComponent } from './shared/components/report-issue/report-issue.component';
+
 
 
 @NgModule({
@@ -71,7 +75,8 @@ import { WebViewerComponent } from './webviewer/webviewer.component';
     ProgresscontainerComponent,
     MergePdfContainerComponent,
     EditPdfComponent,
-    WebViewerComponent
+    WebViewerComponent,
+    ReportIssueComponent
     
   ],
   imports: [
@@ -94,7 +99,8 @@ import { WebViewerComponent } from './webviewer/webviewer.component';
     DynamicDialogModule,
     ProgressBarModule,
     PdfViewerModule,
-    
+    DataViewModule
+ 
   
 
    

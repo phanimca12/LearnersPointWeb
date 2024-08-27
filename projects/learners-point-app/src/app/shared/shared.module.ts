@@ -34,6 +34,7 @@ import { ProgresscontainerComponent } from './components/progresscontainer/progr
 import { MergePdfContainerComponent } from './components/merge-pdf-container/merge-pdf-container.component';
 import { EditPdfComponent } from './components/edit-pdf/edit-pdf.component';
 import { WebViewerComponent } from './components/web-viewer/web-viewer.component';
+import { ReportIssueComponent } from './components/report-issue/report-issue.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { WebViewerComponent } from './components/web-viewer/web-viewer.component
     ProgresscontainerComponent,
     MergePdfContainerComponent,
     EditPdfComponent,
-    WebViewerComponent
+    WebViewerComponent,
+    ReportIssueComponent
   
   ],
   exports: [

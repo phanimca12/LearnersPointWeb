@@ -1,17 +1,36 @@
-<div class="container-fluid">
-<div class="row">
-<div class="col-sm-2">
+<div class="card">
+  <p-dataView
+    #dv
+    [value]="homeItems"
+    [paginator]="true"
+    [rows]="9"
+    filterBy="name"
+    layout="grid" >
+    <ng-template pTemplate="header">
+      <div class="flex flex-column md:flex-row md:justify-content-between">
+        <span class="p-input-icon-left mb-2 md:mb-0">
+          <i class="pi pi-search"></i>
+          <input
+            type="search"
+            pInputText
+            placeholder="Search by Name"
+            (input)="dv.filter($event.target.value)"
+          />
+        </span>
+      </div>
+    </ng-template>
 
-</div>
-
-<div class="col-sm-8">
-    <input type="text" pInputText id="search-input-style" />
-    <p-button icon="pi pi-search" id="search-button-style"></p-button>
-</div>
-<div class="col-sm-2">
-
-</div>
-
-</div>
-
+    <ng-template let-product pTemplate="gridItem">
+      <div >
+        <div class="product-grid-item card">
+          <div class="product-grid-item-content">
+            <div class="product-name">
+                <button pButton pRipple type="button" class="p-button-text" (click)="openLink(product.path)">{{ product.name }}</button>
+            </div>
+            <div class="product-description">{{ product.description }}</div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-dataView>
 </div>

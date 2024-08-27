@@ -1,0 +1,196 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "STRING ENCODE",
+            "description": "Converts String to base64 format",
+            "path": "base64master"
+        },
+        {
+            "id": "2",
+            "name": "STRING DECODE",
+            "description": "Converts to String from Base64",
+            "path": "base64master"
+        },
+        {
+            "id": "3",
+            "name": "URL ENCODE",
+            "description": "Converts URL to base64",
+            "path": "base64master"
+        },
+        {
+            "id": "4",
+            "name": "URL DECODE",
+            "description": "Converts URL from base64",
+            "path": "base64master"
+        }
+        ,
+        {
+            "id": "5",
+            "name": "XSD GENERATOR",
+            "description": "Converts xml to xsd schema",
+            "path": "xmlconversion"
+        }
+        ,
+        {
+            "id": "6",
+            "name": "XML TO JSON CONVERTER",
+            "description": "Converts xml to Json schema",
+            "path": "xmlconversion"
+        }
+        ,
+        {
+            "id": "7",
+            "name": "JSON TO XML CONVERTER",
+            "description": "Converts Json to Xml schema",
+            "path": "xmlconversion"
+        }
+        ,
+        {
+            "id": "8",
+            "name": "JSON TO YAML CONVERTER",
+            "description": "Converts Json to Yaml schema",
+            "path": "xmlconversion"
+        }
+        ,
+        {
+            "id": "9",
+            "name": "YAML TO JSON CONVERTER",
+            "description": "Converts Yam to Json schema",
+            "path": "xmlconversion"
+        },
+        
+        {
+            "id": "10",
+            "name": "CSV TO XML CONVERTER",
+            "description": "Converts .csv to xml schema",
+            "path": "xmlconversion"
+        }
+        ,
+        {
+            "id": "11",
+            "name": "CSV TO JSON CONVERTER",
+            "description": "Converts .csv to Json schema",
+            "path": "xmlconversion"
+        }
+        ,
+        {
+            "id": "12",
+            "name": "XML FORMATTER",
+            "description": "Formats XML Schema",
+            "path": "bformatter"
+        }
+        ,
+        {
+            "id": "13",
+            "name": "JSON FORMATTER",
+            "description": "Formats JSON Schema",
+            "path": "bformatter"
+        }
+        ,
+        {
+            "id": "14",
+            "name": "HTML FORMATTER",
+            "description": "Formats HTML Schema",
+            "path": "bformatter"
+        }
+        ,
+        {
+            "id": "15",
+            "name": "SQL FORMATTER",
+            "description": "Formats HTML Schema",
+            "path": "bformatter"
+        }
+        ,
+        {
+            "id": "16",
+            "name": "XML TO JAVA CLASS",
+            "description": "Converts xml to java classes",
+            "path": "basegenerator"
+        }
+        ,
+        {
+            "id": "17",
+            "name": "JSON TO JAVA CLASS",
+            "description": "Converts Json to java classes",
+            "path": "basegenerator"
+        }
+        ,
+        {
+            "id": "18",
+            "name": "JPG TO PDF",
+            "description": "Converts Jepg images to PDF Document",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "19",
+            "name": "WORD TO PDF",
+            "description": "Converts Word Document to PDF Document",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "20",
+            "name": "POWERPOINT TO PDF",
+            "description": "Converts .ppt Document to PDF Document",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "21",
+            "name": "Excel TO PDF",
+            "description": "Converts .xlsx Document to PDF Document",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "22",
+            "name": "HTML TO PDF",
+            "description": "Converts .html Document to PDF Document",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "23",
+            "name": "PDF TO JPG",
+            "description": "Converts PDF Document to JEPG image",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "24",
+            "name": "PDF TO WORD",
+            "description": "Converts PDF Document to Word Document",
+            "path": "basepdfConverter"
+        },
+        
+        {
+            "id": "25",
+            "name": "PDF TO POWERPOINT",
+            "description": "Converts PDF Document to .PPT Document",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "26",
+            "name": "PDF TO Excel",
+            "description": "Converts PDF Document to .XLS Document",
+            "path": "basepdfConverter"
+        }
+        ,
+        {
+            "id": "27",
+            "name": "MERGE PDF",
+            "description": "Merge multiple PDF in to single PDF document",
+            "path": "mergePDFContainer"
+        }
+        ,
+        {
+            "id": "28",
+            "name": "EDIT PDF",
+            "description": "Edit and modify content of PDF document",
+            "path": "editPDFContainer"
+        }
+    ]
+}

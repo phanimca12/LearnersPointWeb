@@ -9,7 +9,10 @@ export class HomeFooterComponent implements OnInit {
 
   constructor() { }
 
+  currentYear: number;
+
   ngOnInit(): void {
+    this.currentYear = new Date().getFullYear();
   }
 
 }
