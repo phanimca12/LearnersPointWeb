@@ -1,4 +1,18 @@
 @import 'variables';
+
+.format-text
+{
+  font-family: 'Poppins Medium' !important;
+  font-size: 15px;
+  font-weight: $btn-font-weight;
+  line-height: $line-height-base;
+  color:rgb(0, 110, 255);
+  text-align: left;
+
+  
+ 
+
+}
 canvas {
   border: 1px solid #000;
   margin: 10px 0; /* Add some margin between pages */

@@ -13,7 +13,7 @@ export class PDFConversionMasterComponent implements OnInit {
   }
   loadBase64Child(event) {
 
-    this.childLabel = event.textContent;
+    this.childLabel = event.textContent.trim();
 
   }
 }

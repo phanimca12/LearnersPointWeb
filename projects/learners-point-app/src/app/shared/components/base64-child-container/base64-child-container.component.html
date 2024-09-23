@@ -1,12 +1,18 @@
 <p-panel>
   <ng-template pTemplate="header" >
-    {{ this.headerTitle }}
+    {{ this.headerTitle | translate }}
   </ng-template>
   <ng-template pTemplate="content">
     <div id="request">
       <span class="p-float-label">
         <textarea pInputTextarea [autoResize]="true" [(ngModel)]="textareaValue"></textarea>
-        <label for="float-input">Simply enter your data then push the {{ label }} button.</label>
+        <label for="float-input">
+          {{ 'ENCODERS_TAB.SIMPLY_ENTER_YOUR_DATA' | translate }} 
+          
+         {{ label }} {{ 'ENCODERS_TAB.BUTTON' | translate }}.
+        
+        
+        </label>
       </span>
     </div>
     <div id="response" *ngIf="showResponse">

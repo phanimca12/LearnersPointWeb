@@ -43,4 +43,8 @@ export interface IAwdRestApi {
 		postConvertMergePDF: IRestApiFunction;
   }
 
+  emailResources: {
+    postReportIssue: IRestApiFunction;
+  }
+
 }

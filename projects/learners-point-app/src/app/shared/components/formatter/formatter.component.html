@@ -2,47 +2,58 @@
     <div class="row">
       <div class="col-sm-2">
         <p-panel>
-          <ng-template pTemplate="header">Formatters</ng-template>
+          <ng-template pTemplate="header"> {{ "FORMATTERS_TAB.FORMATTERS" | translate }}</ng-template>
           <div class="list-group">
             <button
               #xmlf
               pButton
               pRipple
               type="button"
-              label="XML Formatter"
+            
               class="p-button-outlined p-button-rounded"
               (click)="loadChild(xmlf)"
-            ></button>
+            >
+            {{ "FORMATTERS_TAB.XML_FORMATTER" | translate }}
+          
+          </button>
             <br />
             <button
             #jsonf
             pButton
             pRipple
             type="button"
-            label="JSON Formatter"
+          
             class="p-button-outlined p-button-rounded"
             (click)="loadChild(jsonf)"
-          ></button>
+          >
+        
+          {{ "FORMATTERS_TAB.JSON_FORMATTER" | translate }}
+        </button>
           <br />
           <button
           #htmlf
           pButton
           pRipple
           type="button"
-          label="HTML Formatter"
+       
           class="p-button-outlined p-button-rounded"
           (click)="loadChild(htmlf)"
-        ></button>
+        >
+        {{ "FORMATTERS_TAB.HTML_FORMATTER" | translate }}
+      
+      </button>
         <br />
               <button
         #sqlf
         pButton
         pRipple
         type="button"
-        label="SQL Formatter"
+      
         class="p-button-outlined p-button-rounded"
         (click)="loadChild(sqlf)"
-      ></button>
+      >
+      {{ "FORMATTERS_TAB.SQL_FORMATTER" | translate }}
+    </button>
       
   
           </div>

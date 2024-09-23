@@ -12,6 +12,6 @@ export class FormatterComponent implements OnInit {
   ngOnInit(): void {
   }
   loadChild(event) {
-    this.childLabel = event.textContent;
+    this.childLabel = event.textContent.trim();
   }
 }

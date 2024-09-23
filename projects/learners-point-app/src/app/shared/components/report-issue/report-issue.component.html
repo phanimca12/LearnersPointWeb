@@ -1,17 +1,22 @@
 <p-panel>
   <ng-template pTemplate="header">
-    Please use this form to tell us about the issue that you're experiencing.
+    {{ 'REPORT_ISSUE_TAB.REPORT_AN_ISSUE_TITLE' | translate }}
   </ng-template>
   <ng-template pTemplate="content">
     <div class="form-container">
       <span class="p-float-label">
+        <input id="float-input" type="text" pInputText [(ngModel)]="name" />
+        <label for="float-input">{{ 'REPORT_ISSUE_TAB.NAME' | translate}}</label>
+      </span>
+      <br />
+      <span class="p-float-label">
         <input id="float-input" type="text" pInputText [(ngModel)]="subject" />
-        <label for="float-input">Subject</label>
+        <label for="float-input">{{ 'REPORT_ISSUE_TAB.SUBJECT' | translate}}</label>
       </span>
       <br />
       <span class="p-float-label">
         <input id="float-input" type="text" pInputText [(ngModel)]="cemail" />
-        <label for="float-input">Contact email address</label>
+        <label for="float-input">{{ 'REPORT_ISSUE_TAB.CONTACT_EMAIL_ADDRESS' | translate}}</label>
       </span>
       <br />
       <span class="p-float-label">
@@ -23,22 +28,26 @@
           [(ngModel)]="desc"
           autoResize="autoResize"
         ></textarea>
-        <label for="float-input">Description of the issue</label>
+        <label for="float-input">{{ 'REPORT_ISSUE_TAB.ISSUE_DESCRIPTION' | translate}}</label>
       </span>
       <br />
       <p>Screenshot of Issue</p>
       <p-fileUpload
         #fileUpload
-        pTooltip="users can process up to 6 files per task"
         name="myfile[]"
         customUpload="true"
-        (uploadHandler)="uploadFile($event)"
-        (onClear)="onFileCancel()"
+        (onSelect)="uploadFile($event)"
         multiple="multiple"
         accept="{{ acceptedFiles }}"
         maxFileSize="1000000"
+        mode="basic"
+        chooseLabel="Browse"
       >
+      {{ 'REPORT_ISSUE_TAB.BROWSE' | translate}}
       </p-fileUpload>
+
+      <br />
+      <p-button (onClick)="submitData()">{{ 'REPORT_ISSUE_TAB.SUBMIT' | translate}} </p-button>
     </div>
   </ng-template>
 </p-panel>

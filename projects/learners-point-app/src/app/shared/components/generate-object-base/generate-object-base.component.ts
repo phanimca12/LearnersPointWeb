@@ -15,8 +15,7 @@ export class GenerateObjectBaseComponent implements OnInit {
   }
 
   loadBase64Child(event) {
-    this.childLabel = event.textContent;
-    console.log(event);
+    this.childLabel = event.textContent.trim();
     //this.router.navigate(['base64master/base64child']);
   }
 }

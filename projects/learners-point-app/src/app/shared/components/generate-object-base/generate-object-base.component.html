@@ -2,27 +2,31 @@
     <div class="row">
       <div class="col-sm-2">
         <p-panel>
-          <ng-template pTemplate="header" >Generate java class</ng-template>
+          <ng-template pTemplate="header" > {{ 'GENERATE_TAB.GENERATE_JAVA_CLASS' | translate}}</ng-template>
           <div class="list-group">
             <button
               #sencode
               pButton
               pRipple
               type="button"
-              label="XML to Java class"
-              class="p-button-outlined p-button-rounded"
+                        class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(sencode)"
-            ></button>
+            >
+          {{ 'GENERATE_TAB.XML_TO_JAVA_CLASS' | translate}}
+          
+          </button>
   <br>
             <button
               #sdecode
               pButton
               pRipple
               type="button"
-              label="JSON to Java Class"
+       
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(sdecode)"
-            ></button>
+            >
+            {{ 'GENERATE_TAB.JSON_TO_JAVA_CLASS' | translate}}
+          </button>
            
           </div>
         </p-panel>

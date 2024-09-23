@@ -2,13 +2,11 @@ import { writeFileSync, readFileSync } from 'fs';
 
 const masterData = JSON.parse(readFileSync(__dirname + '/../assets/i18n/_master.json', { encoding: 'utf8', flag: 'r' }));
 
-writeI18nFile('en-au', buildLangData(masterData, 'en'));
-writeI18nFile('en-ca', buildLangData(masterData, 'en'));
-writeI18nFile('en-gb', buildLangData(masterData, 'en'));
-writeI18nFile('en-ie', buildLangData(masterData, 'en'));
-writeI18nFile('en-nz', buildLangData(masterData, 'en'));
+writeI18nFile('in-hindi', buildLangData(masterData, 'in-hindi'));
+writeI18nFile('in-telugu', buildLangData(masterData, 'in-telugu'));
+writeI18nFile('in-tamil', buildLangData(masterData, 'in-tamil'));
+writeI18nFile('thai', buildLangData(masterData, 'thai'));
 writeI18nFile('en-us', buildLangData(masterData, 'en'));
-writeI18nFile('en-za', buildLangData(masterData, 'en'));
 writeI18nFile('en', buildLangData(masterData, 'en'));
 writeI18nFile('zh', buildLangData(masterData, 'zh'));
 writeI18nFile('zh-cn', buildLangData(masterData, 'zh'));

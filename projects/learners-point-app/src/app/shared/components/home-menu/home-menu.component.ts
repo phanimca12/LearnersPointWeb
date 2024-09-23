@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { MessageService } from 'primeng/api';
 import { ReportIssueComponent } from '../report-issue/report-issue.component';
+
+
+
 @Component({
   selector: 'app-home-menu',
   templateUrl: './home-menu.component.html',
@@ -60,7 +63,7 @@ export class HomeMenuComponent implements OnInit {
     this.ref = this.dialogService.open(ReportIssueComponent, {
       header: 'Report an issue',
       width: '70%',
-      contentStyle: {"max-height": "500px", "overflow": "auto"},
+      contentStyle: {"max-height": "600px", "overflow": "auto"},
       baseZIndex: 10000
   });
 

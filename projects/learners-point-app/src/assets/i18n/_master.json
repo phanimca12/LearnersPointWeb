@@ -1,662 +1,914 @@
 {
-  "COMMON": {
-    "DATE": {
-      "en": "Date",
-      "zh": "日期",
-      "ja": "日付"
+  "STRING ENCODE": {
+    "en": "STRING ENCODE",
+    "in-hindi": "स्ट्रिंग एनकोड",
+    "in-telugu": "",
+    "in-tamil": "",
+    "ja": "日付",
+    "thai": "",
+    "zh-cn": "",
+    "zh": ""
+  },
+  "STRING DECODE": {
+    "en": "STRING DECODE",
+    "in-hindi": "स्ट्रिंग डिकोड",
+    "in-telugu": "",
+    "in-tamil": "",
+    "ja": "日付",
+    "thai": "",
+    "zh-cn": "",
+    "zh": ""
+  },
+  "URL ENCODE": {
+    "en": "URL ENCODE",
+    "in-hindi": "यूआरएल एनकोड",
+    "in-telugu": "",
+    "in-tamil": "",
+    "ja": "日付",
+    "thai": "",
+    "zh-cn": "",
+    "zh": ""
+  },
+  "MENU": {
+    "ENCODERS": {
+      "en": "Encoders",
+      "in-hindi": "इनकोडर्स",
+      "in-telugu": "ఎన్‌కోడర్‌లు",
+      "in-tamil": "குறியாக்கிகள்",
+      "ja": "エンコーダ",
+      "thai": "ตัวเข้ารหัส",
+      "zh-cn": "编码器",
+      "zh": "編碼器"
     },
-    "DAY": {
-      "en": "Day",
-      "zh": "天",
-      "ja": "日"
+    "CONVERTERS": {
+      "en": "Converters",
+      "in-hindi": "कन्वर्टर्स",
+      "in-telugu": "కన్వర్టర్లు",
+      "in-tamil": "மாற்றிகள்",
+      "ja": "コンバーター",
+      "thai": "ตัวแปลง",
+      "zh-cn": "转换器",
+      "zh": "轉換器"
     },
-    "DAYS": {
-      "en": "Days",
-      "zh": "天数",
-      "ja": "日"
+    "FORMATTERS": {
+      "en": "Formatters",
+      "in-hindi": "फ़ॉर्मेटर्स",
+      "in-telugu": "ఫార్మాట్‌లు",
+      "in-tamil": "வடிவங்கள்",
+      "ja": "フォーマッター",
+      "thai": "ฟอร์แมตเตอร์",
+      "zh-cn": "格式化程序",
+      "zh": "格式化程式"
     },
-    "HOUR": {
-      "en": "Hour",
-      "zh": "小时",
-      "ja": "時間"
+    "GENERATE": {
+      "en": "Generate",
+      "in-hindi": "उत्पन्न",
+      "in-telugu": "సృష్టించు",
+      "in-tamil": "உருவாக்கு",
+      "ja": "生成する",
+      "thai": "สร้าง",
+      "zh-cn": "产生",
+      "zh": "產生"
     },
-    "HOURS": {
-      "en": "Hours",
-      "zh": "小时数",
-      "ja": "時間"
+    "CONVERTPDF": {
+      "en": "Convert PDF",
+      "in-hindi": "पीडीएफ कन्वर्ट करें",
+      "in-telugu": "PDFని మార్చండి",
+      "in-tamil": "PDF ஐ மாற்றவும்",
+      "ja": "PDF変換",
+      "thai": "แปลงไฟล์ PDF",
+      "zh-cn": "转换 PDF",
+      "zh": "轉換PDF"
     },
-    "ITEM": {
-      "en": "Item",
-      "zh": "项目",
-      "ja": "アイテム"
+    "MERGEPDF": {
+      "en": "Merge PDF",
+      "in-hindi": "पीडीएफ मर्ज करें",
+      "in-telugu": "PDFని విలీనం చేయండి",
+      "in-tamil": "PDF ஐ இணைக்கவும்",
+      "ja": "PDFを結合",
+      "thai": "รวม PDF",
+      "zh-cn": "合并 PDF",
+      "zh": "合併PDF"
     },
-    "ITEMS": {
-      "en": "Items",
-      "zh": "项目",
-      "ja": "アイテム"
+    "EDITPDF": {
+      "en": "Edit PDF",
+      "in-hindi": "पीडीएफ संपादित करें",
+      "in-telugu": "PDFని సవరించండి",
+      "in-tamil": "PDF ஐ திருத்து",
+      "ja": "PDFを編集",
+      "thai": "แก้ไข PDF",
+      "zh-cn": "编辑 PDF",
+      "zh": "編輯PDF"
     },
-    "MIN": {
-      "en": "Min",
-      "zh": "分钟",
-      "ja": "分"
-    },
-    "MINUTE": {
-      "en": "Minute",
-      "zh": "分钟",
-      "ja": "分"
-    },
-    "MINUTES": {
-      "en": "Minutes",
-      "zh": "分钟",
-      "ja": "分"
-    },
-    "PROCESS": {
-      "en": "Process",
-      "zh": "工作步骤名称",
-      "ja": "プロセス："
-    },
-    "STATUS": {
-      "en": "Status",
-      "zh": "状态",
-      "ja": "ステータス"
-    },
-    "WORK_TYPE": {
-      "en": "Work Type",
-      "zh": "工作类型",
-      "ja": "作業タイプ"
+    "REPORTISSUE": {
+      "en": "Report Issue",
+      "in-hindi": "समस्या की रिपोर्ट करें",
+      "in-telugu": "సమస్యను నివేదించండి",
+      "in-tamil": "அறிக்கை சிக்கல்",
+      "ja": "問題を報告",
+      "thai": "รายงานปัญหา",
+      "zh-cn": "报告问题",
+      "zh": "報告問題"
     }
   },
-  "BUTTONS": {
-    "CANCEL": {
-      "en": "Cancel",
-      "zh": "取消",
-      "ja": "Cancel"
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": {
+      "en": "Base64 Conversion",
+      "in-hindi": "बेस64 रूपांतरण",
+      "in-telugu": "Base64 మార్పిడి",
+      "in-tamil": "Base64 மாற்றம்",
+      "ja": "Base64 変換",
+      "thai": "การแปลง Base64",
+      "zh-cn": "Base64 转换",
+      "zh": "Base64 轉換"
     },
-    "CLEAR": {
-      "en": "Clear",
-      "zh": "创建",
-      "ja": "Clear"
+    "STRING_ENCODE": {
+      "en": "String Encode",
+      "in-hindi": "स्ट्रिंग एनकोड",
+      "in-telugu": "స్ట్రింగ్ ఎన్కోడ్",
+      "in-tamil": "சரம் குறியாக்கம்",
+      "ja": "文字列エンコード",
+      "thai": "การเข้ารหัสสตริง",
+      "zh-cn": "字符串编码",
+      "zh": "字串編碼"
     },
-    "CLOSE": {
-      "en": "Close",
-      "zh": "关闭",
-      "ja": "閉じる"
+    "STRING_DECODE": {
+      "en": "String Decode",
+      "in-hindi": "स्ट्रिंग डिकोड",
+      "in-telugu": "స్ట్రింగ్ డీకోడ్",
+      "in-tamil": "ஸ்டிரிங் டிகோட்",
+      "ja": "文字列デコード",
+      "thai": "การถอดรหัสสตริง",
+      "zh-cn": "字符串解码",
+      "zh": "字串解碼"
     },
-    "CONTINUE": {
-      "en": "Continue",
-      "zh": "继续",
-      "ja": "続行"
+    "URL_ENCODE": {
+      "en": "URL Encode",
+      "in-hindi": "यूआरएल एनकोड",
+      "in-telugu": "URL ఎన్‌కోడ్",
+      "in-tamil": "URL குறியாக்கம்",
+      "ja": "URLエンコード",
+      "thai": "การเข้ารหัส URL",
+      "zh-cn": "URL 编码",
+      "zh": "網址編碼"
     },
-    "CREATE": {
-      "en": "Create",
-      "zh": "创建",
-      "ja": "作成"
+    "URL_DECODE": {
+      "en": "URL Decode",
+      "in-hindi": "यूआरएल डिकोड",
+      "in-telugu": "URL డీకోడ్",
+      "in-tamil": "URL டிகோட்",
+      "ja": "URLデコード",
+      "thai": "ถอดรหัส URL",
+      "zh-cn": "URL 解码",
+      "zh": "網址解碼"
     },
-    "DELETE": {
-      "en": "Delete",
-      "zh": "删除",
-      "ja": "Delete"
+    "ENCODE": {
+      "en": "encode",
+      "in-hindi": "एन्कोड",
+      "in-telugu": "ఎన్కోడ్",
+      "in-tamil": "குறியாக்கம்",
+      "ja": "エンコード",
+      "thai": "เข้ารหัส",
+      "zh-cn": "编码",
+      "zh": "編碼"
     },
-    "LAUNCH": {
-      "en": "Launch",
-      "zh": "启动",
-      "ja": "起動"
+    "DECODE": {
+      "en": "decode",
+      "in-hindi": "गूढ़वाचन करना",
+      "in-telugu": "డీకోడ్",
+      "in-tamil": "டிகோட்",
+      "ja": "デコード",
+      "thai": "ถอดรหัส",
+      "zh-cn": "解码",
+      "zh": "解碼"
     },
-    "OKAY": {
-      "en": "Okay",
-      "zh": "确定",
-      "ja": "OK"
+    "ENCODE_STRING_TO_BASE64_FORMAT": {
+      "en": "Encode String to Base64 Format",
+      "in-hindi": "स्ट्रिंग को बेस64 प्रारूप में एनकोड करें",
+      "in-telugu": "స్ట్రింగ్‌ని Base64 ఫార్మాట్‌కి ఎన్‌కోడ్ చేయండి",
+      "in-tamil": "சரத்தை Base64 வடிவமைப்பிற்கு குறியாக்கம் செய்யவும்",
+      "ja": "文字列をBase64形式にエンコードする",
+      "thai": "เข้ารหัสสตริงเป็นรูปแบบ Base64",
+      "zh-cn": "将字符串编码为 Base64 格式",
+      "zh": "將字串編碼為 Base64 格式"
     },
-    "SAVE": {
-      "en": "Save",
-      "zh": "保存",
-      "ja": "保存"
+    "DECODE_STRING_FROM_BASE64_FORMAT": {
+      "en": "Decode from Base64 format",
+      "in-hindi": "बेस64 प्रारूप से डिकोड करें",
+      "in-telugu": "Base64 ఫార్మాట్ నుండి డీకోడ్ చేయండి",
+      "in-tamil": "Base64 வடிவமைப்பிலிருந்து டிகோட் செய்யவும்",
+      "ja": "Base64形式からデコード",
+      "thai": "ถอดรหัสจากรูปแบบ Base64",
+      "zh-cn": "从 Base64 格式解码",
+      "zh": "從 Base64 格式解碼"
     },
-    "APPLY_FILTERS": {
-      "en": "Apply Filters",
-      "zh": "应用过滤器",
-      "ja": "フィルターを適用"
+    "DECODE_URL_ENCODED_FORMAT": {
+      "en": "Decode from URL-encoded format",
+      "in-hindi": "URL-एन्कोडेड प्रारूप से डिकोड करें",
+      "in-telugu": "URL-ఎన్‌కోడ్ చేసిన ఫార్మాట్ నుండి డీకోడ్ చేయండి",
+      "in-tamil": "URL-குறியீடு செய்யப்பட்ட வடிவமைப்பிலிருந்து டிகோட் செய்யவும்",
+      "ja": "URLエンコード形式からデコードする",
+      "thai": "ถอดรหัสจากรูปแบบที่เข้ารหัส URL",
+      "zh-cn": "从 URL 编码格式解码",
+      "zh": "從 URL 編碼格式解碼"
     },
-    "RESET": {
-      "en": "Reset",
-      "zh": "重置",
-      "ja": "リセット"
+    "ENCODE_URL_ENCODED_FORMAT": {
+      "en": "Encode to URL-encoded format",
+      "in-hindi": "URL-एन्कोडेड प्रारूप में एनकोड करें",
+      "in-telugu": "URL-ఎన్‌కోడ్ చేసిన ఆకృతికి ఎన్‌కోడ్ చేయండి",
+      "in-tamil": "URL-குறியீடு செய்யப்பட்ட வடிவமைப்பிற்கு குறியாக்கம்",
+      "ja": "URLエンコード形式にエンコードする",
+      "thai": "เข้ารหัสเป็นรูปแบบเข้ารหัส URL",
+      "zh-cn": "编码为 URL 编码格式",
+      "zh": "編碼為 URL 編碼格式"
     },
-    "REFRESH": {
-      "en": "Refresh",
-      "zh": "刷新",
-      "ja": "更新"
+    "SIMPLY_ENTER_YOUR_DATA": {
+      "en": "Simply enter your data then push the",
+      "in-hindi": "बस अपना डेटा दर्ज करें और फिर दबाएं",
+      "in-telugu": "మీ డేటాను నమోదు చేసి, ఆపై పుష్ చేయండి",
+      "in-tamil": "உங்கள் தரவை உள்ளிட்டு அழுத்தவும்",
+      "ja": "データを入力して",
+      "thai": "เพียงป้อนข้อมูลของคุณแล้วกด",
+      "zh-cn": "只需输入您的数据，然后按下",
+      "zh": "只需輸入您的數據，然後按"
     },
-    "RUN_SELECTED": {
-      "en": "Run Selected",
-      "zh": "运行选定的",
-      "ja": "選択したものを実行"
-    },
-    "RESUME": {
-      "en": "Resume",
-      "zh": "恢复",
-      "ja": "再開"
-    },
-    "RESUME_IN_ANOTHER_PROCESS": {
-      "en": "Resume in Another Process",
-      "zh": "在另一个进程中恢复",
-      "ja": "別のプロセスで再開"
-    },
-    "RESTART_IN_ANOTHER_WORK_STEP": {
-      "en": "Restart in Another Work Step",
-      "zh": "在另一个工作步骤中重新启动",
-      "ja": "別の作業ステップで再開"
-    },
-    "RESTART_WORK_STEPS": {
-      "en": "Restart Workstep",
-      "zh": "重新启动工作步骤",
-      "ja": "作業ステップを再開"
-    },
-    "PAUSE": {
-      "en": "Pause",
-      "zh": "暂停",
-      "ja": "Pause"
-    },
-    "MOVE": {
-      "en": "Move",
-      "zh": "移动",
-      "ja": "移動"
-    },
-    "RESTART": {
-      "en": "Restart",
-      "zh": "重新开始",
-      "ja": "再起動"
-    },
-    "NEXT": {
-      "en": "Next",
-      "zh": "下一个",
-      "ja": "次へ"
-    },
-    "RUN": {
-      "en": "Run",
-      "zh": "跑步",
-      "ja": "実行"
-    },
-    "EXPORT": {
-      "en": "Export",
-      "zh": "出口",
-      "ja": "エクスポート"
-    },
-    "YES": {
-      "en": "Yes",
-      "zh": "是的",
-      "ja": "はい"
-    },
-    "NO": {
-      "en": "No",
-      "zh": "不",
-      "ja": "×"
-    },
-    "OK": {
-      "en": "OK",
-      "zh": "好的",
-      "ja": "OK"
-    },
-    "UNASSIGN": {
-      "en": "Unassign",
-      "zh": "取消分配",
-      "ja": "割り当て解除"
-    },
-    "EXPORT_TO_CSV": {
-      "en": "Export to CSV",
-      "zh": "导出为 CSV",
-      "ja": "Export to CSV"
-    },
-    "UNLOCK": {
-      "en": "Unlock",
-      "zh": "开锁",
-      "ja": "Unlock"
-    },
-    "CHANGE_STATUS": {
-      "en": "Change Status",
-      "zh": "更改状态",
-      "ja": "Change Status"
+    "BUTTON": {
+      "en": "button",
+      "in-hindi": "बटन",
+      "in-telugu": "బటన్",
+      "in-tamil": "பொத்தான்",
+      "ja": "ボタン",
+      "thai": "ปุ่ม",
+      "zh-cn": "按钮",
+      "zh": "按鈕"
     }
   },
-  "LABELS": {
-    "SHOW_SUB_SERVICE_TASKS": {
-      "en": "Show Sub Service Task",
-      "zh": "显示子服务任务",
-      "ja": "サブサービスタスクを表示"
+  "CONVERTERS_TAB": {
+    "CONVERTERS": {
+      "en": "Converters",
+      "in-hindi": "कन्वर्टर्स",
+      "in-telugu": "కన్వర్టర్లు",
+      "in-tamil": "மாற்றிகள்",
+      "ja": "コンバーター",
+      "thai": "ตัวแปลง",
+      "zh-cn": "转换器",
+      "zh": "轉換器"
     },
-    "SHOW_WORK_STEPS": {
-      "en": "Show Work Steps",
-      "zh": "显示工作步骤",
-      "ja": "作業ステップを表示"
+    "XSD_GENERATOR": {
+      "en": "XSD Generator",
+      "in-hindi": "एक्सएसडी जनरेटर",
+      "in-telugu": "XSD జనరేటర్",
+      "in-tamil": "XSD ஜெனரேட்டர்",
+      "ja": "XSD ジェネレーター",
+      "thai": "เครื่องกำเนิด XSD",
+      "zh-cn": "XSD 生成器",
+      "zh": "XSD 產生器"
     },
-    "FILTER_BY_ERROR_CODE": {
-      "en": "Filter by Error Code",
-      "zh": "按错误代码过滤",
-      "ja": "エラーコードでフィルタリング"
+    "XML_JSON_CONVERTER": {
+      "en": "XML to JSON Converter",
+      "in-hindi": "XML से JSON कनवर्टर",
+      "in-telugu": "XML నుండి JSON కన్వర్టర్",
+      "in-tamil": "XML முதல் JSON மாற்றி",
+      "ja": "XML から JSON へのコンバーター",
+      "thai": "ตัวแปลง XML เป็น JSON",
+      "zh-cn": "XML 到 JSON 转换器",
+      "zh": "XML 到 JSON 轉換器"
     },
-    "EXPORT_SELECTED_HISTORY": {
-      "en": "Export Selected History",
-      "zh": "导出选定的历史记录",
-      "ja": "選択した履歴をエクスポート"
+    "JSON_XML_CONVERTER": {
+      "en": "JSON to XML Converter",
+      "in-hindi": "JSON से XML कनवर्टर",
+      "in-telugu": "JSON నుండి XML కన్వర్టర్",
+      "in-tamil": "JSON முதல் XML மாற்றி",
+      "ja": "JSON から XML へのコンバーター",
+      "thai": "ตัวแปลง JSON เป็น XML",
+      "zh-cn": "JSON 到 XML 转换器",
+      "zh": "JSON 到 XML 轉換器"
     },
-    "BUSINESS_AREA": {
-      "en": "Business Area",
-      "zh": "业务范围",
-      "ja": "ビジネスエリア"
+    "JSON_YAML_CONVERTER": {
+      "en": "JSON to YAML Converter",
+      "in-hindi": "JSON से YAML कनवर्टर",
+      "in-telugu": "JSON నుండి YAML కన్వర్టర్",
+      "in-tamil": "JSON இலிருந்து YAML மாற்றி",
+      "ja": "JSON から YAML へのコンバーター",
+      "thai": "ตัวแปลง JSON เป็น YAML",
+      "zh-cn": "JSON 到 YAML 转换器",
+      "zh": "JSON 到 YAML 轉換器"
     },
-    "USER": {
-      "en": "User",
-      "zh": "业务范围",
-      "ja": "ユーザー"
+    "YAML_JSON_CONVERTER": {
+      "en": "YAML to JSON Converter",
+      "in-hindi": "YAML से JSON कनवर्टर",
+      "in-telugu": "YAML నుండి JSON కన్వర్టర్",
+      "in-tamil": "YAML இலிருந்து JSON மாற்றி",
+      "ja": "YAML から JSON へのコンバーター",
+      "thai": "ตัวแปลง YAML เป็น JSON",
+      "zh-cn": "YAML 到 JSON 转换器",
+      "zh": "YAML 到 JSON 轉換器"
     },
-    "ASSIGN": {
-      "en": "Assign",
-      "zh": "业务范围",
-      "ja": "割り当て"
+    "CSV_XML_CONVERTER": {
+      "en": "CSV to XML Converter",
+      "in-hindi": "CSV से XML कनवर्टर",
+      "in-telugu": "CSV నుండి XML కన్వర్టర్",
+      "in-tamil": "CSV முதல் XML மாற்றி",
+      "ja": "CSV から XML へのコンバーター",
+      "thai": "ตัวแปลง CSV เป็น XML",
+      "zh-cn": "CSV 到 XML 转换器",
+      "zh": "CSV 到 XML 轉換器"
     },
-    "SELECT_ALL": {
-      "en": "Select All",
-      "zh": "全选",
-      "ja": "すべて選択"
+    "CSV_JSON_CONVERTER": {
+      "en": "CSV to JSON Converter",
+      "in-hindi": "CSV से JSON कनवर्टर",
+      "in-telugu": "CSV నుండి JSON కన్వర్టర్",
+      "in-tamil": "CSV முதல் JSON மாற்றி",
+      "ja": "CSV から JSON へのコンバーター",
+      "thai": "ตัวแปลง CSV เป็น JSON",
+      "zh-cn": "CSV 到 JSON 转换器",
+      "zh": "CSV 到 JSON 轉換器"
     },
-    "ALL": {
-      "en": "All",
-      "zh": "全部",
-      "ja": "すべて"
+    "XSD_SCHEMA_GENERATOR": {
+      "en": "XSD Schema Generator",
+      "in-hindi": "XSD स्कीमा जनरेटर",
+      "in-telugu": "XSD స్కీమా జనరేటర్",
+      "in-tamil": "XSD ஸ்கீமா ஜெனரேட்டர்",
+      "ja": "XSD スキーマ ジェネレーター",
+      "thai": "เครื่องกำเนิดรูปแบบ XSD",
+      "zh-cn": "XSD 架构生成器",
+      "zh": "XSD 架構產生器"
     },
-    "SELECT_PLACEHOLDER": {
-      "en": "Please select...",
-      "zh": "请选择...",
-      "ja": "選択してください..."
+    "GENERATE_XSD": {
+      "en": "Generate XSD",
+      "in-hindi": "XSD उत्पन्न करें",
+      "in-telugu": "XSDని రూపొందించండి",
+      "in-tamil": "XSD ஐ உருவாக்கவும்",
+      "ja": "XSD を生成する",
+      "thai": "สร้าง XSD",
+      "zh-cn": "生成 XSD",
+      "zh": "產生 XSD"
     },
-    "TYPE": {
-      "en": "Type",
-      "zh": "类型",
-      "ja": "タイプ"
+    "CONVERT_XML_TO_JSON": {
+      "en": "Convert XML to JSON",
+      "in-hindi": "XML को JSON में बदलें",
+      "in-telugu": "XMLని JSONకి మార్చండి",
+      "in-tamil": "XML を JSON に変換する",
+      "ja": "URLエンコード形式にエンコードする",
+      "thai": "แปลง XML เป็น JSON",
+      "zh-cn": "將 XML 轉換為 JSON",
+      "zh": "將 XML 轉換為 JSON"
     },
-    "CATEGORY": {
-      "en": "Category",
-      "zh": "类别",
-      "ja": "カテゴリー"
+    "CONVERT_JSON_TO_XML": {
+      "en": "Convert JSON to XML",
+      "in-hindi": "XML को JSON में बदलें",
+      "in-telugu": "JSON నుండి XMLకి మార్చండి",
+      "in-tamil": "JSON ஐ XML ஆக மாற்றவும்",
+      "ja": "JSON を XML に変換する",
+      "thai": "แปลง JSON เป็น XML",
+      "zh-cn": "將 JSON 轉換為 XML",
+      "zh": "將 JSON 轉換為 XML"
     },
-    "CATEGORY_PLACEHOLDER": {
-      "en": "All categories",
-      "zh": "所有类别",
-      "ja": "すべてのカテゴリー"
+    "CONVERT_JSON_TO_YAML": {
+      "en": "Convert JSON to YAML",
+      "in-hindi": "JSON को YAML में बदलें",
+      "in-telugu": "JSON నుండి YAMLకి మార్చండి",
+      "in-tamil": "JSON ஐ YAML ஆக மாற்றவும்",
+      "ja": "JSON を YAML に変換する",
+      "thai": "แปลง JSON เป็น YAML",
+      "zh-cn": "將 JSON 轉換為 YAML",
+      "zh": "將 JSON 轉換為 YAML"
     },
-    "SEARCH_PLACEHOLDER": {
-      "en": "Search",
-      "zh": "搜索",
-      "ja": "検索"
+    "CONVERT_YAML_TO_JSON": {
+      "en": "Convert YAML to JSON",
+      "in-hindi": "YAML को JSON में बदलें",
+      "in-telugu": "YAMLని JSONకి మార్చండి",
+      "in-tamil": "YAML ஐ JSON ஆக மாற்றவும்",
+      "ja": "YAML を JSON に変換する",
+      "thai": "แปลง YAML เป็น JSON",
+      "zh-cn": "將 YAML 轉換為 JSON",
+      "zh": "將 YAML 轉換為 JSON"
     },
-    "SEARCH_BY_OBJECT_KEY": {
-      "en": "Search by Object Key",
-      "zh": "按对象键搜索",
-      "ja": "Search by Object Key"
+    "CONVERT_CSV_FILE_TO_XML_FILE": {
+      "en": "Convert CSV file to XML file",
+      "in-hindi": "CSV फ़ाइल को XML फ़ाइल में बदलें",
+      "in-telugu": "CSV ఫైల్‌ను XML ఫైల్‌గా మార్చండి",
+      "in-tamil": "CSVファイルをXMLファイルに変換する",
+      "ja": "YAML を JSON に変換する",
+      "thai": "แปลงไฟล์ CSV เป็นไฟล์ XML",
+      "zh-cn": "将 CSV 文件转换为 XML 文件",
+      "zh": "將 CSV 檔案轉換為 XML 文件"
     },
-    "ALL_MODELS": {
-      "en": "All models",
-      "zh": "所有型号",
-      "ja": "すべてのモデル"
+    "CONVERT_CSV_TO_JSON": {
+      "en": "Convert CSV to JSON",
+      "in-hindi": "CSV को JSON में बदलें",
+      "in-telugu": "CSVని JSONకి మార్చండి",
+      "in-tamil": "CSV ஐ JSON ஆக மாற்றவும்",
+      "ja": "CSV を JSON に変換する",
+      "thai": "แปลง CSV เป็น JSON",
+      "zh-cn": "將 CSV 轉換為 JSON",
+      "zh": "將 CSV 轉換為 JSON"
     },
-    "ACTIVE_MODELS": {
-      "en": "Active models",
-      "zh": "活跃型号",
-      "ja": "アクティブなモデル"
+    "SIMPLY_ENTER_YOUR_DATA": {
+      "en": "Simply enter your data then push the",
+      "in-hindi": "बस अपना डेटा दर्ज करें और फिर दबाएं",
+      "in-telugu": "మీ డేటాను నమోదు చేసి, ఆపై పుష్ చేయండి",
+      "in-tamil": "உங்கள் தரவை உள்ளிட்டு அழுத்தவும்",
+      "ja": "データを入力して",
+      "thai": "เพียงป้อนข้อมูลของคุณแล้วกด",
+      "zh-cn": "只需输入您的数据，然后按下",
+      "zh": "只需輸入您的數據，然後按"
     },
-    "DEPRECATED_MODELS": {
-      "en": "Deprecated models",
-      "zh": "已弃用的型号",
-      "ja": "廃止されたモデル"
-    },
-    "SEARCH_BY_PROCESS_NAME": {
-      "en": "Search by process name",
-      "zh": "按进程名称搜索",
-      "ja": "プロセス名で検索"
-    },
-    "HISTORY_DETAILS": {
-      "en": "Details",
-      "zh": "细节",
-      "ja": "詳細"
-    },
-    "AUTOMATION_SERVICE": {
-      "en": "Automation Service",
-      "zh": "自动化服务",
-      "ja": "自動化サービス"
-    },
-    "PRESENTATION_FLOW": {
-      "en": "Presentation Flow",
-      "zh": "演示流程",
-      "ja": "プレゼンテーションフロー"
-    },
-    "SAMPLING_SERVICE": {
-      "en": "Sampling Service",
-      "zh": "抽样服务",
-      "ja": "サンプリングサービス"
-    },
-    "UX_SERVICE": {
-      "en": "Ux Service",
-      "zh": "UX服务",
-      "ja": "Uxサービス"
-    },
-    "DESIGN_DETAILS_SEARCH_PLACEHOLDER": {
-      "en": "Search by Name",
-      "zh": "按名称搜索",
-      "ja": "名前で検索"
-    },
-    "SHOW_STEP_ID": {
-      "en": "Show Step ID",
-      "zh": "顯示步驟 ID",
-      "ja": "ステップIDを表示"
-    },
-    "GROUP_BY_ORIGINAL": {
-      "en": "Group by original",
-      "zh": "按原件分组",
-      "ja": "オリジナルでグループ化"
-    },
-    "RESULTS": {
-      "en": "Results",
-      "zh": "结果",
-      "ja": "結果"
-    },
-    "ITEMS": {
-      "en": "Items",
-      "zh": "项目",
-      "ja": "アイテム"
-    },
-    "SELECT_PROCESS_TO_RESUME_WORK": {
-      "en": "Please select a process in which to resume the work.",
-      "zh": "请选择恢复工作的流程",
-      "ja": "作業を再開するプロセスを選択してください。"
-    },
-    "COMPLETED_WORK_OBJECTS": {
-      "en": "Completed Work objects",
-      "zh": "已完成的工作对象",
-      "ja": "完了したワークオブジェクト"
-    },
-    "PROCESS_NAME": {
-      "en": "Process Name",
-      "zh": "进程名称",
-      "ja": "プロセス名"
-    },
-    "VERSION": {
-      "en": "Version",
-      "zh": "版本",
-      "ja": "バージョン"
-    },
-    "FROM_DATE": {
-      "en": "From Date",
-      "zh": "从日期",
-      "ja": "開始日"
-    },
-    "TO_DATE": {
-      "en": "To Date",
-      "zh": "迄今为止",
-      "ja": "終了日"
-    },
-    "WORK_TYPE": {
-      "en": "Work Type",
-      "zh": "工作类型",
-      "ja": "作業タイプ"
-    },
-    "ERROR": {
-      "en": "Error",
-      "zh": "错误",
-      "ja": "エラー"
-    },
-    "ASSIGNED": {
-      "en": "Assigned",
-      "zh": "割り当てられた",
-      "ja": "Assigned"
-    },
-    "LOCKED": {
-      "en": "Locked",
-      "zh": "ロックされています",
-      "ja": "Locked"
-    },
-    "PAUSE_WORK": {
-      "en": "What type of work do you want to pause ?",
-      "zh": "您想暂停什么类型的工作？",
-      "ja": "What type of work do you want to pause ?"
-    },
-    "NEW_WORK_ONLY": {
-      "en": "New work only",
-      "zh": "仅限新作品",
-      "ja": "New work only"
-    },
-    "NEW_AND_EXISTING_WORK": {
-      "en": "New and existing work",
-      "zh": "新的和现有的工作",
-      "ja": "New and existing work"
-    },
-    "NEW_WORK_STEP": {
-      "en": "New work (Step)",
-      "zh": "新作品（步骤)",
-      "ja": "新作（ステップ)"
-    },
-    "EXISTING_WORK_ITEM": {
-      "en": "Existing work (Item)",
-      "zh": "现有工作（项目)",
-      "ja": "既存作品（アイテム)"
-    },
-    "STATUS": {
-      "en": "*Status",
-      "zh": "*地位",
-      "ja": "Status"
+    "BUTTON": {
+      "en": "button",
+      "in-hindi": "बटन",
+      "in-telugu": "బటన్",
+      "in-tamil": "பொத்தான்",
+      "ja": "ボタン",
+      "thai": "ปุ่ม",
+      "zh-cn": "按钮",
+      "zh": "按鈕"
     }
   },
-  "MESSAGES": {
-    "NO_RECORDS_FOUND": {
-      "en": "No records found",
-      "zh": "没有找到记录",
-      "ja": "レコードが見つかりません"
+  "FORMATTERS_TAB": {
+    "FORMATTERS": {
+      "en": "Formatters",
+      "in-hindi": "फ़ॉर्मेटर्स",
+      "in-telugu": "ఫార్మాటర్లు",
+      "in-tamil": "வடிவமைப்பாளர்கள்",
+      "ja": "フォーマッタ",
+      "thai": "เครื่องมือจัดรูปแบบ",
+      "zh-cn": "格式化程序",
+      "zh": "格式化程式"
     },
-    "SESSION_TIMEOUT_MESSAGE": {
-      "en": "Your session will time out in {{countdown}} seconds due to inactivity. Click continue to continue your session.",
-      "zh": "你的会话将在{{countdown}}秒内超时。点击继续来继续会话。",
-      "ja": "非アクティブなためセッションは{{countdown}}秒後にタイムアウトします。続行をクリックするとセッションを続行します。"
+    "XML_FORMATTER": {
+      "en": "XML Formatter",
+      "in-hindi": "एक्सएमएल फ़ॉर्मेटर",
+      "in-telugu": "XML ఫార్మాటర్",
+      "in-tamil": "எக்ஸ்எம்எல் ஃபார்மேட்டர்",
+      "ja": "XML フォーマッタ",
+      "thai": "ตัวจัดรูปแบบ XML",
+      "zh-cn": "XML 格式化程序",
+      "zh": "XML格式化程式"
     },
-    "ERROR_TO_DATE": {
-      "en": "'To Date' must not be greater than today's date",
-      "zh": "截止日期不能大于今天",
-      "ja": "［終了日］を今日の日付より後にすることはできません"
+    "JSON_FORMATTER": {
+      "en": "JSON Formatter",
+      "in-hindi": "जेएसओएन फ़ॉर्मेटर",
+      "in-telugu": "JSON ఫార్మాటర్",
+      "in-tamil": "JSON ஃபார்மேட்டர்",
+      "ja": "JSONフォーマッタ",
+      "thai": "ตัวจัดรูปแบบ JSON",
+      "zh-cn": "JSON 格式化程序",
+      "zh": "JSON 格式化程式"
     },
-    "ERROR_FROM_DATE": {
-      "en": "The 'From Date' cannot be later than the 'To Date'.",
-      "zh": "起始日期”不能晚于“截止日期",
-      "ja": "［開始日］を［終了日］より後にすることはできません。"
+    "HTML_FORMATTER": {
+      "en": "HTML Formatter",
+      "in-hindi": "एचटीएमएल फ़ॉर्मेटर",
+      "in-telugu": "HTML ఫార్మాటర్",
+      "in-tamil": "HTML ஃபார்மேட்டர்",
+      "ja": "HTML フォーマッタ",
+      "thai": "เครื่องมือจัดรูปแบบ HTML",
+      "zh-cn": "HTML 格式化程序",
+      "zh": "HTML 格式化程式"
     },
-    "ERROR_DATE_RANGE": {
-      "en": "The selected date range should not exceed 31 days.",
-      "zh": "所选日期范围不能超过31天",
-      "ja": "選択した日付範囲は31日を超えてはなりません。"
+    "JSON_YAML_CONVERTER": {
+      "en": "JSON to YAML Converter",
+      "in-hindi": "JSON से YAML कनवर्टर",
+      "in-telugu": "JSON నుండి YAML కన్వర్టర్",
+      "in-tamil": "JSON இலிருந்து YAML மாற்றி",
+      "ja": "JSON から YAML へのコンバーター",
+      "thai": "ตัวแปลง JSON เป็น YAML",
+      "zh-cn": "JSON 到 YAML 转换器",
+      "zh": "JSON 到 YAML 轉換器"
     },
-    "CANCEL_CONFIRMATION": {
-      "en": "Are you sure you want to cancel?",
-      "zh": "你确定要取消？",
-      "ja": "取り消しますか？"
+    "SQL_FORMATTER": {
+      "en": "SQL Formatter",
+      "in-hindi": "एसक्यूएल फ़ॉर्मेटर",
+      "in-telugu": "SQL ఫార్మాటర్",
+      "in-tamil": "SQL ஃபார்மேட்டர்",
+      "ja": "SQL フォーマッタ",
+      "thai": "ตัวจัดรูปแบบ SQL",
+      "zh-cn": "SQL 格式化程序",
+      "zh": "SQL格式化程式"
     },
-    "DO_NOT_SHOW_MSG": {
-      "en": "Do not show this message again.",
-      "zh": "不要再显示此消息",
-      "ja": "このメッセージを今後表示しない。"
+    "FORMAT_XML": {
+      "en": "Format XML",
+      "in-hindi": "XML प्रारूप",
+      "in-telugu": "ఫార్మాట్ XML",
+      "in-tamil": "எக்ஸ்எம்எல் வடிவமைப்பு",
+      "ja": "XML 形式",
+      "thai": "รูปแบบ XML",
+      "zh-cn": "格式化 XML",
+      "zh": "格式化XML"
     },
-    "OF": {
-      "en": "of",
-      "zh": "的",
-      "ja": "of"
+    "FORMAT_JSON": {
+      "en": "Format JSON",
+      "in-hindi": "JSON प्रारूप",
+      "in-telugu": "JSON வடிவமைப்பு",
+      "in-tamil": "CSV முதல் JSON மாற்றி",
+      "ja": "JSON形式",
+      "thai": "รูปแบบ JSON",
+      "zh-cn": "格式化 JSON",
+      "zh": "格式化 JSON"
     },
-    "ITEMS_SELECTED": {
-      "en": " items selected",
-      "zh": "已选择的项目",
-      "ja": " items selected"
+    "FORMAT_SQL": {
+      "en": "Format SQL",
+      "in-hindi": "SQL प्रारूप",
+      "in-telugu": "ఫార్మాట్ SQL",
+      "in-tamil": "வடிவம் SQL",
+      "ja": "SQLフォーマット",
+      "thai": "รูปแบบ SQL",
+      "zh-cn": "格式化 SQL",
+      "zh": "格式化 SQL"
     },
-    "WARNING": {
-      "en": "Warning",
-      "zh": "警告",
-      "ja": "Warning"
-    },
-    "UNLOCKER_WARNING_MSG": {
-      "en": "You can unlock or unassign up to 250 work objects at a time.",
-      "zh": "您一次最多可以解锁或取消分配 250 个工作对象。",
-      "ja": "You can unlock or unassign up to 250 work objects at a time."
-    },
-    "PAUSE_ICON_DELETE_ALERT_MSG": {
-      "en": "Removing the Global Pause allows future work to be executed through this step. It does not resume paused work. To resume paused work, click the Resume in selected process button. Would you like to continue? ",
-      "zh": "取消暂停功能使今后的工作可以在这个步骤被执行。它将不会使已经暂停的工作恢复。要恢复暂停的工作, 在选择的处理按钮上点击恢复。你要继续块？",
-      "ja": "Removing the Global Pause allows future work to be executed through this step. It does not resume paused work. To resume paused work, click the Resume in selected process button. Would you like to continue? "
-    },
-    "SOMETHING_WENT_WRONG": {
-      "en": "Something went wrong",
-      "zh": "出了些问题",
-      "ja": "Something went wrong"
-    },
-    "SUCCESSFULLY_COMPLETED": {
-      "en": "Successfully completed",
-      "zh": "成功完成",
-      "ja": "Successfully completed"
-    },
-    "RESUME_TOOLTIP": {
-      "en": "Use the Move button to activate an aborted or paused item in the selected step. Model differences(inputs,variables,data sources)may still result in a failed activation.",
-      "zh": "使用“移动”按钮激活所选步骤中已中止或暂停的项目。模型差异（输入、变量、数据源）仍可能导致激活失败。",
-      "ja": "選択したステップで中止または一時停止された項目をアクティブにするには、「移動」ボタンを使用します。モデルの違い (入力、変数、データ ソース) により、アクティベーションが失敗する可能性があります"
-    },
-    "MOVE_BTN_TOOLTIP": {
-      "en": "Use the Move button to select a different process and version before resuming your items.",
-      "zh": "在恢复项目之前，使用“移动”按钮选择不同的流程和版本",
-      "ja": "アイテムを再開する前に、[移動] ボタンを使用して別のプロセスとバージョンを選択します"
-    },
-    "FILTER_TOOLTIP": {
-      "en": "Show Filters",
-      "zh": "显示过滤器",
-      "ja": "フィルターを表示"
+    "FORMAT_HTML": {
+      "en": "Format HTML",
+      "in-hindi": "HTML प्रारूप",
+      "in-telugu": "HTMLను ఫార్మాట్ చేయండి",
+      "in-tamil": "HTML ஐ வடிவமைக்கவும்",
+      "ja": "HTML形式",
+      "thai": "รูปแบบ HTML",
+      "zh-cn": "格式化 HTML",
+      "zh": "HTML 格式"
     }
   },
-  "TITLE": {
-    "ABORTED": {
-      "en": "Aborted",
-      "zh": "已中止",
-      "ja": "中止"
+  "GENERATE_TAB": {
+    "GENERATE": {
+      "en": "Generate",
+      "in-hindi": "उत्पन्न",
+      "in-telugu": "సృష్టించు",
+      "in-tamil": "உருவாக்கு",
+      "ja": "生成する",
+      "thai": "สร้าง",
+      "zh-cn": "产生",
+      "zh": "產生"
     },
-    "ACTIVE": {
-      "en": "Active",
-      "zh": "活动",
-      "ja": "アクティブ"
+    "GENERATE_JAVA_CLASS": {
+      "en": "Generate java class",
+      "in-hindi": "जावा क्लास उत्पन्न करें",
+      "in-telugu": "జావా క్లాస్‌ని రూపొందించండి",
+      "in-tamil": "ஜாவா வகுப்பை உருவாக்கவும்",
+      "ja": "Javaクラスを生成する",
+      "thai": "สร้างคลาส Java",
+      "zh-cn": "生成 Java 类",
+      "zh": "產生java類"
     },
-    "PAUSED": {
-      "en": "Paused",
-      "zh": "已暂停",
-      "ja": "時停止"
+    "XML_TO_JAVA_CLASS": {
+      "en": "XML to Java class",
+      "in-hindi": "XML से जावा क्लास",
+      "in-telugu": "XML నుండి జావా తరగతికి",
+      "in-tamil": "எக்ஸ்எம்எல் முதல் ஜாவா வகுப்பு வரை",
+      "ja": "XML から Java クラス",
+      "thai": "XML เป็นคลาส Java",
+      "zh-cn": "XML 到 Java 类",
+      "zh": "XML 到 Java 類"
     },
-    "PROCESS_MONITOR_ABORTED": {
-      "en": "Process Monitor - Aborted",
-      "zh": "进程监视器 - 已中止",
-      "ja": "プロセスモニター - 中止"
+    "JSON_TO_JAVA_CLASS": {
+      "en": "JSON to Java Class",
+      "in-hindi": "JSON से जावा क्लास",
+      "in-telugu": "JSON నుండి జావా క్లాస్",
+      "in-tamil": "JSON முதல் ஜாவா வகுப்பு வரை",
+      "ja": "JSON から Java クラスへ",
+      "thai": "JSON ถึงคลาส Java",
+      "zh-cn": "JSON 到 Java 类",
+      "zh": "JSON 到 Java 類"
+    }
+  
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": {
+      "en": "Convert To PDF",
+      "in-hindi": "पीडीएफ में बदलें",
+      "in-telugu": "PDFకి మార్చండి",
+      "in-tamil": "PDF ஆக மாற்றவும்",
+      "ja": "PDFに変換",
+      "thai": "แปลงเป็น PDF",
+      "zh-cn": "转换为 PDF",
+      "zh": "轉換為 PDF"
     },
-    "PROCESS_MONITOR_ACTIVE": {
-      "en": "Process Monitor - Active",
-      "zh": "过程监视器 - 活动",
-      "ja": "プロセスモニター - アクティブ"
+    "CONVERT_FROM_PDF": {
+      "en": "Convert From PDF",
+      "in-hindi": "पीडीएफ से कनवर्ट करें",
+      "in-telugu": "PDF నుండి మార్చండి",
+      "in-tamil": "PDF இலிருந்து மாற்றவும்",
+      "ja": "PDFから変換",
+      "thai": "แปลงจาก PDF",
+      "zh-cn": "从 PDF 转换",
+      "zh": "從 PDF 轉換"
     },
-    "PROCESS_MONITOR_PAUSED": {
-      "en": "Process Monitor - Paused",
-      "zh": "进程监视器 - 已暂停",
-      "ja": "プロセスモニター - 一時停止"
+    "JPG_To_PDF": {
+      "en": "JPG To PDF",
+      "in-hindi": "जेपीजी से पीडीएफ",
+      "in-telugu": "JPG నుండి PDF",
+      "in-tamil": "JPG முதல் PDF வரை",
+      "ja": "JPGからPDFへ",
+      "thai": "JPG เป็น PDF",
+      "zh-cn": "JPG 转 PDF",
+      "zh": "JPG 轉 PDF"
     },
-    "SERVICE_ANALYSIS": {
-      "en": "Channel Support - Service Analysis",
-      "zh": "渠道支持 - 服务分析",
-      "ja": "サービス分析"
+    "WORD_To_PDF": {
+      "en": "WORD TO PDF",
+      "in-hindi": "वर्ड से पीडीएफ",
+      "in-telugu": "PDFకి పదం",
+      "in-tamil": "PDFக்கு வார்த்தை",
+      "ja": "ワードからPDFへ",
+      "thai": "แปลงคำเป็น PDF",
+      "zh-cn": "WORD 转 PDF",
+      "zh": "文字轉PDF"
     },
-    "SERVICE_MONITOR_INTEROPERABILITY": {
-      "en": "Service Monitor - Interoperability",
-      "zh": "服务监视器 - 互操作性",
-      "ja": "サービスモニターの相互運用性"
+    "POWERPOINT_To_PDF": {
+      "en": "POWERPOINT TO PDF",
+      "in-hindi": "पावरपॉइंट से पीडीएफ",
+      "in-telugu": "PDFకి పవర్‌పాయింట్",
+      "in-tamil": "PDFக்கு பவர்பாயிண்ட்",
+      "ja": "パワーポイントからPDFへ",
+      "thai": "แปลงไฟล์ POWERPOINT เป็น PDF",
+      "zh-cn": "POWERPOINT 转 PDF",
+      "zh": "PowerPoint 轉 PDF"
     },
-    "SESSION_TIMEOUT": {
-      "en": "Session Timeout",
-      "zh": "绘话超时",
-      "ja": "セッションタイムアウト"
+    "EXCEL_To_PDF": {
+      "en": "EXCEL TO PDF",
+      "in-hindi": "एक्सेल से पीडीएफ",
+      "in-telugu": "PDFకి EXCEL",
+      "in-tamil": "PDFக்கு EXCEL",
+      "ja": "Excel から PDF へ",
+      "thai": "การแปลง Excel เป็น PDF",
+      "zh-cn": "EXCEL 转 PDF",
+      "zh": "Excel 轉 PDF"
     },
-    "RESUME_IN_ANOTHER_PROCESS": {
-      "en": "Resume in Another Process",
-      "zh": "在另一个进程中恢复",
-      "ja": "別のプロセスで再開"
+
+    "HTML_To_PDF": {
+      "en": "HTML TO PDF",
+      "in-hindi": "HTML से पीडीएफ",
+      "in-telugu": "HTML నుండి PDF వరకు",
+      "in-tamil": "HTML முதல் PDF வரை",
+      "ja": "HTMLからPDFへ",
+      "thai": "แปลง HTML เป็น PDF",
+      "zh-cn": "HTML 转 PDF",
+      "zh": "HTML 轉 PDF"
     },
-    "PROCESS_HISTORY_EXTRACT": {
-      "en": "Channel Support - Process Extract",
-      "zh": "渠道支持 - 流程摘录",
-      "ja": "履歴分析 - プロセス履歴抽出"
+
+    "PDF_To_JPG": {
+      "en": "PDF TO JPG",
+      "in-hindi": "पीडीएफ से जेपीजी",
+      "in-telugu": "PDF నుండి JPGకి",
+      "in-tamil": "PDF முதல் JPG வரை",
+      "ja": "PDFからJPGへ",
+      "thai": "PDF เป็น JPG",
+      "zh-cn": "PDF转JPG",
+      "zh": "PDF 轉 JPG"
     },
-    "UNLOCKER-USERS": {
-      "en": "Unlocker - Users",
-      "zh": "解锁器 - 用户",
-      "ja": "Unlocker-Users"
+    "PDF_To_WORD": {
+      "en": "PDF TO WORD",
+      "in-hindi": "पीडीएफ से वर्ड",
+      "in-telugu": "PDF టు వర్డ్",
+      "in-tamil": "வார்த்தைக்கு PDF",
+      "ja": "PDFからWordへ",
+      "thai": "แปลงไฟล์ PDF เป็น WORD",
+      "zh-cn": "PDF 转 WORD",
+      "zh": "PDF 到 WORD"
     },
-    "GLOBAL_PAUSE": {
-      "en": "Global Pause",
-      "zh": "全局暂停",
-      "ja": "Global Pause"
+    "PDF_To_POWERPOINT": {
+      "en": "PDF TO POWERPOINT",
+      "in-hindi": "पीडीएफ से पावरपॉइंट",
+      "in-telugu": "PDF నుండి పవర్‌పాయింట్",
+      "in-tamil": "பவர்பாயிண்டிற்கு PDF",
+      "ja": "PDFからパワーポイントへ",
+      "thai": "แปลงไฟล์ PDF เป็น POWERPOINT",
+      "zh-cn": "PDF 转 POWERPOINT",
+      "zh": "PDF 到 PowerPoint"
     },
-    "GLOBAL_RESUME": {
-      "en": "Global Resume",
-      "zh": "全球简历",
-      "ja": "Global Resume"
+    "PDF_To_EXCEL": {
+      "en": "PDF TO EXCEL",
+      "in-hindi": "पीडीएफ से एक्सेल",
+      "in-telugu": "EXCELకి PDF",
+      "in-tamil": "EXCELக்கு PDF",
+      "ja": "PDFからExcelへ",
+      "thai": "PDF เป็น Excel",
+      "zh-cn": "PDF 转 Excel",
+      "zh": "PDF 到 Excel"
     },
-    "CHANGE_STATUS": {
-      "en": "Change Status",
-      "zh": "更改状态",
-      "ja": "Change Status"
+    "CONVERT_WORD_TO_PDF": {
+      "en": "Convert WORD To PDF",
+      "in-hindi": "WORD को PDF में बदलें",
+      "in-telugu": "WORDని PDFకి మార్చండి",
+      "in-tamil": "வார்த்தையை PDF ஆக மாற்றவும்",
+      "ja": "WORDをPDFに変換する",
+      "thai": "แปลง WORD เป็น PDF",
+      "zh-cn": "WORD 转 PDF",
+      "zh": "將 WORD 轉換為 PDF"
+    }
+    ,
+    "CONVERT_POWERPOINT_TO_PDF": {
+      "en": "Convert POWERPOINT to PDF",
+      "in-hindi": "POWERPOINT को PDF में बदलें",
+      "in-telugu": "POWERPOINTని PDFకి మార్చండి",
+      "in-tamil": "POWERPOINT ஐ PDF ஆக மாற்றவும்",
+      "ja": "パワーポイントをPDFに変換する",
+      "thai": "แปลง POWERPOINT เป็น PDF",
+      "zh-cn": "将 POWERPOINT 转换为 PDF",
+      "zh": "將 POWERPOINT 轉換為 PDF"
+    }
+    ,
+    "CONVERT_EXCEL_TO_PDF": {
+      "en": "Convert EXCEL to PDF",
+      "in-hindi": "एक्सेल को पीडीएफ में बदलें",
+      "in-telugu": "EXCELని PDFకి మార్చండి",
+      "in-tamil": "EXCEL ஐ PDF ஆக மாற்றவும்",
+      "ja": "ExcelをPDFに変換する",
+      "thai": "แปลง EXCEL เป็น PDF",
+      "zh-cn": "EXCEL 转 PDF",
+      "zh": "將 EXCEL 轉換為 PDF"
+    }
+    ,
+    "HTML_TO_PDF": {
+      "en": "HTML to PDF",
+      "in-hindi": "HTML से PDF",
+      "in-telugu": "HTML నుండి PDF",
+      "in-tamil": "HTML முதல் PDF வரை",
+      "ja": "HTMLからPDFへ",
+      "thai": "HTML เป็น PDF",
+      "zh-cn": "HTML 到 PDF",
+      "zh": "HTML 到 PDF"
+    }
+    ,
+    "PDF_TO_WORD_CONVERTER": {
+      "en": "PDF to WORD Converter",
+      "in-hindi": "पीडीएफ से वर्ड कनवर्टर",
+      "in-telugu": "PDF నుండి వర్డ్ కన్వర్టర్",
+      "in-tamil": "PDF to WORD மாற்றி",
+      "ja": "PDFからWORDへのコンバーター",
+      "thai": "โปรแกรมแปลงไฟล์ PDF เป็น WORD",
+      "zh-cn": "PDF 到 WORD 转换器",
+      "zh": "PDF 到 WORD 轉換器"
     },
-    "MOVE": {
-      "en": "Move",
-      "zh": "移动",
-      "ja": "Move"
+    
+    "CONVERT_PDF_TO_POWERPOINT": {
+      "en": "Convert PDF to POWERPOINT",
+      "in-hindi": "पीडीएफ को पावरपॉइंट में बदलें",
+      "in-telugu": "PDFని POWERPOINTకి మార్చండి",
+      "in-tamil": "PDF ஐ POWERPOINT ஆக மாற்றவும்",
+      "ja": "PDFをPowerPointに変換する",
+      "thai": "แปลง PDF เป็น POWERPOINT",
+      "zh-cn": "将 PDF 转换为 POWERPOINT",
+      "zh": "將 PDF 轉換為 POWERPOINT"
     },
-    "PROCESS_MONITOR": {
-      "en": "Process Monitor",
-      "zh": "过程监视器",
-      "ja": "プロセスモニター"
+        
+    "CONVERT_PDF_TO_EXCEL": {
+      "en": "Convert PDF to EXCEL",
+      "in-hindi": "पीडीएफ को एक्सेल में बदलें",
+      "in-telugu": "PDFని EXCELకి మార్చండి",
+      "in-tamil": "PDF ஐ EXCEL ஆக மாற்றவும்",
+      "ja": "PDFをExcelに変換する",
+      "thai": "แปลง PDF เป็น EXCEL",
+      "zh-cn": "将 PDF 转换为 EXCEL",
+      "zh": "將 PDF 轉換為 EXCEL"
+    }
+ 
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": {
+      "en": "To change the order of your PDFs, drag and drop the files as you want.",
+      "in-hindi": "अपनी PDF का क्रम बदलने के लिए, फ़ाइलों को अपनी इच्छानुसार खींचें और छोड़ें.",
+      "in-telugu": "మీ PDFల క్రమాన్ని మార్చడానికి, మీకు కావలసిన విధంగా ఫైల్‌లను లాగండి మరియు వదలండి.",
+      "in-tamil": "உங்கள் PDFகளின் வரிசையை மாற்ற, நீங்கள் விரும்பியபடி கோப்புகளை இழுத்து விடுங்கள்.",
+      "ja": "PDF の順序を変更するには、必要に応じてファイルをドラッグ アンド ドロップします。",
+      "thai": "หากต้องการเปลี่ยนลำดับไฟล์ PDF ให้ลากและวางไฟล์ตามที่คุณต้องการ",
+      "zh-cn": "要更改 PDF 的顺序，请根据需要拖放文件",
+      "zh": "若要變更 PDF 的順序，請根據需要拖放檔案"
     },
-    "SERVICE_MONITOR": {
-      "en": "Service Monitor",
-      "zh": "服务监控",
-      "ja": "サービスモニター"
+    "ATTACH_FILES": {
+      "en": "Attach files",
+      "in-hindi": "फ़ाइलों को संलग्न करें",
+      "in-telugu": "ఫైళ్లను అటాచ్ చేయం",
+      "in-tamil": "கோப்புகளை இணைக்கவும்",
+      "ja": "ファイルを添付する",
+      "thai": "แนบไฟล์",
+      "zh-cn": "附加文件",
+      "zh": "附加文件"
+    }
+ 
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": {
+      "en": "PDF Editor",
+      "in-hindi": "पीडीएफ संपादक",
+      "in-telugu": "PDF ఎడిటర్",
+      "in-tamil": "PDF எடிட்டர்",
+      "ja": "PDF エディター",
+      "thai": "โปรแกรมแก้ไข PDF",
+      "zh-cn": "PDF 编辑器",
+      "zh": "PDF編輯器"
     },
-    "UNLOCKER": {
-      "en": "Unlocker",
-      "zh": "解锁器",
-      "ja": "ロック解除者"
+    "TITLE_1": {
+      "en": "Edit PDF by adding text, shapes, comments and Annotations.",
+      "in-hindi": "पाठ, आकृतियाँ, टिप्पणियाँ और एनोटेशन जोड़कर पीडीएफ संपादित करें।",
+      "in-telugu": "వచనం, ఆకారాలు, వ్యాఖ్యలు మరియు ఉల్లేఖనాలను జోడించడం ద్వారా PDFని సవరించండి.",
+      "in-tamil": "உரை, வடிவங்கள், கருத்துகள் மற்றும் சிறுகுறிப்புகளைச் சேர்ப்பதன் மூலம் PDF ஐத் திருத்தவும்.",
+      "ja": "テキスト、図形、コメント、注釈を追加して PDF を編集します。",
+      "thai": "แก้ไข PDF โดยการเพิ่มข้อความ รูปร่าง ความคิดเห็น และคำอธิบายประกอบ",
+      "zh-cn": "通过添加文本、形状、注释和注解来编辑 PDF。",
+      "zh": "透過新增文字、形狀、註釋和註釋來編輯 PDF。"
     },
-    "CHANNEL_SUPPORT": {
-      "en": "Channel Support",
-      "zh": "渠道支持",
-      "ja": "チャネルサポート"
+    "TITLE_2": {
+      "en": "Edit PDF by adding text, shapes, comments and Annotations.",
+      "in-hindi": "पीडीएफ संपादित करने के लिए आपका सुरक्षित और सरल उपकरण",
+      "in-telugu": "PDFని సవరించడానికి మీ సురక్షితమైన మరియు సులభమైన సాధనం",
+      "in-tamil": "PDF ஐ திருத்த உங்கள் பாதுகாப்பான மற்றும் எளிய கருவி",
+      "ja": "PDFを編集するための安全でシンプルなツール",
+      "thai": "เครื่องมือที่ปลอดภัยและเรียบง่ายสำหรับแก้ไข PDF",
+      "zh-cn": "安全、简单的 PDF 编辑工具",
+      "zh": "您安全且簡單的 PDF 編輯工具"
     },
-    "INTEROPERABILITY": {
-      "en": "Interoperability",
-      "zh": "互操作性",
-      "ja": "相互運用性"
+    "TITLE_3": {
+      "en": "upload .pdf file to edit",
+      "in-hindi": "संपादित करने के लिए .pdf फ़ाइल अपलोड करें",
+      "in-telugu": "సవరించడానికి .pdf ఫైల్‌ని అప్‌లోడ్ చేయండి",
+      "in-tamil": "திருத்த .pdf கோப்பை பதிவேற்றவும்",
+      "ja": "編集する.pdfファイルをアップロードする",
+      "thai": "อัพโหลดไฟล์ .pdf เพื่อแก้ไข",
+      "zh-cn": "上传 .pdf 文件进行编辑",
+      "zh": "上傳 .pdf 文件進行編輯"
+    }
+ 
+ 
+  }
+,
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": {
+      "en": "Report an issue",
+      "in-hindi": "समस्या की रिपोर्ट करें",
+      "in-telugu": "సమస్యను నివేదించండి",
+      "in-tamil": "சிக்கலைப் புகாரளிக்கவும்",
+      "ja": "問題を報告する",
+      "thai": "รายงานปัญหา",
+      "zh-cn": "报告问题",
+      "zh": "報告問題"
     },
-    "USERS": {
-      "en": "Users",
-      "zh": "用户",
-      "ja": "ユーザー"
+    "REPORT_AN_ISSUE_TITLE": {
+      "en": "Please use this form to tell us about the issue that you're experiencing.",
+      "in-hindi": "कृपया इस फ़ॉर्म का उपयोग करके हमें अपनी समस्या के बारे में बताएं।",
+      "in-telugu": "దయచేసి మీరు ఎదుర్కొంటున్న సమస్య గురించి మాకు తెలియజేయడానికి ఈ ఫారమ్‌ని ఉపయోగించండి.",
+      "in-tamil": "நீங்கள் அனுபவிக்கும் சிக்கலைப் பற்றி எங்களிடம் கூற இந்தப் படிவத்தைப் பயன்படுத்தவும்.",
+      "ja": "このフォームを使用して、発生している問題についてお知らせください。",
+      "thai": "โปรดใช้แบบฟอร์มนี้เพื่อแจ้งให้เราทราบเกี่ยวกับปัญหาที่คุณประสบอยู่",
+      "zh-cn": "请使用此表格告诉我们您遇到的问题",
+      "zh": "請使用此表格告訴我們您遇到的問題。"
     },
-    "PROCESS_EXTRACT": {
-      "en": "Process Extract",
-      "zh": "工艺摘录",
-      "ja": "プロセス抽出物"
+    "NAME": {
+      "en": "Name",
+      "in-hindi": "नाम",
+      "in-telugu": "పేరు",
+      "in-tamil": "பெயர்",
+      "ja": "名前",
+      "thai": "ชื่อ",
+      "zh-cn": "姓名",
+      "zh": "姓名"
     },
-    "PROCESS_INTELLIGENCE": {
-      "en": "Process Intelligence",
-      "zh": "过程智能",
-      "ja": "プロセスインテリジェンス"
+    "SUBJECT": {
+      "en": "Subject",
+      "in-hindi": "विषय",
+      "in-telugu": "విషయం",
+      "in-tamil": "பொருள்",
+      "ja": "主題",
+      "thai": "เรื่อง",
+      "zh-cn": "主题",
+      "zh": "主題"
     },
-    "PROCESS_INTELLIGENCE_HISTORY_EXTRACT": {
-      "en": "Process Intelligence - Process Extract",
-      "zh": "过程智能 - 流程摘录",
-      "ja": "プロセスインテリジェンス - プロセス履歴抽出"
+    "CONTACT_EMAIL_ADDRESS": {
+      "en": "Contact email address",
+      "in-hindi": "संपर्क ई - मेल पता",
+      "in-telugu": "సంప్రదింపు ఇమెయిల్ చిరునామా",
+      "in-tamil": "தொடர்பு மின்னஞ்சல் முகவரி",
+      "ja": "連絡先メールアドレス",
+      "thai": "ที่อยู่อีเมล์สำหรับติดต่อ",
+      "zh-cn": "联系电子邮件地址",
+      "zh": "聯絡電子郵件地址"
+    },
+    "ISSUE_DESCRIPTION": {
+      "en": "Description of the issue",
+      "in-hindi": "समस्या का विवरण",
+      "in-telugu": "సమస్య యొక్క వివరణ",
+      "in-tamil": "பிரச்சினையின் விளக்கம்",
+      "ja": "問題の説明",
+      "thai": "คำอธิบายปัญหา",
+      "zh-cn": "问题描述",
+      "zh": "問題描述"
+    },
+    "BROWSE": {
+      "en": "Browse",
+      "in-hindi": "ब्राउज़",
+      "in-telugu": "బ్రౌజ్ చేయండి",
+      "in-tamil": "உலாவவும்",
+      "ja": "ブラウズ",
+      "thai": "ค้นหา",
+      "zh-cn": "浏览",
+      "zh": "瀏覽"
+    },
+    "SUBMIT": {
+      "en": "Submit",
+      "in-hindi": "जमा करना",
+      "in-telugu": "సమర్పించండి",
+      "in-tamil": "சமர்ப்பிக்கவும்",
+      "ja": "提出する",
+      "thai": "ส่ง",
+      "zh-cn": "提交",
+      "zh": "提交"
     }
   }
 }

@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/internal/Observable';
 import { PdfConstants } from '../../constants/enums/pdfconversion-headers';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { FileUpload } from 'primeng/fileupload';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-pdfconversion-child',
@@ -18,21 +19,21 @@ import { FileUpload } from 'primeng/fileupload';
 export class PDFConversionChildComponent implements OnInit {
 	@ViewChild('fileUpload') fileUpload: FileUpload;
 
-	type: String = PdfConstants.JPG_TO_PDF;
+	type: String =this.translateService.instant('CONVERT_PDF_TAB.JPG_To_PDF') ;
 	getSubcription: Subscription;
 	uploadedWordFiles: File[] = [];
 	@Input() childLabel: String;
 	acceptedFiles: String = "image/*.jpeg";
-	headerTitle: String = PdfConstants.JPG_TO_PDF_HEADER
+	headerTitle: String = this.translateService.instant('CONVERT_PDF_TAB.JPG_To_PDF') ;
 	subTitle: String = PdfConstants.JPEG_TO_PDF_SUB_HEADER
 	showSpinner: boolean = false;
 
 
-	constructor(private messageService: MessageService, private pdfConversion: PdfconversionService, public dialogService: DialogService) { }
+	constructor(private messageService: MessageService, private pdfConversion: PdfconversionService, public dialogService: DialogService,private translateService: TranslateService) { }
 
 	ngOnInit(): void {
 		this.type = !this.childLabel ? PdfConstants.JPG_TO_PDF : this.childLabel;
-		this.headerTitle = PdfConstants.JPG_TO_PDF_HEADER;
+		this.headerTitle = this.translateService.instant('CONVERT_PDF_TAB.JPG_To_PDF') ;
 		this.subTitle = PdfConstants.JPEG_TO_PDF_SUB_HEADER;
 		this.acceptedFiles = "image/*.jpeg";
 	}
@@ -152,15 +153,15 @@ export class PDFConversionChildComponent implements OnInit {
 	}
 	getHeaders() {
 		return new Map<String, String>([
-			[PdfConstants.WORD_TO_PDF, PdfConstants.WORD_TO_PDF_HEADER],
-			[PdfConstants.JPG_TO_PDF, PdfConstants.JPG_TO_PDF_HEADER],
-			[PdfConstants.HTML_TO_PDF, PdfConstants.HTML_TO_PDF_HEADER],
-			[PdfConstants.EXCEL_TO_PDF, PdfConstants.EXCEL_TO_PDF_HEADER],
-			[PdfConstants.POWERPOINT_TO_PDF, PdfConstants.POWERPOINT_TO_PDF_HEADER],
-			[PdfConstants.PDF_TO_JPG, PdfConstants.PDF_TO_JPG_HEADER],
-			[PdfConstants.PDF_TO_WORD, PdfConstants.PDF_TO_WORD_HEADER],
-			[PdfConstants.PDF_TO_POWERPOINT, PdfConstants.PDF_TO_POWERPOINT_HEADER],
-			[PdfConstants.PDF_TO_EXCEL, PdfConstants.PDF_TO_EXCEL_HEADER],
+			[this.translateService.instant('CONVERT_PDF_TAB.WORD_To_PDF'), this.translateService.instant('CONVERT_PDF_TAB.WORD_To_PDF') ],
+			[this.translateService.instant('CONVERT_PDF_TAB.JPG_To_PDF'), this.translateService.instant('CONVERT_PDF_TAB.JPG_To_PDF')],
+			[this.translateService.instant('CONVERT_PDF_TAB.HTML_To_PDF'), this.translateService.instant('CONVERT_PDF_TAB.HTML_To_PDF')],
+			[this.translateService.instant('CONVERT_PDF_TAB.EXCEL_To_PDF'), this.translateService.instant('CONVERT_PDF_TAB.CONVERT_EXCEL_TO_PDF')],
+			[this.translateService.instant('CONVERT_PDF_TAB.POWERPOINT_To_PDF'),this.translateService.instant('CONVERT_PDF_TAB.CONVERT_POWERPOINT_TO_PDF')],
+			[this.translateService.instant('CONVERT_PDF_TAB.PDF_To_JPG'), this.translateService.instant('CONVERT_PDF_TAB.PDF_To_JPG')],
+			[this.translateService.instant('CONVERT_PDF_TAB.PDF_To_WORD'), this.translateService.instant('CONVERT_PDF_TAB.PDF_TO_WORD_CONVERTER')],
+			[this.translateService.instant('CONVERT_PDF_TAB.PDF_To_POWERPOINT'),this.translateService.instant('CONVERT_PDF_TAB.CONVERT_PDF_TO_POWERPOINT')],
+			[this.translateService.instant('CONVERT_PDF_TAB.PDF_To_EXCEL'), this.translateService.instant('CONVERT_PDF_TAB.CONVERT_PDF_TO_EXCEL')],
 		]);
 	}
 	getSubHeaders() {

@@ -2,47 +2,55 @@
     <div class="row">
       <div class="col-sm-3">
         <p-panel>
-          <ng-template pTemplate="header" >Convert To PDF</ng-template>
+          <ng-template pTemplate="header" >{{ 'CONVERT_PDF_TAB.CONVERT_TO_PDF' | translate}}</ng-template>
           <div class="list-group">
             <button
               #jpgtopdf
               pButton
               pRipple
               type="button"
-              label="JPG To PDF"
+              
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(jpgtopdf)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.JPG_To_PDF' | translate}}
+          </button>
   <br>
             <button
               #wordtopdf
               pButton
               pRipple
               type="button"
-              label="WORD TO PDF"
+     
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(wordtopdf)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.WORD_To_PDF' | translate}}
+          </button>
             <br>
             <button
               #ptopdf
               pButton
               pRipple
               type="button"
-              label="POWERPOINT TO PDF"
+             
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(ptopdf)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.POWERPOINT_To_PDF' | translate}}
+          </button>
             <br>
             <button
               #extopdf
               pButton
               pRipple
               type="button"
-              label="EXCEL TO PDF"
+           
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(extopdf)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.EXCEL_To_PDF' | translate}}
+          </button>
 
             <br>
             <button
@@ -50,55 +58,66 @@
               pButton
               pRipple
               type="button"
-              label="HTML TO PDF"
+              
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(htopdf)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.HTML_To_PDF' | translate}}
+          </button>
           </div>
         </p-panel>
         <br>
         <p-panel>
-          <ng-template pTemplate="header" >Convert From PDF</ng-template>
+          <ng-template pTemplate="header" >{{ 'CONVERT_PDF_TAB.CONVERT_FROM_PDF' | translate}}</ng-template>
           <div class="list-group">
             <button
               #pdftojpg
               pButton
               pRipple
               type="button"
-              label="PDF TO JPG"
+             
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(pdftojpg)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.PDF_To_JPG' | translate}}
+          
+          </button>
   <br>
             <button
               #pdftoword
               pButton
               pRipple
               type="button"
-              label="PDF TO WORD"
+              
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(pdftoword)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.PDF_To_WORD' | translate}}
+          </button>
             <br>
             <button
               #pdftoppt
               pButton
               pRipple
               type="button"
-              label="PDF TO POWERPOINT"
+            
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(pdftoppt)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.PDF_To_POWERPOINT' | translate}}
+          </button>
             <br>
             <button
               #pdftoexcel
               pButton
               pRipple
               type="button"
-              label="PDF TO EXCEL"
+           
               class="p-button-outlined p-button-rounded"
               (click)="loadBase64Child(pdftoexcel)"
-            ></button>
+            >
+            {{ 'CONVERT_PDF_TAB.PDF_To_EXCEL' | translate}}
+          </button>
 
             <br>
           </div>

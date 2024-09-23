@@ -1,3 +1,5 @@
+@import 'variables';
+
 :host ::ng-deep {
  
     
@@ -8,6 +10,12 @@
     
     .product-description {
         margin: 0 0 1rem 0;
+        width:200px;
+        font-family: "Poppins Semi Bold" !important;
+        font-size: 15px;
+        font-weight: $btn-font-weight;
+        line-height: $line-height-base;
+        text-align: center;
     }
     
 

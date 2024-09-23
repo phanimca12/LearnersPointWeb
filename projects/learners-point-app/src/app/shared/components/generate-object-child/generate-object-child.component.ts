@@ -6,6 +6,7 @@ import xmlFormat from 'xml-formatter';
 import { XMLConversionService } from '../../../core/services/xmlconversion.service';
 import { XmlConstants } from '../../constants/enums/xml-headers';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -15,8 +16,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 })
 export class GenerateObjectChildComponent implements OnInit {
 	@Input() childLabel: String;
-	label: String = XmlConstants.GENERATE_JAVA_CLASS
-	headerTitle: String = XmlConstants.XML_TO_JAVA_CLASS
+	label: String = this.translateService.instant('GENERATE_TAB.GENERATE_JAVA_CLASS');
+	headerTitle: String = this.translateService.instant('GENERATE_TAB.XML_TO_JAVA_CLASS');
 	textareaValue: string = '';
 	showResponse = false;
 	responseData: string = '';
@@ -38,10 +39,10 @@ export class GenerateObjectChildComponent implements OnInit {
 	];
 	dataList: objectModel[] = [];
 	sanitizer: any;
-	constructor(private xmlConversionService: XMLConversionService, sanitizer: DomSanitizer) { }
+	constructor(private xmlConversionService: XMLConversionService, sanitizer: DomSanitizer,private translateService: TranslateService) { }
 
 	ngOnInit(): void {
-		this.headerTitle = XmlConstants.XML_TO_JAVA_CLASS;
+		this.headerTitle =this.translateService.instant('GENERATE_TAB.XML_TO_JAVA_CLASS');
 		this.type = this.childLabel;
 		this.isDisabled = true;
 		this.responseData = '';
@@ -106,15 +107,15 @@ export class GenerateObjectChildComponent implements OnInit {
 
 	getHeaders() {
 		return new Map<String, String>([
-			[XmlConstants.XML_TO_JAVA_CLASS, XmlConstants.XML_TO_JAVA_CLASS],
-			[XmlConstants.JSON_TO_JAVA_CLASS, XmlConstants.JSON_TO_JAVA_CLASS],
+			[this.translateService.instant('GENERATE_TAB.XML_TO_JAVA_CLASS'),this.translateService.instant('GENERATE_TAB.XML_TO_JAVA_CLASS') ],
+			[this.translateService.instant('GENERATE_TAB.JSON_TO_JAVA_CLASS'), this.translateService.instant('GENERATE_TAB.JSON_TO_JAVA_CLASS')],
 
 		]);
 	}
 	getLabels() {
 		return new Map<String, String>([
-			[XmlConstants.XML_TO_JAVA_CLASS, XmlConstants.GENERATE_JAVA_CLASS],
-			[XmlConstants.JSON_TO_JAVA_CLASS, XmlConstants.GENERATE_JAVA_CLASS],
+			[this.translateService.instant('GENERATE_TAB.XML_TO_JAVA_CLASS'), this.translateService.instant('GENERATE_TAB.GENERATE_JAVA_CLASS')],
+			[this.translateService.instant('GENERATE_TAB.JSON_TO_JAVA_CLASS'), this.translateService.instant('GENERATE_TAB.GENERATE_JAVA_CLASS')],
 
 		]);
 	}
@@ -122,14 +123,14 @@ export class GenerateObjectChildComponent implements OnInit {
 	getFileModes() {
 		return new Map<String, String>([
 			[XmlConstants.XML_TO_JAVA_CLASS, 'application/xml'],
-			[XmlConstants.XML_TO_JAVA_CLASS, 'application/ld+json'],
+			[XmlConstants.JSON_TO_JAVA_CLASS, 'application/ld+json'],
 
 		]);
 	}
 	getApi() {
 		return new Map<String, String>([
 			[XmlConstants.XML_TO_JAVA_CLASS, 'convertXmlToClass'],
-			[XmlConstants.XML_TO_JAVA_CLASS, 'convertJSONToClass'],
+			[XmlConstants.JSON_TO_JAVA_CLASS, 'convertJSONToClass'],
 		]);
 	}
 }

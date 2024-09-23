@@ -3,6 +3,19 @@ import { IHomeData } from '../../interfaces/IHome';
 import { HomeService } from '../../../core/services/home.service';
 import { Router } from '@angular/router'
 
+
+
+
+interface TranslationResponse {
+  text: string;
+  from: {
+      language: { iso: string };
+  };
+  to: {
+      language: { iso: string };
+  };
+}
+
 @Component({
   selector: 'app-home-body-default',
   templateUrl: './home-body-default.component.html',
@@ -10,10 +23,14 @@ import { Router } from '@angular/router'
 })
 export class HomeBodyDefaultComponent implements OnInit {
   homeItems: IHomeData[];
+
+
   constructor(private homeService:HomeService,public router:Router) { }
 
   ngOnInit(): void {
     this.homeService.getHomeListData().then(data => this.homeItems=data);
+
+
   }
   openLink(path:string)
   {

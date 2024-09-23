@@ -17,7 +17,7 @@ childLabel='';
   }
   loadBase64Child(event) {
    
-    this.childLabel=event.textContent;
+    this.childLabel=event.textContent.trim();
     console.log(event);
     
         //this.router.navigate(['base64master/base64child']);

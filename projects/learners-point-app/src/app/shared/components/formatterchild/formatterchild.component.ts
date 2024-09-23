@@ -6,6 +6,7 @@ import * as vkbeautify from 'vkbeautify';
 import { format } from 'sql-formatter';
 import { ClipboardService } from 'ngx-clipboard'
 import { CodemirrorComponent } from '@ctrl/ngx-codemirror';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-formatterchild',
@@ -26,12 +27,12 @@ export class FormatterchildComponent implements OnInit {
 	textareaValue: string = '';
 	mode: String = '';
 	rating: number;
-	constructor(private clipboardService: ClipboardService) { }
+	constructor(private clipboardService: ClipboardService,private translateService: TranslateService) { }
 
 	ngOnInit(): void {
 		this.mode = 'application/xml'
-		this.headerTitle = XmlConstants.XML_FORMATTER;
-		this.label = XmlConstants.FORMAT_XML;
+		this.headerTitle = this.translateService.instant('FORMATTERS_TAB.XML_FORMATTER');
+		this.label = this.translateService.instant('FORMATTERS_TAB.FORMAT_XML');
 	}
 
 	ngOnChanges(changes: SimpleChanges): void {
@@ -94,19 +95,19 @@ export class FormatterchildComponent implements OnInit {
 
 	getHeaders() {
 		return new Map<String, String>([
-			[XmlConstants.XML_FORMATTER, XmlConstants.XML_FORMATTER],
-			[XmlConstants.JSON_FORMATTER, XmlConstants.JSON_FORMATTER],
-			[XmlConstants.SQL_FORMATTER, XmlConstants.SQL_FORMATTER],
-			[XmlConstants.HTML_FORMATTER, XmlConstants.HTML_FORMATTER],
+			[this.translateService.instant('FORMATTERS_TAB.XML_FORMATTER'), this.translateService.instant('FORMATTERS_TAB.XML_FORMATTER')],
+			[this.translateService.instant('FORMATTERS_TAB.JSON_FORMATTER'),this.translateService.instant('FORMATTERS_TAB.JSON_FORMATTER') ],
+			[this.translateService.instant('FORMATTERS_TAB.SQL_FORMATTER'), this.translateService.instant('FORMATTERS_TAB.SQL_FORMATTER')],
+			[this.translateService.instant('FORMATTERS_TAB.HTML_FORMATTER'),this.translateService.instant('FORMATTERS_TAB.HTML_FORMATTER') ],
 
 		]);
 	}
 	getLabels() {
 		return new Map<String, String>([
-			[XmlConstants.XML_FORMATTER, XmlConstants.FORMAT_XML],
-			[XmlConstants.JSON_FORMATTER, XmlConstants.FORMAT_JSON],
-			[XmlConstants.SQL_FORMATTER, XmlConstants.FORMAT_SQL],
-			[XmlConstants.HTML_FORMATTER, XmlConstants.FORMAT_HTML],
+			[this.translateService.instant('FORMATTERS_TAB.XML_FORMATTER'), this.translateService.instant('FORMATTERS_TAB.FORMAT_XML')],
+			[this.translateService.instant('FORMATTERS_TAB.JSON_FORMATTER'),this.translateService.instant('FORMATTERS_TAB.FORMAT_JSON')],
+			[this.translateService.instant('FORMATTERS_TAB.SQL_FORMATTER'), this.translateService.instant('FORMATTERS_TAB.FORMAT_SQL')],
+			[this.translateService.instant('FORMATTERS_TAB.HTML_FORMATTER'), this.translateService.instant('FORMATTERS_TAB.FORMAT_HTML')],
 		]);
 	}
 

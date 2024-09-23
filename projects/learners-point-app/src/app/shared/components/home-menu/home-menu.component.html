@@ -7,31 +7,31 @@
       <div class="collapse navbar-collapse" [ngClass]="{ show: isShown }">
         <ul class="navbar-nav" id="nav-list-style">
           <li class="nav-item active">
-            <button pButton pRipple type="button" label="Encoders" class="p-button-text" (click)="navigateBase64Link()"></button>
+            <button pButton pRipple type="button"  class="p-button-text" (click)="navigateBase64Link()">{{ 'MENU.ENCODERS' | translate }} </button>
           
           </li>
           <li class="nav-item active">
-            <button pButton pRipple type="button" label="Converters" class="p-button-secondary p-button-text" (click)="navigateXmlConversionLink()"></button>
+            <button pButton pRipple type="button"  class="p-button-secondary p-button-text" (click)="navigateXmlConversionLink()">{{ 'MENU.CONVERTERS' | translate }}</button>
           </li>
 
           <li class="nav-item active">
-            <button pButton pRipple type="button" label="Formatters" class="p-button-secondary p-button-text" (click)="navigateBaseFormatter()"></button>
+            <button pButton pRipple type="button"  class="p-button-secondary p-button-text" (click)="navigateBaseFormatter()">{{ 'MENU.FORMATTERS' | translate }}</button>
           </li>
 
           <li class="nav-item active">
-            <button pButton pRipple type="button" label="Generate" class="p-button-secondary p-button-text" (click)="navigateBaseGenerator()"></button>
+            <button pButton pRipple type="button"  class="p-button-secondary p-button-text" (click)="navigateBaseGenerator()">{{ 'MENU.GENERATE' | translate }}</button>
           </li>
           <li class="nav-item active">
-            <button pButton pRipple type="button" label="Convert PDF" class="p-button-secondary p-button-text" (click)="navigateBasePDF()"></button>
+            <button pButton pRipple type="button"  class="p-button-secondary p-button-text" (click)="navigateBasePDF()">{{ 'MENU.CONVERTPDF' | translate }}</button>
           </li>
           <li class="nav-item active">
-            <button pButton pRipple type="button" label="Merge PDF" class="p-button-secondary p-button-text" (click)="navigateMergePDF()"></button>
+            <button pButton pRipple type="button"  class="p-button-secondary p-button-text" (click)="navigateMergePDF()">{{ 'MENU.MERGEPDF' | translate }}</button>
           </li>
           <li class="nav-item active">
-            <button pButton pRipple type="button" label="Edit PDF" class="p-button-secondary p-button-text" (click)="navigateEditPDF()"></button>
+            <button pButton pRipple type="button"  class="p-button-secondary p-button-text" (click)="navigateEditPDF()">{{ 'MENU.EDITPDF' | translate }}</button>
           </li>
           <li class="nav-item active" >
-            <button pButton pRipple type="button" label="Report Issue" class="p-button-secondary p-button-text" (click)="showForm()" style="color:rgb(235, 239, 16)"></button>
+            <button pButton pRipple type="button"  class="p-button-secondary p-button-text" (click)="showForm()" style="color:rgb(235, 239, 16)">{{ 'MENU.REPORTISSUE' | translate }}</button>
           </li>
         </ul>
       </div>

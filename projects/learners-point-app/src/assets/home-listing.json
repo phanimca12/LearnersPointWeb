@@ -56,7 +56,7 @@
         {
             "id": "9",
             "name": "YAML TO JSON CONVERTER",
-            "description": "Converts Yam to Json schema",
+            "description": "Converts Yaml to Json schema",
             "path": "xmlconversion"
         },
         
@@ -98,7 +98,7 @@
         {
             "id": "15",
             "name": "SQL FORMATTER",
-            "description": "Formats HTML Schema",
+            "description": "Formats SQL Schema",
             "path": "bformatter"
         }
         ,
@@ -119,77 +119,77 @@
         {
             "id": "18",
             "name": "JPG TO PDF",
-            "description": "Converts Jepg images to PDF Document",
+            "description": "Convert JPG images to PDF in seconds. Easily adjust orientation and margins.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "19",
             "name": "WORD TO PDF",
-            "description": "Converts Word Document to PDF Document",
+            "description": "Make DOC and DOCX files easy to read by converting them to PDF.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "20",
             "name": "POWERPOINT TO PDF",
-            "description": "Converts .ppt Document to PDF Document",
+            "description": "Make PPT and PPTX slideshows easy to view by converting them to PDF.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "21",
             "name": "Excel TO PDF",
-            "description": "Converts .xlsx Document to PDF Document",
+            "description": "Make EXCEL spreadsheets easy to read by converting them to PDF.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "22",
             "name": "HTML TO PDF",
-            "description": "Converts .html Document to PDF Document",
+            "description": "Convert webpages in HTML to PDF. Copy and paste the URL of the page you want and convert it to PDF with a click.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "23",
             "name": "PDF TO JPG",
-            "description": "Converts PDF Document to JEPG image",
+            "description": "Convert each PDF page into a JPG or extract all images contained in a PDF.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "24",
             "name": "PDF TO WORD",
-            "description": "Converts PDF Document to Word Document",
+            "description": "Easily convert your PDF files into easy to edit DOC and DOCX documents. The converted WORD document is almost 100% accurate.",
             "path": "basepdfConverter"
         },
         
         {
             "id": "25",
             "name": "PDF TO POWERPOINT",
-            "description": "Converts PDF Document to .PPT Document",
+            "description": "Turn your PDF files into easy to edit PPT and PPTX slideshows.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "26",
             "name": "PDF TO Excel",
-            "description": "Converts PDF Document to .XLS Document",
+            "description": "Pull data straight from PDFs into Excel spreadsheets in a few short seconds.",
             "path": "basepdfConverter"
         }
         ,
         {
             "id": "27",
             "name": "MERGE PDF",
-            "description": "Merge multiple PDF in to single PDF document",
+            "description": "Combine PDFs in the order you want with the easiest PDF merger available.",
             "path": "mergePDFContainer"
         }
         ,
         {
             "id": "28",
             "name": "EDIT PDF",
-            "description": "Edit and modify content of PDF document",
+            "description": "Add text, images, shapes or freehand annotations to a PDF document. Edit the size, font, and color of the added content.",
             "path": "editPDFContainer"
         }
     ]

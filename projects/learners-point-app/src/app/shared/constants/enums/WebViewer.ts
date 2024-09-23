@@ -1,0 +1,4 @@
+export enum WebViewerConst {
+    KEY = 'dzYIiLZZwP0M6YR1OcYx8FgkTvWFC2W_GNxNVBKFQ2Ot35AievMD1am9u0il0DCViEjTa-QLTpCTqzHyOEIXDwBw9S1ns36gKHZRrIajlB3mPonpx4UY9AiWBfAKyALrvBH203Hiw9yokNfoUBER5KPyNEGo96R-CGXQBoZKpz3jd1crY3I_aAyat5_oDpVTWO3N6wEw-yVwmms',
+  
+}

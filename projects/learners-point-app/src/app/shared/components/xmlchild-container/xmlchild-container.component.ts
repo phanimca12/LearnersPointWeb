@@ -7,6 +7,7 @@ import xmlFormat from 'xml-formatter';
 import { CodemirrorComponent } from '@ctrl/ngx-codemirror';
 import { ClipboardService } from 'ngx-clipboard'
 import { FileUpload } from 'primeng/fileupload';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-xmlchild-container',
@@ -18,8 +19,8 @@ export class XmlchildContainerComponent implements OnInit {
 	
 	@ViewChild(CodemirrorComponent) codeMirrorComponent: CodemirrorComponent;
 	@Input() childLabel: String;
-	label: String = XmlConstants.GENERATE_XSD;
-	headerTitle: String = XmlConstants.XSD_SCHEMA_GENERATOR;
+	label: String = this.translateService.instant('CONVERTERS_TAB.GENERATE_XSD'); 
+	headerTitle: String =this.translateService.instant('CONVERTERS_TAB.XSD_SCHEMA_GENERATOR'); 
 	textareaValue: string = '';
 	showResponse = false;
 	responseData: string = '';
@@ -34,10 +35,10 @@ export class XmlchildContainerComponent implements OnInit {
 	showButton = true;
 	acceptedFiles: String = ".csv,.xls,.xlsx";
 
-	constructor(private xmlConversionService: XMLConversionService, private clipboardService: ClipboardService) { }
+	constructor(private xmlConversionService: XMLConversionService, private clipboardService: ClipboardService,private translateService: TranslateService) { }
 
 	ngOnInit(): void {
-		this.headerTitle = XmlConstants.XSD_SCHEMA_GENERATOR;
+		this.headerTitle =this.translateService.instant('CONVERTERS_TAB.XSD_SCHEMA_GENERATOR'); 
 		this.type = this.childLabel;
 		this.isDisabled = true;
 		this.responseData = '';
@@ -120,24 +121,24 @@ export class XmlchildContainerComponent implements OnInit {
 
 	getHeaders() {
 		return new Map<String, String>([
-			[XmlConstants.XSD_GENERATOR, XmlConstants.XSD_SCHEMA_GENERATOR],
-			[XmlConstants.XML_TO_JSON_CONVERTER, XmlConstants.XML_TO_JSON_CONVERTER],
-			[XmlConstants.JSON_TO_XML_CONVERTER, XmlConstants.JSON_TO_XML_CONVERTER],
-			[XmlConstants.JSON_TO_YAML_CONVERTER, XmlConstants.JSON_TO_YAML_CONVERTER],
-			[XmlConstants.YAML_TO_JSON_CONVERTER, XmlConstants.YAML_TO_JSON_CONVERTER],
-			[XmlConstants.CSV_TO_XML_CONVERTER, XmlConstants.CSV_TO_XML_CONVERTER],
-			[XmlConstants.CSV_TO_JSON_CONVERTER, XmlConstants.CSV_TO_JSON_CONVERTER],
+			[this.translateService.instant('CONVERTERS_TAB.XSD_GENERATOR'), this.translateService.instant('CONVERTERS_TAB.XSD_SCHEMA_GENERATOR')],
+			[this.translateService.instant('CONVERTERS_TAB.XML_JSON_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.XML_JSON_CONVERTER')],
+			[this.translateService.instant('CONVERTERS_TAB.JSON_XML_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.JSON_XML_CONVERTER')],
+			[this.translateService.instant('CONVERTERS_TAB.JSON_YAML_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.JSON_YAML_CONVERTER')],
+			[this.translateService.instant('CONVERTERS_TAB.YAML_JSON_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.YAML_JSON_CONVERTER')],
+			[this.translateService.instant('CONVERTERS_TAB.CSV_XML_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CSV_XML_CONVERTER')],
+			[this.translateService.instant('CONVERTERS_TAB.CSV_JSON_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CSV_JSON_CONVERTER')],
 		]);
 	}
 	getLabels() {
 		return new Map<String, String>([
-			[XmlConstants.XSD_GENERATOR, XmlConstants.GENERATE_XSD],
-			[XmlConstants.XML_TO_JSON_CONVERTER, XmlConstants.CONVERT_XML_TO_JSON],
-			[XmlConstants.JSON_TO_XML_CONVERTER, XmlConstants.CONVERT_JSON_TO_XML],
-			[XmlConstants.JSON_TO_YAML_CONVERTER, XmlConstants.CONVERT_JSON_TO_YAML],
-			[XmlConstants.YAML_TO_JSON_CONVERTER, XmlConstants.CONVERT_YAML_TO_JSON],
-			[XmlConstants.CSV_TO_XML_CONVERTER, XmlConstants.CONVERT_CSV_FILE_TO_XML_FILE],
-			[XmlConstants.CSV_TO_JSON_CONVERTER, XmlConstants.CONVERT_CSV_TO_JSON],
+			[this.translateService.instant('CONVERTERS_TAB.XSD_GENERATOR'), this.translateService.instant('CONVERTERS_TAB.GENERATE_XSD')],
+			[this.translateService.instant('CONVERTERS_TAB.XML_JSON_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CONVERT_XML_TO_JSON')],
+			[this.translateService.instant('CONVERTERS_TAB.JSON_XML_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CONVERT_JSON_TO_XML')],
+			[this.translateService.instant('CONVERTERS_TAB.JSON_YAML_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CONVERT_JSON_TO_YAML')],
+			[this.translateService.instant('CONVERTERS_TAB.YAML_JSON_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CONVERT_YAML_TO_JSON')],
+			[this.translateService.instant('CONVERTERS_TAB.CSV_XML_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CONVERT_CSV_FILE_TO_XML_FILE')],
+			[this.translateService.instant('CONVERTERS_TAB.CSV_JSON_CONVERTER'), this.translateService.instant('CONVERTERS_TAB.CONVERT_CSV_TO_JSON')],
 		]);
 	}
 

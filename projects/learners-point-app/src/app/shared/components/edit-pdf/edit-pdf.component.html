@@ -1,14 +1,29 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-2">
-      <div class="file-dialouge">
-        <input type="file" (change)="handleFileInput($event)" accept=".pdf" />
-      </div>
+      <p-panel>
+  
+        <ng-template pTemplate="header" >{{'EDIT_PDF_TAB.PDF_EDITOR' | translate }}</ng-template>
 
-      <br />
-      <br />
-    </div>
-    <div class="col-sm-10">
+        <ng-template pTemplate="content" >
+
+          <p class="format-text">{{ 'EDIT_PDF_TAB.TITLE_1'  | translate }}</p>
+            
+           <p class="format-text">{{ 'EDIT_PDF_TAB.TITLE_2'  | translate }}</p>
+             <br>
+             <br>
+            
+             <p-fileUpload #fileUpload name="myfile[]"  (onSelect)="uploadFile($event)" 
+              accept=".pdf" maxFileSize="1000000" [auto]="true" chooseLabel="Browse" mode="basic" customUpload="true">
+             </p-fileUpload>
+             <br>
+             <p>{{ 'EDIT_PDF_TAB.TITLE_3'  | translate }}</p>
+
+        </ng-template>
+
+      </p-panel>
+      </div>
+       <div class="col-sm-10">
       <app-web-viewer [file]="this.selectedFile"></app-web-viewer>
     </div>
   </div>

@@ -2,94 +2,100 @@
   <div class="row">
     <div class="col-sm-2">
       <p-panel>
-        <ng-template pTemplate="header">Converters</ng-template>
+        <ng-template pTemplate="header"> {{ 'CONVERTERS_TAB.CONVERTERS' | translate }}</ng-template>
         <div class="list-group">
           <button
             #xsdgen
             pButton
             pRipple
             type="button"
-            label="XSD Generator"
             class="p-button-outlined p-button-rounded"
             (click)="loadChild(xsdgen)"
-          ></button>
+          >
+            {{ "CONVERTERS_TAB.XSD_GENERATOR" | translate }}
+          </button>
           <br />
           <button
-          #xmltojson
-          pButton
-          pRipple
-          type="button"
-          label="XML to JSON Converter"
-          class="p-button-outlined p-button-rounded"
-          (click)="loadChild(xmltojson)"
-        ></button>
-        <br />
-        <button
-        #jsontoxml
-        pButton
-        pRipple
-        type="button"
-        label="JSON to XML Converter"
-        class="p-button-outlined p-button-rounded"
-        (click)="loadChild(jsontoxml)"
-      ></button>
-      <br />
-            <button
-      #jsontoyaml
-      pButton
-      pRipple
-      type="button"
-      label="JSON to YAML Converter"
-      class="p-button-outlined p-button-rounded"
-      (click)="loadChild(jsontoyaml)"
-    ></button>
-    <br />
+            #xmltojson
+            pButton
+            pRipple
+            type="button"
+           
+            class="p-button-outlined p-button-rounded"
+            (click)="loadChild(xmltojson)"
+          >
+            {{ "CONVERTERS_TAB.XML_JSON_CONVERTER" | translate }}
+          </button>
+          <br />
+          <button
+            #jsontoxml
+            pButton
+            pRipple
+            type="button"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadChild(jsontoxml)"
+          >
+            {{ "CONVERTERS_TAB.JSON_XML_CONVERTER" | translate }}
+          </button>
+          <br />
+          <button
+            #jsontoyaml
+            pButton
+            pRipple
+            type="button"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadChild(jsontoyaml)"
+          >
+            {{ "CONVERTERS_TAB.JSON_YAML_CONVERTER" | translate }}
+          </button>
+          <br />
 
-    <button
-    #yamltojson
-    pButton
-    pRipple
-    type="button"
-    label="YAML to JSON Converter"
-    class="p-button-outlined p-button-rounded"
-    (click)="loadChild(yamltojson)"
-  ></button>
-  <br />
+          <button
+            #yamltojson
+            pButton
+            pRipple
+            type="button"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadChild(yamltojson)"
+          >
+            {{ "CONVERTERS_TAB.YAML_JSON_CONVERTER" | translate }}
+          </button>
+          <br />
 
-  <button
-  #csvtoxml
-  pButton
-  pRipple
-  type="button"
-  label="CSV to XML Converter"
-  class="p-button-outlined p-button-rounded"
-  (click)="loadChild(csvtoxml)"
-></button>
-<br />
+          <button
+            #csvtoxml
+            pButton
+            pRipple
+            type="button"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadChild(csvtoxml)"
+          >
+            {{ "CONVERTERS_TAB.CSV_XML_CONVERTER" | translate }}
+          </button>
+          <br />
 
-
-
-<button
-#csvtojson
-pButton
-pRipple
-type="button"
-label="CSV to JSON Converter"
-class="p-button-outlined p-button-rounded"
-(click)="loadChild(csvtojson)"
-></button>
-<br />
-
+          <button
+            #csvtojson
+            pButton
+            pRipple
+            type="button"
+            class="p-button-outlined p-button-rounded"
+            (click)="loadChild(csvtojson)"
+          >
+            {{ "CONVERTERS_TAB.CSV_JSON_CONVERTER" | translate }}
+          </button>
+          <br />
         </div>
       </p-panel>
-  
     </div>
     <div class="col-sm-10">
       <div>
-        <app-xmlchild-container [childLabel]="childLabel"></app-xmlchild-container>
+        <app-xmlchild-container
+          [childLabel]="childLabel"
+        ></app-xmlchild-container>
       </div>
     </div>
-    <br>
-    <br>
+    <br />
+    <br />
   </div>
 </div>

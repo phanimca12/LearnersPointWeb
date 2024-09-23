@@ -251,6 +251,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/learners-point-app/",
             "outputPath": "dist/learners-point-app",
             "index": "projects/learners-point-app/src/index.html",
             "main": "projects/learners-point-app/src/main.ts",
@@ -260,21 +261,27 @@
             "assets": [
               "projects/learners-point-app/src/favicon.ico",
               "projects/learners-point-app/src/assets",
-              "projects/learners-point-app/src/wv-resources/lib"
+              "projects/learners-point-app/src/assets/wv-resources/lib",
+              "projects/learners-point-app/src/assets",
+              {
+                	"glob": "**/*",
+                	"input": "node_modules/pspdfkit/dist/pspdfkit-lib/",
+                		"output": "projects/learners-point-app/src/assets/pspdfkit-lib/"
+                	}
             ],
             "styles": [
+                 "projects/learners-point-app/src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeflex/primeflex.css",
-              "node_modules/primeicons/primeicons.css",
-              "projects/learners-point-app/src/styles.scss"
-            
+              "node_modules/primeicons/primeicons.css"
+           
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/jquery/dist/jquery.min.js",
-              "projects/learners-point-app/src/wv-resources/lib/webviewer.min.js"
+              "node_modules/jquery/dist/jquery.min.js"
+         
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -309,8 +316,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "2mb"
+                  "maximumWarning": "4mb", 
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -358,7 +365,13 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/learners-point-app/src/favicon.ico",
-              "projects/learners-point-app/src/assets"
+              "projects/learners-point-app/src/assets",
+              "projects/learners-point-app/src/assets",
+              {
+                	"glob": "**/*",
+                	"input": "node_modules/pspdfkit/dist/pspdfkit-lib/",
+                		"output": "projects/learners-point-app/src/assets/pspdfkit-lib/"
+                	}
             ],
             "styles": [
               "projects/learners-point-app/src/styles.scss"

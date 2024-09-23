@@ -1,30 +1,44 @@
-import { ChangeDetectorRef, Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnChanges, OnDestroy, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { Base64Headers } from '../../constants/enums/base64-headers';
 import { Base64ConversionService } from '../../../core/services/base64-conversion.service';
 
 import { ClipboardService } from 'ngx-clipboard';
 
+import { TranslateService } from '@ngx-translate/core';
+
+
+
 @Component({
 	selector: 'app-base64-child-container',
 	templateUrl: './base64-child-container.component.html',
 	styleUrls: ['./base64-child-container.component.scss']
 })
-export class Base64ChildContainerComponent implements OnInit, OnChanges {
+export class Base64ChildContainerComponent implements OnInit, OnChanges,OnDestroy  {
 
 	@ViewChild('resultArea') resultArea: ElementRef<HTMLTextAreaElement>;
 
-	headerTitle: String = Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT;
-	label: String = Base64Headers.ENCODE;
+	headerTitle: String = this.translateService.instant('ENCODERS_TAB.ENCODE_STRING_TO_BASE64_FORMAT');
+	label: String = this.translateService.instant('ENCODERS_TAB.ENCODE');
 	@Input() childLabel: String;
 	showResponse = false;
 	responseData: string = '';
 	textareaValue: string = '';
-	type: String = Base64Headers.STRING_ENCODE;
+	type: String = this.translateService.instant('ENCODERS_TAB.STRING_ENCODE');
 	getSubcription: Subscription;
 	isDisabled: true;
 	rating: number;
-	constructor(private base64ConversionService: Base64ConversionService, private clipboardService: ClipboardService) { }
+
+	private langChangeSubscription: Subscription;
+
+	constructor(private base64ConversionService: Base64ConversionService, private clipboardService: ClipboardService, private translateService: TranslateService) 
+	
+	{ 
+		this.langChangeSubscription = this.translateService.onLangChange.subscribe();
+
+	}
+
+
 
 	ngOnChanges(changes: SimpleChanges): void {
 		console.log(changes);
@@ -38,10 +52,12 @@ export class Base64ChildContainerComponent implements OnInit, OnChanges {
 	}
 
 	ngOnInit(): void {
-		this.headerTitle = Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT;
+
+		this.headerTitle = this.translateService.instant('ENCODERS_TAB.ENCODE_STRING_TO_BASE64_FORMAT');
 		this.type = !this.childLabel ? Base64Headers.STRING_ENCODE: this.childLabel;
 		this.isDisabled = true;
-		this.label= Base64Headers.ENCODE;
+		this.label=this.translateService.instant('ENCODERS_TAB.ENCODE');
+		setTimeout(() => { }, 0);
 	}
 
 	getResponse() {
@@ -92,28 +108,34 @@ export class Base64ChildContainerComponent implements OnInit, OnChanges {
 	}
 	getHeaders() {
 		return new Map<String, String>([
-			[Base64Headers.STRING_ENCODE, Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT],
-			[Base64Headers.STRING_DECODE, Base64Headers.DECODE_FROM_BASE64_FORMAT],
-			[Base64Headers.URL_ENCODE, Base64Headers.ENCODE_URL_TO_ENCODED_FORMAT],
-			[Base64Headers.URL_DECODE, Base64Headers.ENCODE_STRING_TO_BASE64_FORMAT],
+			[this.translateService.instant('ENCODERS_TAB.STRING_ENCODE'), this.translateService.instant('ENCODERS_TAB.ENCODE_STRING_TO_BASE64_FORMAT')],
+			[this.translateService.instant('ENCODERS_TAB.STRING_DECODE'), this.translateService.instant('ENCODERS_TAB.DECODE_STRING_FROM_BASE64_FORMAT')],
+			[this.translateService.instant('ENCODERS_TAB.URL_ENCODE'), this.translateService.instant('ENCODERS_TAB.ENCODE_URL_ENCODED_FORMAT')],
+			[this.translateService.instant('ENCODERS_TAB.URL_DECODE'), this.translateService.instant('ENCODERS_TAB.DECODE_URL_ENCODED_FORMAT')],
 
 		]);
 	}
 	getLabels() {
 		return new Map<String, String>([
-			[Base64Headers.STRING_ENCODE, Base64Headers.ENCODE],
-			[Base64Headers.STRING_DECODE, Base64Headers.DECODE],
-			[Base64Headers.URL_ENCODE, Base64Headers.ENCODE],
-			[Base64Headers.URL_DECODE, Base64Headers.DECODE],
+			[this.translateService.instant('ENCODERS_TAB.STRING_ENCODE'), this.translateService.instant('ENCODERS_TAB.ENCODE')],
+			[this.translateService.instant('ENCODERS_TAB.STRING_DECODE'), this.translateService.instant('ENCODERS_TAB.DECODE')],
+			[this.translateService.instant('ENCODERS_TAB.URL_ENCODE'), this.translateService.instant('ENCODERS_TAB.ENCODE')],
+			[this.translateService.instant('ENCODERS_TAB.URL_DECODE'), this.translateService.instant('ENCODERS_TAB.DECODE')]
 		]);
 	}
 
 	getApi() {
 		return new Map<String, String>([
-			[Base64Headers.STRING_ENCODE, 'encodeStringToBase64'],
-			[Base64Headers.STRING_DECODE, 'decodeStringToBase64'],
-			[Base64Headers.URL_ENCODE, 'encodeURLToBase64'],
-			[Base64Headers.URL_DECODE, 'decodeURLToBase64'],
+			[this.translateService.instant('ENCODERS_TAB.STRING_ENCODE'), 'encodeStringToBase64'],
+			[this.translateService.instant('ENCODERS_TAB.STRING_DECODE'), 'decodeStringToBase64'],
+			[this.translateService.instant('ENCODERS_TAB.URL_ENCODE'), 'encodeURLToBase64'],
+			[this.translateService.instant('ENCODERS_TAB.URL_DECODE'), 'decodeURLToBase64'],
 		]);
 	}
+
+	ngOnDestroy() {
+		if (this.langChangeSubscription) {
+		  this.langChangeSubscription.unsubscribe();
+		}
+}
 }

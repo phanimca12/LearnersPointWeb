@@ -2,47 +2,57 @@
   <div class="row">
     <div class="col-sm-2">
       <p-panel>
-        <ng-template pTemplate="header" >Base64 Conversion</ng-template>
+        <ng-template pTemplate="header" >{{ 'ENCODERS_TAB.BASE64CONVERSION' | translate }}</ng-template>
         <div class="list-group">
           <button
             #sencode
             pButton
             pRipple
             type="button"
-            label="String Encode"
-            class="p-button-outlined p-button-rounded"
+                      class="p-button-outlined p-button-rounded"
             (click)="loadBase64Child(sencode)"
-          ></button>
+          >
+          {{ 'ENCODERS_TAB.STRING_ENCODE' | translate }}
+        
+        
+        </button>
 <br>
           <button
             #sdecode
             pButton
             pRipple
             type="button"
-            label="String Decode"
+           
             class="p-button-outlined p-button-rounded"
             (click)="loadBase64Child(sdecode)"
-          ></button>
+          >
+          {{ 'ENCODERS_TAB.STRING_DECODE' | translate }}
+        </button>
           <br>
           <button
             #uencode
             pButton
             pRipple
             type="button"
-            label="URL Encode"
+            
             class="p-button-outlined p-button-rounded"
             (click)="loadBase64Child(uencode)"
-          ></button>
+          >
+          {{ 'ENCODERS_TAB.URL_ENCODE' | translate }}
+        
+        </button>
           <br>
           <button
             #udecode
             pButton
             pRipple
             type="button"
-            label="URL Decode"
+           
             class="p-button-outlined p-button-rounded"
             (click)="loadBase64Child(udecode)"
-          ></button>
+          >
+          {{ 'ENCODERS_TAB.URL_DECODE' | translate }}
+        </button>
         </div>
       </p-panel>
     </div>

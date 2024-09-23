@@ -1,6 +1,8 @@
+
 import { EditPdfComponent } from './../shared/components/edit-pdf/edit-pdf.component';
-import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
-import WebViewer, { WebViewerInstance } from '@pdftron/webviewer';
+import { Component, ElementRef, Input, OnDestroy, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import PSPDFKit from 'pspdfkit';
+import { WebViewerConst } from '../shared/constants/enums/WebViewer';
 
 
 @Component({
@@ -8,79 +10,63 @@ import WebViewer, { WebViewerInstance } from '@pdftron/webviewer';
   templateUrl: './webviewer.component.html',
   styleUrls: ['./webviewer.component.scss']
 })
-export class WebViewerComponent implements OnInit {
-  @Input() file: ArrayBuffer;
-  private viewerElementId = 'pdf-viewer';
-  private isViewerInitialized: boolean = false;
-  arrayBuffer: ArrayBuffer;
-  wvInstance: any;
+export class WebViewerComponent implements OnInit, OnDestroy {
+  @Input() file: Uint8Array;
+  arrayBuffer: Uint8Array;
 
+  private instance: any;
+  private container: HTMLElement | undefined;
+
+  constructor(private elRef: ElementRef) { }
   async ngOnInit() {
-    this.initWebViewerInstance();
-    this.isViewerInitialized = true;
-    this.arrayBuffer = this.file;
-    this.wvDocumentLoadedHandler = this.wvDocumentLoadedHandler.bind(this);
+    this.container = this.elRef.nativeElement.querySelector('#pspdfkit-container');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.file.currentValue) {
       this.arrayBuffer = changes.file.currentValue;
-      if (!this.isViewerInitialized) {
-        this.initWebViewerInstance();
-        this.isViewerInitialized = true;
-        this.wvInstance.Core.documentViewer.loadDocument(this.arrayBuffer);
-      }
-      else {
-        this.wvInstance.Core.documentViewer.loadDocument(this.arrayBuffer);
-      }
+      this.loadWebViewer(this.file.buffer);
+
     }
     setTimeout(() => { }, 0);
   }
 
-  wvDocumentLoadedHandler(): void {
-    // you can access docViewer object for low-level APIs
-    const { documentViewer, annotationManager, Annotations } = this.wvInstance.Core;
-    // and access classes defined in the WebViewer iframe
-    const rectangle = new Annotations.RectangleAnnotation();
-    rectangle.PageNumber = 1;
-    rectangle.X = 100;
-    rectangle.Y = 100;
-    rectangle.Width = 250;
-    rectangle.Height = 250;
-    rectangle.StrokeThickness = 5;
-    rectangle.Author = annotationManager.getCurrentUser();
-    annotationManager.addAnnotation(rectangle);
-    annotationManager.drawAnnotations(rectangle.PageNumber);
+  loadWebViewer(file: ArrayBuffer) {
+    if (this.instance) {
+      PSPDFKit.unload(this.container);
+    }
 
-  }
-
-  initWebViewerInstance() {
-    WebViewer({
-      path: 'assets/wv-resources/lib',
-      initialDoc: null,
-      fullAPI: true,
-      ui: 'beta',
-      licenseKey: 'demo:1722420472457:7e666645030000000003beb3a0b5cb5378303edd584685dcaccd8d634e'
-    }, document.getElementById(this.viewerElementId) as HTMLElement).then((instance) => {
-      const { documentViewer, Annotations, Tools } = instance.Core;
-      const { UI } = instance;
-      UI.enableFeatures([instance.UI.Feature.ContentEdit]);
-      this.enableAllToolbars(UI);
-      this.wvInstance = instance;
-        fullAPI: true
-      documentViewer.addEventListener('documentLoaded', () => {
-        instance.UI.openElements(['notesPanel']);
-        
-      });
-    }).catch((error) => {
-      console.error('Error loading WebViewer:', error);
+    this.instance = PSPDFKit.load({
+      licenseKey: WebViewerConst.KEY,
+      baseUrl: location.protocol + "//" + location.host +"/learners-point-app"+ "/assets/",
+     
+      document: file,
+      container: this.container,
+      toolbarItems: [
+        ...PSPDFKit.defaultToolbarItems,
+        { type: "content-editor" },
+        {
+          type: "form-creator"
+        }
+      ],
     });
-  }
-  enableAllToolbars(UI: any) {
-    // Show the main toolbar
-    UI.enableElements(['toolbarGroup-annotation', 'toolbarGroup-edit', 'toolbarGroup-measure', 'toolbarGroup-forms', 'toolbarGroup-shapes', 'toolbarGroup-edit-text']);
 
-    UI.enableElements(['toolbar']);
+    interactionMode: PSPDFKit.InteractionMode.CONTENT_EDITOR
+
+  }
+
+
+
+
+  async ngOnDestroy(): Promise<void> {
+    if (this.instance) {
+      try {
+        await PSPDFKit.unload(this.container);
+        console.log('PSPDFKit instance unloaded successfully');
+      } catch (error) {
+        console.error('Error unloading PSPDFKit instance:', error);
+      }
+    }
 
   }
 

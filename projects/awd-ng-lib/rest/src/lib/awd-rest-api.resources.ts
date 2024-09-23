@@ -116,9 +116,15 @@ const PDF_CONVERSION_RESOURCES = {
     methods: [HttpMethods.POST]
   }
 };
-
+const EMAIL_RESOURCES = {
+  reportIssue: {
+    urlTemplate: 'sendmail/report-issue',
+    methods: [HttpMethods.POST]
+  }
+}
 export const AWD_REST_RESOURCES: IAwdRestResources = {
   base64Resources: BASE64_RESOURCES,
-  xmlConversionResources:XML_CONVERSION_RESOURCES,
-  pdfConversionResources:PDF_CONVERSION_RESOURCES
+  xmlConversionResources: XML_CONVERSION_RESOURCES,
+  pdfConversionResources: PDF_CONVERSION_RESOURCES,
+  emailResources: EMAIL_RESOURCES
 };

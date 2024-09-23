@@ -12,15 +12,12 @@ export class AwdTranslateConfigService {
   translations: any;
   currentLanguage: string = DEFAULT_CULTURE;
   supportedLanguages = [
-    'en-gb',
-    'zh',
+    'in-hindi',
+    'in-tamil',
+    'in-telugu',
     'zh-cn',
     'en-us',
-    'en-au',
-    'en-nz',
-    'en-za',
-    'en-ie',
-    'en-ca',
+      'thai',
     'ja'
   ];
 
