@@ -60,7 +60,11 @@ import { APP_INITIALIZER } from '@angular/core';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
  // return new TranslateHttpLoader(http);
- return new TranslateHttpLoader(http,'/learners-point-app/assets/i18n/', '.json');
+ //prod
+return new TranslateHttpLoader(http,'/assets/i18n/', '.json');
+
+ //local
+//return new TranslateHttpLoader(http,'assets/i18n/', '.json');
 }
 
 function initializeApp(appService: AppService) {
@@ -107,7 +111,8 @@ function initializeApp(appService: AppService) {
     FieldsetModule,
     PanelModule,
     InputTextareaModule,
-    RouterModule.forRoot(ApplicationRoutes),
+    RouterModule.forRoot(ApplicationRoutes,{onSameUrlNavigation: 'reload'}),
+   
     FileUploadModule,
     TabViewModule,
     RatingModule,

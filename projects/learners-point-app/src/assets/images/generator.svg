@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <style>
+    .gear {
+      fill: #FF9800; /* Orange */
+    }
+    .bolt {
+      fill: #FFEB3B; /* Yellow */
+    }
+    .text {
+      fill: #2196F3; /* Blue */
+      font-family: Arial;
+      font-size: 8px;
+    }
+  </style>
+
+  <!-- Gear representation -->
+  <path class="gear" d="M25 15c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+
+  <!-- Lightning bolt representation -->
+  <path class="bolt" d="M26 9h-5l-1 6h4l-2 6h5l1-6h-4l2-6z"/>
+
+
+</svg>

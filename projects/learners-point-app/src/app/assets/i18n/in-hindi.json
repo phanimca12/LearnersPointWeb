@@ -1,0 +1,108 @@
+{
+  "STRING ENCODE": "स्ट्रिंग एनकोड",
+  "STRING DECODE": "स्ट्रिंग डिकोड",
+  "URL ENCODE": "यूआरएल एनकोड",
+  "MENU": {
+    "ENCODERS": "इनकोडर्स",
+    "CONVERTERS": "कन्वर्टर्स",
+    "FORMATTERS": "फ़ॉर्मेटर्स",
+    "GENERATE": "उत्पन्न",
+    "CONVERTPDF": "पीडीएफ कन्वर्ट करें",
+    "MERGEPDF": "पीडीएफ मर्ज करें",
+    "EDITPDF": "पीडीएफ संपादित करें",
+    "REPORTISSUE": "समस्या की रिपोर्ट करें"
+  },
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": "बेस64 रूपांतरण",
+    "STRING_ENCODE": "स्ट्रिंग एनकोड",
+    "STRING_DECODE": "स्ट्रिंग डिकोड",
+    "URL_ENCODE": "यूआरएल एनकोड",
+    "URL_DECODE": "यूआरएल डिकोड",
+    "ENCODE": "एन्कोड",
+    "DECODE": "गूढ़वाचन करना",
+    "ENCODE_STRING_TO_BASE64_FORMAT": "स्ट्रिंग को बेस64 प्रारूप में एनकोड करें",
+    "DECODE_STRING_FROM_BASE64_FORMAT": "बेस64 प्रारूप से डिकोड करें",
+    "DECODE_URL_ENCODED_FORMAT": "URL-एन्कोडेड प्रारूप से डिकोड करें",
+    "ENCODE_URL_ENCODED_FORMAT": "URL-एन्कोडेड प्रारूप में एनकोड करें",
+    "SIMPLY_ENTER_YOUR_DATA": "बस अपना डेटा दर्ज करें और फिर दबाएं",
+    "BUTTON": "बटन"
+  },
+  "CONVERTERS_TAB": {
+    "CONVERTERS": "कन्वर्टर्स",
+    "XSD_GENERATOR": "एक्सएसडी जनरेटर",
+    "XML_JSON_CONVERTER": "XML से JSON कनवर्टर",
+    "JSON_XML_CONVERTER": "JSON से XML कनवर्टर",
+    "JSON_YAML_CONVERTER": "JSON से YAML कनवर्टर",
+    "YAML_JSON_CONVERTER": "YAML से JSON कनवर्टर",
+    "CSV_XML_CONVERTER": "CSV से XML कनवर्टर",
+    "CSV_JSON_CONVERTER": "CSV से JSON कनवर्टर",
+    "XSD_SCHEMA_GENERATOR": "XSD स्कीमा जनरेटर",
+    "GENERATE_XSD": "XSD उत्पन्न करें",
+    "CONVERT_XML_TO_JSON": "XML को JSON में बदलें",
+    "CONVERT_JSON_TO_XML": "XML को JSON में बदलें",
+    "CONVERT_JSON_TO_YAML": "JSON को YAML में बदलें",
+    "CONVERT_YAML_TO_JSON": "YAML को JSON में बदलें",
+    "CONVERT_CSV_FILE_TO_XML_FILE": "CSV फ़ाइल को XML फ़ाइल में बदलें",
+    "CONVERT_CSV_TO_JSON": "CSV को JSON में बदलें",
+    "SIMPLY_ENTER_YOUR_DATA": "बस अपना डेटा दर्ज करें और फिर दबाएं",
+    "BUTTON": "बटन"
+  },
+  "FORMATTERS_TAB": {
+    "FORMATTERS": "फ़ॉर्मेटर्स",
+    "XML_FORMATTER": "एक्सएमएल फ़ॉर्मेटर",
+    "JSON_FORMATTER": "जेएसओएन फ़ॉर्मेटर",
+    "HTML_FORMATTER": "एचटीएमएल फ़ॉर्मेटर",
+    "JSON_YAML_CONVERTER": "JSON से YAML कनवर्टर",
+    "SQL_FORMATTER": "एसक्यूएल फ़ॉर्मेटर",
+    "FORMAT_XML": "XML प्रारूप",
+    "FORMAT_JSON": "JSON प्रारूप",
+    "FORMAT_SQL": "SQL प्रारूप",
+    "FORMAT_HTML": "HTML प्रारूप"
+  },
+  "GENERATE_TAB": {
+    "GENERATE": "उत्पन्न",
+    "GENERATE_JAVA_CLASS": "जावा क्लास उत्पन्न करें",
+    "XML_TO_JAVA_CLASS": "XML से जावा क्लास",
+    "JSON_TO_JAVA_CLASS": "JSON से जावा क्लास"
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": "पीडीएफ में बदलें",
+    "CONVERT_FROM_PDF": "पीडीएफ से कनवर्ट करें",
+    "JPG_To_PDF": "जेपीजी से पीडीएफ",
+    "WORD_To_PDF": "वर्ड से पीडीएफ",
+    "POWERPOINT_To_PDF": "पावरपॉइंट से पीडीएफ",
+    "EXCEL_To_PDF": "एक्सेल से पीडीएफ",
+    "HTML_To_PDF": "HTML से पीडीएफ",
+    "PDF_To_JPG": "पीडीएफ से जेपीजी",
+    "PDF_To_WORD": "पीडीएफ से वर्ड",
+    "PDF_To_POWERPOINT": "पीडीएफ से पावरपॉइंट",
+    "PDF_To_EXCEL": "पीडीएफ से एक्सेल",
+    "CONVERT_WORD_TO_PDF": "WORD को PDF में बदलें",
+    "CONVERT_POWERPOINT_TO_PDF": "POWERPOINT को PDF में बदलें",
+    "CONVERT_EXCEL_TO_PDF": "एक्सेल को पीडीएफ में बदलें",
+    "HTML_TO_PDF": "HTML से PDF",
+    "PDF_TO_WORD_CONVERTER": "पीडीएफ से वर्ड कनवर्टर",
+    "CONVERT_PDF_TO_POWERPOINT": "पीडीएफ को पावरपॉइंट में बदलें",
+    "CONVERT_PDF_TO_EXCEL": "पीडीएफ को एक्सेल में बदलें"
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": "अपनी PDF का क्रम बदलने के लिए, फ़ाइलों को अपनी इच्छानुसार खींचें और छोड़ें.",
+    "ATTACH_FILES": "फ़ाइलों को संलग्न करें"
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": "पीडीएफ संपादक",
+    "TITLE_1": "पाठ, आकृतियाँ, टिप्पणियाँ और एनोटेशन जोड़कर पीडीएफ संपादित करें।",
+    "TITLE_2": "पीडीएफ संपादित करने के लिए आपका सुरक्षित और सरल उपकरण",
+    "TITLE_3": "संपादित करने के लिए .pdf फ़ाइल अपलोड करें"
+  },
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": "समस्या की रिपोर्ट करें",
+    "REPORT_AN_ISSUE_TITLE": "कृपया इस फ़ॉर्म का उपयोग करके हमें अपनी समस्या के बारे में बताएं।",
+    "NAME": "नाम",
+    "SUBJECT": "विषय",
+    "CONTACT_EMAIL_ADDRESS": "संपर्क ई - मेल पता",
+    "ISSUE_DESCRIPTION": "समस्या का विवरण",
+    "BROWSE": "ब्राउज़",
+    "SUBMIT": "जमा करना"
+  }
+}

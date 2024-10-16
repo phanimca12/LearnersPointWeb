@@ -37,8 +37,8 @@ export class WebViewerComponent implements OnInit, OnDestroy {
     }
 
     this.instance = PSPDFKit.load({
-      licenseKey: WebViewerConst.KEY,
-      baseUrl: location.protocol + "//" + location.host +"/learners-point-app"+ "/assets/",
+      //licenseKey: WebViewerConst.KEY,
+      baseUrl: location.protocol + "//" + location.host + "/assets/",
      
       document: file,
       container: this.container,

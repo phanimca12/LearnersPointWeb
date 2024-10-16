@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build:awd-ng-lib": "ng build @awd-ng-lib/util && ng build @awd-ng-lib/session && ng build @awd-ng-lib/rest && ng build @awd-ng-lib/awd-job-api-client && ng build @awd-ng-lib/keyboard-shortcuts && ng build @awd-ng-lib/ui",
-    "build:learners-point-app": "ng build learners-point-app --configuration production --base-href /learners-point-app/",
+    "build:learners-point-app": "ng build learners-point-app --configuration production --base-href /",
     "start:learners-point-app": "npm run build:awd-ng-lib && ng serve learners-point-app --proxy-config proxy.conf.js -o ",
     "quick-start:learners-point-app": "ng serve learners-point-app --proxy-config proxy.conf.js -o",
     "generate-awd-rest-api-model": "ts-node --project ./tsconfig.node.json projects/awd-ng-lib/rest/src/scripts/generate-awd-rest-api-model.ts",

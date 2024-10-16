@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <style>
+    .arrow {
+      fill: #FF5722; /* Red-Orange */
+    }
+    .rectangle {
+      fill: #4CAF50; /* Green */
+    }
+    .text {
+      fill: #2196F3; /* Blue */
+      font-family: Arial;
+      font-size: 8px;
+    }
+  </style>
+
+  <!-- Left Rectangle (XML) -->
+  <rect x="5" y="10" width="20" height="30" class="rectangle" rx="3" />
+  
+  <!-- Right Rectangle (JSON) -->
+  <rect x="25" y="10" width="20" height="30" class="rectangle" rx="3" />
+  
+  <!-- Left Arrow -->
+  <path class="arrow" d="M25 25 H 15 L 20 20 L 15 25 L 20 30 Z" />
+
+  <!-- Right Arrow -->
+  <path class="arrow" d="M25 25 H 35 L 30 20 L 35 25 L 30 30 Z" />
+
+
+</svg>

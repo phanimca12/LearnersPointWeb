@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3">
-        <p-panel>
+        <p-panel [toggleable]="true">
           <ng-template pTemplate="header" >{{ 'CONVERT_PDF_TAB.CONVERT_TO_PDF' | translate}}</ng-template>
           <div class="list-group">
             <button
@@ -67,7 +67,7 @@
           </div>
         </p-panel>
         <br>
-        <p-panel>
+        <p-panel [toggleable]="true">
           <ng-template pTemplate="header" >{{ 'CONVERT_PDF_TAB.CONVERT_FROM_PDF' | translate}}</ng-template>
           <div class="list-group">
             <button

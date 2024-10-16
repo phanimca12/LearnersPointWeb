@@ -1,0 +1,108 @@
+{
+  "STRING ENCODE": "",
+  "STRING DECODE": "",
+  "URL ENCODE": "",
+  "MENU": {
+    "ENCODERS": "ตัวเข้ารหัส",
+    "CONVERTERS": "ตัวแปลง",
+    "FORMATTERS": "ฟอร์แมตเตอร์",
+    "GENERATE": "สร้าง",
+    "CONVERTPDF": "แปลงไฟล์ PDF",
+    "MERGEPDF": "รวม PDF",
+    "EDITPDF": "แก้ไข PDF",
+    "REPORTISSUE": "รายงานปัญหา"
+  },
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": "การแปลง Base64",
+    "STRING_ENCODE": "การเข้ารหัสสตริง",
+    "STRING_DECODE": "การถอดรหัสสตริง",
+    "URL_ENCODE": "การเข้ารหัส URL",
+    "URL_DECODE": "ถอดรหัส URL",
+    "ENCODE": "เข้ารหัส",
+    "DECODE": "ถอดรหัส",
+    "ENCODE_STRING_TO_BASE64_FORMAT": "เข้ารหัสสตริงเป็นรูปแบบ Base64",
+    "DECODE_STRING_FROM_BASE64_FORMAT": "ถอดรหัสจากรูปแบบ Base64",
+    "DECODE_URL_ENCODED_FORMAT": "ถอดรหัสจากรูปแบบที่เข้ารหัส URL",
+    "ENCODE_URL_ENCODED_FORMAT": "เข้ารหัสเป็นรูปแบบเข้ารหัส URL",
+    "SIMPLY_ENTER_YOUR_DATA": "เพียงป้อนข้อมูลของคุณแล้วกด",
+    "BUTTON": "ปุ่ม"
+  },
+  "CONVERTERS_TAB": {
+    "CONVERTERS": "ตัวแปลง",
+    "XSD_GENERATOR": "เครื่องกำเนิด XSD",
+    "XML_JSON_CONVERTER": "ตัวแปลง XML เป็น JSON",
+    "JSON_XML_CONVERTER": "ตัวแปลง JSON เป็น XML",
+    "JSON_YAML_CONVERTER": "ตัวแปลง JSON เป็น YAML",
+    "YAML_JSON_CONVERTER": "ตัวแปลง YAML เป็น JSON",
+    "CSV_XML_CONVERTER": "ตัวแปลง CSV เป็น XML",
+    "CSV_JSON_CONVERTER": "ตัวแปลง CSV เป็น JSON",
+    "XSD_SCHEMA_GENERATOR": "เครื่องกำเนิดรูปแบบ XSD",
+    "GENERATE_XSD": "สร้าง XSD",
+    "CONVERT_XML_TO_JSON": "แปลง XML เป็น JSON",
+    "CONVERT_JSON_TO_XML": "แปลง JSON เป็น XML",
+    "CONVERT_JSON_TO_YAML": "แปลง JSON เป็น YAML",
+    "CONVERT_YAML_TO_JSON": "แปลง YAML เป็น JSON",
+    "CONVERT_CSV_FILE_TO_XML_FILE": "แปลงไฟล์ CSV เป็นไฟล์ XML",
+    "CONVERT_CSV_TO_JSON": "แปลง CSV เป็น JSON",
+    "SIMPLY_ENTER_YOUR_DATA": "เพียงป้อนข้อมูลของคุณแล้วกด",
+    "BUTTON": "ปุ่ม"
+  },
+  "FORMATTERS_TAB": {
+    "FORMATTERS": "เครื่องมือจัดรูปแบบ",
+    "XML_FORMATTER": "ตัวจัดรูปแบบ XML",
+    "JSON_FORMATTER": "ตัวจัดรูปแบบ JSON",
+    "HTML_FORMATTER": "เครื่องมือจัดรูปแบบ HTML",
+    "JSON_YAML_CONVERTER": "ตัวแปลง JSON เป็น YAML",
+    "SQL_FORMATTER": "ตัวจัดรูปแบบ SQL",
+    "FORMAT_XML": "รูปแบบ XML",
+    "FORMAT_JSON": "รูปแบบ JSON",
+    "FORMAT_SQL": "รูปแบบ SQL",
+    "FORMAT_HTML": "รูปแบบ HTML"
+  },
+  "GENERATE_TAB": {
+    "GENERATE": "สร้าง",
+    "GENERATE_JAVA_CLASS": "สร้างคลาส Java",
+    "XML_TO_JAVA_CLASS": "XML เป็นคลาส Java",
+    "JSON_TO_JAVA_CLASS": "JSON ถึงคลาส Java"
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": "แปลงเป็น PDF",
+    "CONVERT_FROM_PDF": "แปลงจาก PDF",
+    "JPG_To_PDF": "JPG เป็น PDF",
+    "WORD_To_PDF": "แปลงคำเป็น PDF",
+    "POWERPOINT_To_PDF": "แปลงไฟล์ POWERPOINT เป็น PDF",
+    "EXCEL_To_PDF": "การแปลง Excel เป็น PDF",
+    "HTML_To_PDF": "แปลง HTML เป็น PDF",
+    "PDF_To_JPG": "PDF เป็น JPG",
+    "PDF_To_WORD": "แปลงไฟล์ PDF เป็น WORD",
+    "PDF_To_POWERPOINT": "แปลงไฟล์ PDF เป็น POWERPOINT",
+    "PDF_To_EXCEL": "PDF เป็น Excel",
+    "CONVERT_WORD_TO_PDF": "แปลง WORD เป็น PDF",
+    "CONVERT_POWERPOINT_TO_PDF": "แปลง POWERPOINT เป็น PDF",
+    "CONVERT_EXCEL_TO_PDF": "แปลง EXCEL เป็น PDF",
+    "HTML_TO_PDF": "HTML เป็น PDF",
+    "PDF_TO_WORD_CONVERTER": "โปรแกรมแปลงไฟล์ PDF เป็น WORD",
+    "CONVERT_PDF_TO_POWERPOINT": "แปลง PDF เป็น POWERPOINT",
+    "CONVERT_PDF_TO_EXCEL": "แปลง PDF เป็น EXCEL"
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": "หากต้องการเปลี่ยนลำดับไฟล์ PDF ให้ลากและวางไฟล์ตามที่คุณต้องการ",
+    "ATTACH_FILES": "แนบไฟล์"
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": "โปรแกรมแก้ไข PDF",
+    "TITLE_1": "แก้ไข PDF โดยการเพิ่มข้อความ รูปร่าง ความคิดเห็น และคำอธิบายประกอบ",
+    "TITLE_2": "เครื่องมือที่ปลอดภัยและเรียบง่ายสำหรับแก้ไข PDF",
+    "TITLE_3": "อัพโหลดไฟล์ .pdf เพื่อแก้ไข"
+  },
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": "รายงานปัญหา",
+    "REPORT_AN_ISSUE_TITLE": "โปรดใช้แบบฟอร์มนี้เพื่อแจ้งให้เราทราบเกี่ยวกับปัญหาที่คุณประสบอยู่",
+    "NAME": "ชื่อ",
+    "SUBJECT": "เรื่อง",
+    "CONTACT_EMAIL_ADDRESS": "ที่อยู่อีเมล์สำหรับติดต่อ",
+    "ISSUE_DESCRIPTION": "คำอธิบายปัญหา",
+    "BROWSE": "ค้นหา",
+    "SUBMIT": "ส่ง"
+  }
+}

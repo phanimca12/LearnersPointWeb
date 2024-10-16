@@ -56,13 +56,13 @@ a:hover {
 }
 .p-button {
   padding:$btn-padding !important;
-  font-weight: $btn-font-weight !important;
-  font-size: $btn-font-size !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
 
   line-height: 1.5 !important;
   height: 40px !important;
   width: auto !important;
-  font-family: "Poppins Medium" !important;
+  font-family: "Times New Roman", Times, serif !important;
   display: inline-flex !important; /* Ensure height applies */
   align-items: center !important; /* Center text vertically */
   justify-content: center !important; /* Center text horizontally */
@@ -87,18 +87,28 @@ a:hover {
 
 .p-panel .p-panel-header {
   background: rgb(238, 245, 196) !important;
-  font-family: "Poppins Semi Bold" !important;
-  font-size: 15px;
-  font-weight: $btn-font-weight;
+ // font-family: "Poppins Semi Bold" !important;
+ font-family: "Times New Roman", Times, serif  !important;
+  font-size: 16px;
+  font-weight: bold;
   line-height: $line-height-base;
   text-align: center;
+  color:#938686 !important;
+  
 }
 .p-panel .p-panel-content {
   color: black !important;
-  font-family: "Poppins Semi Bold" !important;
-  font-size: 13px;
+  font-family: "Times New Roman", Times, serif  !important;
+  font-size: 16px;
+  font-weight: bold;
 }
 
+.p-float-label label{
+  color:rgb(153, 159, 159) !important;
+  font-family: "Times New Roman", Times, serif  !important;
+  font-size: 16px;
+  font-weight: bold;
+}
 .footer {
 
   padding: 20px !important;
@@ -108,7 +118,7 @@ a:hover {
 
 .footer p {
   margin: 0;
-  color: #ffff !important;
+  color: #dee2e6 !important;
   font-size: 14px !important;
   font-family: "Poppins Semi Bold" !important;
 }
@@ -142,6 +152,7 @@ a:hover {
   font-size: 13px !important;
   height: 36px !important;
   padding: 10px 20px !important;
+  font-family: "Times New Roman", Times, serif !important;
   }
 }
 
@@ -157,6 +168,7 @@ a:hover {
   font-size: 13px !important;
   height: 38px !important;
   padding: 10px 20px !important;
+  font-family: "Times New Roman", Times, serif !important;
   }
 } 
 
@@ -172,6 +184,7 @@ a:hover {
   font-size: 13px !important;
   height: 38px !important;
   padding: 10px 20px !important;
+  font-family: "Times New Roman", Times, serif !important;
   }
 } 
 
@@ -189,6 +202,7 @@ a:hover {
   font-size: 14px !important;
   height: 40px !important;
   padding: 10px 20px !important;
+  font-family: "Times New Roman", Times, serif !important;
   }
 }
 

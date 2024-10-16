@@ -1,5 +1,5 @@
 @import 'variables';
-#p-header
+/* #p-header
 {
  color: rgba(0, 0, 255, 0.646);
  font-size: 20px;
@@ -7,7 +7,7 @@
 }
 p-button
 {
-   font-family: 'Poppins' !important;
+   font-family: "Times New Roman", Times, serif !important;
    font-size:$btn-font-size;
   font-weight: $btn-font-weight;
   line-height: $line-height-base;
@@ -26,8 +26,8 @@ p-button
   background-repeat: no-repeat;
 
  
-}
-:host ::ng-deep .p-panel .p-panel-header { 
+} */
+/* :host ::ng-deep .p-panel .p-panel-header { 
     background: rgb(238, 245, 196) !important; 
     font-family: 'Poppins Bold' !important;
     font-size: 15px;
@@ -39,4 +39,4 @@ p-button
      color: black !important; 
     font-weight: 500; 
     font-size: 18px; 
-}
+} */

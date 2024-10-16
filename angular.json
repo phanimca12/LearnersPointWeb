@@ -246,27 +246,28 @@
       },
       "root": "projects/learners-point-app",
       "sourceRoot": "projects/learners-point-app/src",
-      "prefix": "app",
+      "prefix": "/",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/learners-point-app/",
-            "outputPath": "dist/learners-point-app",
+            "baseHref": "/",
+            "outputPath": "dist/app",
             "index": "projects/learners-point-app/src/index.html",
             "main": "projects/learners-point-app/src/main.ts",
             "polyfills": "projects/learners-point-app/src/polyfills.ts",
             "tsConfig": "projects/learners-point-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/learners-point-app/src/favicon.ico",
+              "projects/learners-point-app/src/favicon2.ico",
               "projects/learners-point-app/src/assets",
-              "projects/learners-point-app/src/assets/wv-resources/lib",
-              "projects/learners-point-app/src/assets",
+              "projects/learners-point-app/src/app/assets/wv-resources/lib",
+              
+              
               {
                 	"glob": "**/*",
                 	"input": "node_modules/pspdfkit/dist/pspdfkit-lib/",
-                		"output": "projects/learners-point-app/src/assets/pspdfkit-lib/"
+                		"output": "projects/learners-point-app/src/app/assets/pspdfkit-lib/"
                 	}
             ],
             "styles": [
@@ -352,7 +353,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "learners-point-app:build"
+            "browserTarget": "app:build"
           }
         },
         "test": {

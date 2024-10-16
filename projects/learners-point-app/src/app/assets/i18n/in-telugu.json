@@ -1,0 +1,108 @@
+{
+  "STRING ENCODE": "",
+  "STRING DECODE": "",
+  "URL ENCODE": "",
+  "MENU": {
+    "ENCODERS": "ఎన్‌కోడర్‌లు",
+    "CONVERTERS": "కన్వర్టర్లు",
+    "FORMATTERS": "ఫార్మాట్‌లు",
+    "GENERATE": "సృష్టించు",
+    "CONVERTPDF": "PDFని మార్చండి",
+    "MERGEPDF": "PDFని విలీనం చేయండి",
+    "EDITPDF": "PDFని సవరించండి",
+    "REPORTISSUE": "సమస్యను నివేదించండి"
+  },
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": "Base64 మార్పిడి",
+    "STRING_ENCODE": "స్ట్రింగ్ ఎన్కోడ్",
+    "STRING_DECODE": "స్ట్రింగ్ డీకోడ్",
+    "URL_ENCODE": "URL ఎన్‌కోడ్",
+    "URL_DECODE": "URL డీకోడ్",
+    "ENCODE": "ఎన్కోడ్",
+    "DECODE": "డీకోడ్",
+    "ENCODE_STRING_TO_BASE64_FORMAT": "స్ట్రింగ్‌ని Base64 ఫార్మాట్‌కి ఎన్‌కోడ్ చేయండి",
+    "DECODE_STRING_FROM_BASE64_FORMAT": "Base64 ఫార్మాట్ నుండి డీకోడ్ చేయండి",
+    "DECODE_URL_ENCODED_FORMAT": "URL-ఎన్‌కోడ్ చేసిన ఫార్మాట్ నుండి డీకోడ్ చేయండి",
+    "ENCODE_URL_ENCODED_FORMAT": "URL-ఎన్‌కోడ్ చేసిన ఆకృతికి ఎన్‌కోడ్ చేయండి",
+    "SIMPLY_ENTER_YOUR_DATA": "మీ డేటాను నమోదు చేసి, ఆపై పుష్ చేయండి",
+    "BUTTON": "బటన్"
+  },
+  "CONVERTERS_TAB": {
+    "CONVERTERS": "కన్వర్టర్లు",
+    "XSD_GENERATOR": "XSD జనరేటర్",
+    "XML_JSON_CONVERTER": "XML నుండి JSON కన్వర్టర్",
+    "JSON_XML_CONVERTER": "JSON నుండి XML కన్వర్టర్",
+    "JSON_YAML_CONVERTER": "JSON నుండి YAML కన్వర్టర్",
+    "YAML_JSON_CONVERTER": "YAML నుండి JSON కన్వర్టర్",
+    "CSV_XML_CONVERTER": "CSV నుండి XML కన్వర్టర్",
+    "CSV_JSON_CONVERTER": "CSV నుండి JSON కన్వర్టర్",
+    "XSD_SCHEMA_GENERATOR": "XSD స్కీమా జనరేటర్",
+    "GENERATE_XSD": "XSDని రూపొందించండి",
+    "CONVERT_XML_TO_JSON": "XMLని JSONకి మార్చండి",
+    "CONVERT_JSON_TO_XML": "JSON నుండి XMLకి మార్చండి",
+    "CONVERT_JSON_TO_YAML": "JSON నుండి YAMLకి మార్చండి",
+    "CONVERT_YAML_TO_JSON": "YAMLని JSONకి మార్చండి",
+    "CONVERT_CSV_FILE_TO_XML_FILE": "CSV ఫైల్‌ను XML ఫైల్‌గా మార్చండి",
+    "CONVERT_CSV_TO_JSON": "CSVని JSONకి మార్చండి",
+    "SIMPLY_ENTER_YOUR_DATA": "మీ డేటాను నమోదు చేసి, ఆపై పుష్ చేయండి",
+    "BUTTON": "బటన్"
+  },
+  "FORMATTERS_TAB": {
+    "FORMATTERS": "ఫార్మాటర్లు",
+    "XML_FORMATTER": "XML ఫార్మాటర్",
+    "JSON_FORMATTER": "JSON ఫార్మాటర్",
+    "HTML_FORMATTER": "HTML ఫార్మాటర్",
+    "JSON_YAML_CONVERTER": "JSON నుండి YAML కన్వర్టర్",
+    "SQL_FORMATTER": "SQL ఫార్మాటర్",
+    "FORMAT_XML": "ఫార్మాట్ XML",
+    "FORMAT_JSON": "JSON வடிவமைப்பு",
+    "FORMAT_SQL": "ఫార్మాట్ SQL",
+    "FORMAT_HTML": "HTMLను ఫార్మాట్ చేయండి"
+  },
+  "GENERATE_TAB": {
+    "GENERATE": "సృష్టించు",
+    "GENERATE_JAVA_CLASS": "జావా క్లాస్‌ని రూపొందించండి",
+    "XML_TO_JAVA_CLASS": "XML నుండి జావా తరగతికి",
+    "JSON_TO_JAVA_CLASS": "JSON నుండి జావా క్లాస్"
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": "PDFకి మార్చండి",
+    "CONVERT_FROM_PDF": "PDF నుండి మార్చండి",
+    "JPG_To_PDF": "JPG నుండి PDF",
+    "WORD_To_PDF": "PDFకి పదం",
+    "POWERPOINT_To_PDF": "PDFకి పవర్‌పాయింట్",
+    "EXCEL_To_PDF": "PDFకి EXCEL",
+    "HTML_To_PDF": "HTML నుండి PDF వరకు",
+    "PDF_To_JPG": "PDF నుండి JPGకి",
+    "PDF_To_WORD": "PDF టు వర్డ్",
+    "PDF_To_POWERPOINT": "PDF నుండి పవర్‌పాయింట్",
+    "PDF_To_EXCEL": "EXCELకి PDF",
+    "CONVERT_WORD_TO_PDF": "WORDని PDFకి మార్చండి",
+    "CONVERT_POWERPOINT_TO_PDF": "POWERPOINTని PDFకి మార్చండి",
+    "CONVERT_EXCEL_TO_PDF": "EXCELని PDFకి మార్చండి",
+    "HTML_TO_PDF": "HTML నుండి PDF",
+    "PDF_TO_WORD_CONVERTER": "PDF నుండి వర్డ్ కన్వర్టర్",
+    "CONVERT_PDF_TO_POWERPOINT": "PDFని POWERPOINTకి మార్చండి",
+    "CONVERT_PDF_TO_EXCEL": "PDFని EXCELకి మార్చండి"
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": "మీ PDFల క్రమాన్ని మార్చడానికి, మీకు కావలసిన విధంగా ఫైల్‌లను లాగండి మరియు వదలండి.",
+    "ATTACH_FILES": "ఫైళ్లను అటాచ్ చేయం"
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": "PDF ఎడిటర్",
+    "TITLE_1": "వచనం, ఆకారాలు, వ్యాఖ్యలు మరియు ఉల్లేఖనాలను జోడించడం ద్వారా PDFని సవరించండి.",
+    "TITLE_2": "PDFని సవరించడానికి మీ సురక్షితమైన మరియు సులభమైన సాధనం",
+    "TITLE_3": "సవరించడానికి .pdf ఫైల్‌ని అప్‌లోడ్ చేయండి"
+  },
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": "సమస్యను నివేదించండి",
+    "REPORT_AN_ISSUE_TITLE": "దయచేసి మీరు ఎదుర్కొంటున్న సమస్య గురించి మాకు తెలియజేయడానికి ఈ ఫారమ్‌ని ఉపయోగించండి.",
+    "NAME": "పేరు",
+    "SUBJECT": "విషయం",
+    "CONTACT_EMAIL_ADDRESS": "సంప్రదింపు ఇమెయిల్ చిరునామా",
+    "ISSUE_DESCRIPTION": "సమస్య యొక్క వివరణ",
+    "BROWSE": "బ్రౌజ్ చేయండి",
+    "SUBMIT": "సమర్పించండి"
+  }
+}

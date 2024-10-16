@@ -1,36 +1,23 @@
-<div class="card">
-  <p-dataView
-    #dv
-    [value]="homeItems"
-    [paginator]="true"
-    [rows]="9"
-    filterBy="name"
-    layout="grid" >
-    <ng-template pTemplate="header">
-      <div class="flex flex-column md:flex-row md:justify-content-between">
-        <span class="p-input-icon-left mb-2 md:mb-0">
-          <i class="pi pi-search"></i>
-          <input
-            type="search"
-            pInputText
-            placeholder="Search by Name"
-            (input)="dv.filter($event.target.value)"
-          />
-        </span>
-      </div>
-    </ng-template>
 
-    <ng-template let-product pTemplate="gridItem">
-      <div >
-        <div class="product-grid-item card">
-          <div class="product-grid-item-content">
-            <div class="product-name">
-                <button pButton pRipple type="button" class="p-button-text" (click)="openLink(product.path)">{{ product.name | translate }}</button>
-            </div>
-            <div class="product-description">{{ product.description | translate}}</div>
+
+ <div class="main">
+<div class="tools"  >
+  <div class="tools_container">
+     <div class="tools__item"  *ngFor="let product of homeItems">
+    
+      <a href=" {{ product.path }} " title= " {{ product.name | translate }} " >
+          <div class="tools__item__icon">
+            <img src="{{ product.icon}} "  alt="Logo">
           </div>
-        </div>
-      </div>
-    </ng-template>
-  </p-dataView>
+          <h3>{{ product.name | translate }}</h3>
+          <div class="tools__item__content">
+              <p>{{ product.description | translate}}</p>
+          </div>
+      </a>
+
+  </div>
+
+  
 </div>
+</div>
+</div> 

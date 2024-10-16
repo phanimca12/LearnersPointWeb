@@ -22,13 +22,18 @@
 }
 
 
+:host ::ng-deep .p-megamenu { 
+    background: #FFFFFF !important; 
+} 
 
-
-#bodyDiv
+.bodypart
 {
-    padding: 0;
-    margin: 0;
-  
+
+    width:100%;
+     margin-bottom: 60px;
+
+    height: calc(100vh - 20px); /* Adjust height based on footer height */
+  overflow-y: auto;
 }
 
 .logo-class

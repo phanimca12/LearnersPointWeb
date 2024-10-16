@@ -1,0 +1,108 @@
+{
+  "STRING ENCODE": "日付",
+  "STRING DECODE": "日付",
+  "URL ENCODE": "日付",
+  "MENU": {
+    "ENCODERS": "エンコーダ",
+    "CONVERTERS": "コンバーター",
+    "FORMATTERS": "フォーマッター",
+    "GENERATE": "生成する",
+    "CONVERTPDF": "PDF変換",
+    "MERGEPDF": "PDFを結合",
+    "EDITPDF": "PDFを編集",
+    "REPORTISSUE": "問題を報告"
+  },
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": "Base64 変換",
+    "STRING_ENCODE": "文字列エンコード",
+    "STRING_DECODE": "文字列デコード",
+    "URL_ENCODE": "URLエンコード",
+    "URL_DECODE": "URLデコード",
+    "ENCODE": "エンコード",
+    "DECODE": "デコード",
+    "ENCODE_STRING_TO_BASE64_FORMAT": "文字列をBase64形式にエンコードする",
+    "DECODE_STRING_FROM_BASE64_FORMAT": "Base64形式からデコード",
+    "DECODE_URL_ENCODED_FORMAT": "URLエンコード形式からデコードする",
+    "ENCODE_URL_ENCODED_FORMAT": "URLエンコード形式にエンコードする",
+    "SIMPLY_ENTER_YOUR_DATA": "データを入力して",
+    "BUTTON": "ボタン"
+  },
+  "CONVERTERS_TAB": {
+    "CONVERTERS": "コンバーター",
+    "XSD_GENERATOR": "XSD ジェネレーター",
+    "XML_JSON_CONVERTER": "XML から JSON へのコンバーター",
+    "JSON_XML_CONVERTER": "JSON から XML へのコンバーター",
+    "JSON_YAML_CONVERTER": "JSON から YAML へのコンバーター",
+    "YAML_JSON_CONVERTER": "YAML から JSON へのコンバーター",
+    "CSV_XML_CONVERTER": "CSV から XML へのコンバーター",
+    "CSV_JSON_CONVERTER": "CSV から JSON へのコンバーター",
+    "XSD_SCHEMA_GENERATOR": "XSD スキーマ ジェネレーター",
+    "GENERATE_XSD": "XSD を生成する",
+    "CONVERT_XML_TO_JSON": "URLエンコード形式にエンコードする",
+    "CONVERT_JSON_TO_XML": "JSON を XML に変換する",
+    "CONVERT_JSON_TO_YAML": "JSON を YAML に変換する",
+    "CONVERT_YAML_TO_JSON": "YAML を JSON に変換する",
+    "CONVERT_CSV_FILE_TO_XML_FILE": "YAML を JSON に変換する",
+    "CONVERT_CSV_TO_JSON": "CSV を JSON に変換する",
+    "SIMPLY_ENTER_YOUR_DATA": "データを入力して",
+    "BUTTON": "ボタン"
+  },
+  "FORMATTERS_TAB": {
+    "FORMATTERS": "フォーマッタ",
+    "XML_FORMATTER": "XML フォーマッタ",
+    "JSON_FORMATTER": "JSONフォーマッタ",
+    "HTML_FORMATTER": "HTML フォーマッタ",
+    "JSON_YAML_CONVERTER": "JSON から YAML へのコンバーター",
+    "SQL_FORMATTER": "SQL フォーマッタ",
+    "FORMAT_XML": "XML 形式",
+    "FORMAT_JSON": "JSON形式",
+    "FORMAT_SQL": "SQLフォーマット",
+    "FORMAT_HTML": "HTML形式"
+  },
+  "GENERATE_TAB": {
+    "GENERATE": "生成する",
+    "GENERATE_JAVA_CLASS": "Javaクラスを生成する",
+    "XML_TO_JAVA_CLASS": "XML から Java クラス",
+    "JSON_TO_JAVA_CLASS": "JSON から Java クラスへ"
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": "PDFに変換",
+    "CONVERT_FROM_PDF": "PDFから変換",
+    "JPG_To_PDF": "JPGからPDFへ",
+    "WORD_To_PDF": "ワードからPDFへ",
+    "POWERPOINT_To_PDF": "パワーポイントからPDFへ",
+    "EXCEL_To_PDF": "Excel から PDF へ",
+    "HTML_To_PDF": "HTMLからPDFへ",
+    "PDF_To_JPG": "PDFからJPGへ",
+    "PDF_To_WORD": "PDFからWordへ",
+    "PDF_To_POWERPOINT": "PDFからパワーポイントへ",
+    "PDF_To_EXCEL": "PDFからExcelへ",
+    "CONVERT_WORD_TO_PDF": "WORDをPDFに変換する",
+    "CONVERT_POWERPOINT_TO_PDF": "パワーポイントをPDFに変換する",
+    "CONVERT_EXCEL_TO_PDF": "ExcelをPDFに変換する",
+    "HTML_TO_PDF": "HTMLからPDFへ",
+    "PDF_TO_WORD_CONVERTER": "PDFからWORDへのコンバーター",
+    "CONVERT_PDF_TO_POWERPOINT": "PDFをPowerPointに変換する",
+    "CONVERT_PDF_TO_EXCEL": "PDFをExcelに変換する"
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": "PDF の順序を変更するには、必要に応じてファイルをドラッグ アンド ドロップします。",
+    "ATTACH_FILES": "ファイルを添付する"
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": "PDF エディター",
+    "TITLE_1": "テキスト、図形、コメント、注釈を追加して PDF を編集します。",
+    "TITLE_2": "PDFを編集するための安全でシンプルなツール",
+    "TITLE_3": "編集する.pdfファイルをアップロードする"
+  },
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": "問題を報告する",
+    "REPORT_AN_ISSUE_TITLE": "このフォームを使用して、発生している問題についてお知らせください。",
+    "NAME": "名前",
+    "SUBJECT": "主題",
+    "CONTACT_EMAIL_ADDRESS": "連絡先メールアドレス",
+    "ISSUE_DESCRIPTION": "問題の説明",
+    "BROWSE": "ブラウズ",
+    "SUBMIT": "提出する"
+  }
+}

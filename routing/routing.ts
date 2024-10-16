@@ -21,7 +21,9 @@ export const ApplicationRoutes = [
 		children: [{ path: 'base64child', component: Base64ChildContainerComponent }]
 	},
 	{ path: 'home', component: HomeBodyDefaultComponent },
-	{ path: '', component: HomeBodyDefaultComponent },
+	{ path: '', pathMatch: 'full', redirectTo: 'home' },
+	
+
 	{
 		path: 'xmlconversion',
 		component: XmlConversionMasterComponent,
@@ -52,4 +54,6 @@ export const ApplicationRoutes = [
 		component: EditPdfComponent,
 		children: [{ path: 'pdfchild', component: PDFConversionChildComponent }]
 	},
+
+	{ path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];

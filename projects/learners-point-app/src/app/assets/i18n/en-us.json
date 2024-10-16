@@ -1,0 +1,108 @@
+{
+  "STRING ENCODE": "STRING ENCODE",
+  "STRING DECODE": "STRING DECODE",
+  "URL ENCODE": "URL ENCODE",
+  "MENU": {
+    "ENCODERS": "Encoders",
+    "CONVERTERS": "Converters",
+    "FORMATTERS": "Formatters",
+    "GENERATE": "Generate",
+    "CONVERTPDF": "Convert PDF",
+    "MERGEPDF": "Merge PDF",
+    "EDITPDF": "Edit PDF",
+    "REPORTISSUE": "Report Issue"
+  },
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": "Base64 Conversion",
+    "STRING_ENCODE": "String Encode",
+    "STRING_DECODE": "String Decode",
+    "URL_ENCODE": "URL Encode",
+    "URL_DECODE": "URL Decode",
+    "ENCODE": "encode",
+    "DECODE": "decode",
+    "ENCODE_STRING_TO_BASE64_FORMAT": "Encode String to Base64 Format",
+    "DECODE_STRING_FROM_BASE64_FORMAT": "Decode from Base64 format",
+    "DECODE_URL_ENCODED_FORMAT": "Decode from URL-encoded format",
+    "ENCODE_URL_ENCODED_FORMAT": "Encode to URL-encoded format",
+    "SIMPLY_ENTER_YOUR_DATA": "Simply enter your data then push the",
+    "BUTTON": "button"
+  },
+  "CONVERTERS_TAB": {
+    "CONVERTERS": "Converters",
+    "XSD_GENERATOR": "XSD Generator",
+    "XML_JSON_CONVERTER": "XML to JSON Converter",
+    "JSON_XML_CONVERTER": "JSON to XML Converter",
+    "JSON_YAML_CONVERTER": "JSON to YAML Converter",
+    "YAML_JSON_CONVERTER": "YAML to JSON Converter",
+    "CSV_XML_CONVERTER": "CSV to XML Converter",
+    "CSV_JSON_CONVERTER": "CSV to JSON Converter",
+    "XSD_SCHEMA_GENERATOR": "XSD Schema Generator",
+    "GENERATE_XSD": "Generate XSD",
+    "CONVERT_XML_TO_JSON": "Convert XML to JSON",
+    "CONVERT_JSON_TO_XML": "Convert JSON to XML",
+    "CONVERT_JSON_TO_YAML": "Convert JSON to YAML",
+    "CONVERT_YAML_TO_JSON": "Convert YAML to JSON",
+    "CONVERT_CSV_FILE_TO_XML_FILE": "Convert CSV file to XML file",
+    "CONVERT_CSV_TO_JSON": "Convert CSV to JSON",
+    "SIMPLY_ENTER_YOUR_DATA": "Simply enter your data then push the",
+    "BUTTON": "button"
+  },
+  "FORMATTERS_TAB": {
+    "FORMATTERS": "Formatters",
+    "XML_FORMATTER": "XML Formatter",
+    "JSON_FORMATTER": "JSON Formatter",
+    "HTML_FORMATTER": "HTML Formatter",
+    "JSON_YAML_CONVERTER": "JSON to YAML Converter",
+    "SQL_FORMATTER": "SQL Formatter",
+    "FORMAT_XML": "Format XML",
+    "FORMAT_JSON": "Format JSON",
+    "FORMAT_SQL": "Format SQL",
+    "FORMAT_HTML": "Format HTML"
+  },
+  "GENERATE_TAB": {
+    "GENERATE": "Generate",
+    "GENERATE_JAVA_CLASS": "Generate java class",
+    "XML_TO_JAVA_CLASS": "XML to Java class",
+    "JSON_TO_JAVA_CLASS": "JSON to Java Class"
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": "Convert To PDF",
+    "CONVERT_FROM_PDF": "Convert From PDF",
+    "JPG_To_PDF": "JPG To PDF",
+    "WORD_To_PDF": "WORD TO PDF",
+    "POWERPOINT_To_PDF": "POWERPOINT TO PDF",
+    "EXCEL_To_PDF": "EXCEL TO PDF",
+    "HTML_To_PDF": "HTML TO PDF",
+    "PDF_To_JPG": "PDF TO JPG",
+    "PDF_To_WORD": "PDF TO WORD",
+    "PDF_To_POWERPOINT": "PDF TO POWERPOINT",
+    "PDF_To_EXCEL": "PDF TO EXCEL",
+    "CONVERT_WORD_TO_PDF": "Convert WORD To PDF",
+    "CONVERT_POWERPOINT_TO_PDF": "Convert POWERPOINT to PDF",
+    "CONVERT_EXCEL_TO_PDF": "Convert EXCEL to PDF",
+    "HTML_TO_PDF": "HTML to PDF",
+    "PDF_TO_WORD_CONVERTER": "PDF to WORD Converter",
+    "CONVERT_PDF_TO_POWERPOINT": "Convert PDF to POWERPOINT",
+    "CONVERT_PDF_TO_EXCEL": "Convert PDF to EXCEL"
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": "To change the order of your PDFs, drag and drop the files as you want.",
+    "ATTACH_FILES": "Attach files"
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": "PDF Editor",
+    "TITLE_1": "Edit PDF by adding text, shapes, comments and Annotations.",
+    "TITLE_2": "Edit PDF by adding text, shapes, comments and Annotations.",
+    "TITLE_3": "upload .pdf file to edit"
+  },
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": "Report an issue",
+    "REPORT_AN_ISSUE_TITLE": "Please use this form to tell us about the issue that you're experiencing.",
+    "NAME": "Name",
+    "SUBJECT": "Subject",
+    "CONTACT_EMAIL_ADDRESS": "Contact email address",
+    "ISSUE_DESCRIPTION": "Description of the issue",
+    "BROWSE": "Browse",
+    "SUBMIT": "Submit"
+  }
+}

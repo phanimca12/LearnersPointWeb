@@ -1,0 +1,108 @@
+{
+  "STRING ENCODE": "",
+  "STRING DECODE": "",
+  "URL ENCODE": "",
+  "MENU": {
+    "ENCODERS": "குறியாக்கிகள்",
+    "CONVERTERS": "மாற்றிகள்",
+    "FORMATTERS": "வடிவங்கள்",
+    "GENERATE": "உருவாக்கு",
+    "CONVERTPDF": "PDF ஐ மாற்றவும்",
+    "MERGEPDF": "PDF ஐ இணைக்கவும்",
+    "EDITPDF": "PDF ஐ திருத்து",
+    "REPORTISSUE": "அறிக்கை சிக்கல்"
+  },
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": "Base64 மாற்றம்",
+    "STRING_ENCODE": "சரம் குறியாக்கம்",
+    "STRING_DECODE": "ஸ்டிரிங் டிகோட்",
+    "URL_ENCODE": "URL குறியாக்கம்",
+    "URL_DECODE": "URL டிகோட்",
+    "ENCODE": "குறியாக்கம்",
+    "DECODE": "டிகோட்",
+    "ENCODE_STRING_TO_BASE64_FORMAT": "சரத்தை Base64 வடிவமைப்பிற்கு குறியாக்கம் செய்யவும்",
+    "DECODE_STRING_FROM_BASE64_FORMAT": "Base64 வடிவமைப்பிலிருந்து டிகோட் செய்யவும்",
+    "DECODE_URL_ENCODED_FORMAT": "URL-குறியீடு செய்யப்பட்ட வடிவமைப்பிலிருந்து டிகோட் செய்யவும்",
+    "ENCODE_URL_ENCODED_FORMAT": "URL-குறியீடு செய்யப்பட்ட வடிவமைப்பிற்கு குறியாக்கம்",
+    "SIMPLY_ENTER_YOUR_DATA": "உங்கள் தரவை உள்ளிட்டு அழுத்தவும்",
+    "BUTTON": "பொத்தான்"
+  },
+  "CONVERTERS_TAB": {
+    "CONVERTERS": "மாற்றிகள்",
+    "XSD_GENERATOR": "XSD ஜெனரேட்டர்",
+    "XML_JSON_CONVERTER": "XML முதல் JSON மாற்றி",
+    "JSON_XML_CONVERTER": "JSON முதல் XML மாற்றி",
+    "JSON_YAML_CONVERTER": "JSON இலிருந்து YAML மாற்றி",
+    "YAML_JSON_CONVERTER": "YAML இலிருந்து JSON மாற்றி",
+    "CSV_XML_CONVERTER": "CSV முதல் XML மாற்றி",
+    "CSV_JSON_CONVERTER": "CSV முதல் JSON மாற்றி",
+    "XSD_SCHEMA_GENERATOR": "XSD ஸ்கீமா ஜெனரேட்டர்",
+    "GENERATE_XSD": "XSD ஐ உருவாக்கவும்",
+    "CONVERT_XML_TO_JSON": "XML を JSON に変換する",
+    "CONVERT_JSON_TO_XML": "JSON ஐ XML ஆக மாற்றவும்",
+    "CONVERT_JSON_TO_YAML": "JSON ஐ YAML ஆக மாற்றவும்",
+    "CONVERT_YAML_TO_JSON": "YAML ஐ JSON ஆக மாற்றவும்",
+    "CONVERT_CSV_FILE_TO_XML_FILE": "CSVファイルをXMLファイルに変換する",
+    "CONVERT_CSV_TO_JSON": "CSV ஐ JSON ஆக மாற்றவும்",
+    "SIMPLY_ENTER_YOUR_DATA": "உங்கள் தரவை உள்ளிட்டு அழுத்தவும்",
+    "BUTTON": "பொத்தான்"
+  },
+  "FORMATTERS_TAB": {
+    "FORMATTERS": "வடிவமைப்பாளர்கள்",
+    "XML_FORMATTER": "எக்ஸ்எம்எல் ஃபார்மேட்டர்",
+    "JSON_FORMATTER": "JSON ஃபார்மேட்டர்",
+    "HTML_FORMATTER": "HTML ஃபார்மேட்டர்",
+    "JSON_YAML_CONVERTER": "JSON இலிருந்து YAML மாற்றி",
+    "SQL_FORMATTER": "SQL ஃபார்மேட்டர்",
+    "FORMAT_XML": "எக்ஸ்எம்எல் வடிவமைப்பு",
+    "FORMAT_JSON": "CSV முதல் JSON மாற்றி",
+    "FORMAT_SQL": "வடிவம் SQL",
+    "FORMAT_HTML": "HTML ஐ வடிவமைக்கவும்"
+  },
+  "GENERATE_TAB": {
+    "GENERATE": "உருவாக்கு",
+    "GENERATE_JAVA_CLASS": "ஜாவா வகுப்பை உருவாக்கவும்",
+    "XML_TO_JAVA_CLASS": "எக்ஸ்எம்எல் முதல் ஜாவா வகுப்பு வரை",
+    "JSON_TO_JAVA_CLASS": "JSON முதல் ஜாவா வகுப்பு வரை"
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": "PDF ஆக மாற்றவும்",
+    "CONVERT_FROM_PDF": "PDF இலிருந்து மாற்றவும்",
+    "JPG_To_PDF": "JPG முதல் PDF வரை",
+    "WORD_To_PDF": "PDFக்கு வார்த்தை",
+    "POWERPOINT_To_PDF": "PDFக்கு பவர்பாயிண்ட்",
+    "EXCEL_To_PDF": "PDFக்கு EXCEL",
+    "HTML_To_PDF": "HTML முதல் PDF வரை",
+    "PDF_To_JPG": "PDF முதல் JPG வரை",
+    "PDF_To_WORD": "வார்த்தைக்கு PDF",
+    "PDF_To_POWERPOINT": "பவர்பாயிண்டிற்கு PDF",
+    "PDF_To_EXCEL": "EXCELக்கு PDF",
+    "CONVERT_WORD_TO_PDF": "வார்த்தையை PDF ஆக மாற்றவும்",
+    "CONVERT_POWERPOINT_TO_PDF": "POWERPOINT ஐ PDF ஆக மாற்றவும்",
+    "CONVERT_EXCEL_TO_PDF": "EXCEL ஐ PDF ஆக மாற்றவும்",
+    "HTML_TO_PDF": "HTML முதல் PDF வரை",
+    "PDF_TO_WORD_CONVERTER": "PDF to WORD மாற்றி",
+    "CONVERT_PDF_TO_POWERPOINT": "PDF ஐ POWERPOINT ஆக மாற்றவும்",
+    "CONVERT_PDF_TO_EXCEL": "PDF ஐ EXCEL ஆக மாற்றவும்"
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": "உங்கள் PDFகளின் வரிசையை மாற்ற, நீங்கள் விரும்பியபடி கோப்புகளை இழுத்து விடுங்கள்.",
+    "ATTACH_FILES": "கோப்புகளை இணைக்கவும்"
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": "PDF எடிட்டர்",
+    "TITLE_1": "உரை, வடிவங்கள், கருத்துகள் மற்றும் சிறுகுறிப்புகளைச் சேர்ப்பதன் மூலம் PDF ஐத் திருத்தவும்.",
+    "TITLE_2": "PDF ஐ திருத்த உங்கள் பாதுகாப்பான மற்றும் எளிய கருவி",
+    "TITLE_3": "திருத்த .pdf கோப்பை பதிவேற்றவும்"
+  },
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": "சிக்கலைப் புகாரளிக்கவும்",
+    "REPORT_AN_ISSUE_TITLE": "நீங்கள் அனுபவிக்கும் சிக்கலைப் பற்றி எங்களிடம் கூற இந்தப் படிவத்தைப் பயன்படுத்தவும்.",
+    "NAME": "பெயர்",
+    "SUBJECT": "பொருள்",
+    "CONTACT_EMAIL_ADDRESS": "தொடர்பு மின்னஞ்சல் முகவரி",
+    "ISSUE_DESCRIPTION": "பிரச்சினையின் விளக்கம்",
+    "BROWSE": "உலாவவும்",
+    "SUBMIT": "சமர்ப்பிக்கவும்"
+  }
+}

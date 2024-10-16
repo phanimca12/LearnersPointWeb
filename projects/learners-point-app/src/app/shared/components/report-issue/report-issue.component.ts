@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { EmailService } from '../../../core/services/email-service.service';
 import { IUserData } from '../../interfaces/IUserModel';
 import { MessageService } from 'primeng/api';
+import { FileUpload } from 'primeng/fileupload';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { MessageService } from 'primeng/api';
   styleUrls: ['./report-issue.component.scss']
 })
 export class ReportIssueComponent implements OnInit {
-
+  @ViewChild('fileUpload') fileUpload!: FileUpload;
   name: string;
   subject: string;
   cemail: string;
@@ -42,6 +43,22 @@ export class ReportIssueComponent implements OnInit {
     };
 
     this.emailservice.reportIssue(this.uploadedFiles, this.model).subscribe();
-    this.messageService.add({ severity: 'info', summary: 'Issue Reported Successfuly !', detail: '' });
+    setTimeout(() => {
+      alert("Issue Reported Successfully !")
+      this.messageService.add({ severity: 'info', summary: 'Issue Reported Successfuly !', detail: '' });
+      this.clearData();
+  }, 2000);
+
+   
+  }
+
+  clearData()
+  {
+this.name='';
+this.cemail='';
+this.subject='';
+this.desc='';
+this.uploadedFiles = [];
+this.fileUpload.clear();
   }
 }

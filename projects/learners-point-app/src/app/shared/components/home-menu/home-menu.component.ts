@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 import {FieldsetModule} from 'primeng/fieldset'
 import {PanelModule} from 'primeng/panel';
@@ -20,6 +20,9 @@ export class HomeMenuComponent implements OnInit {
   isShown = false;
   ref: DynamicDialogRef;
 
+  @ViewChild('navbarCollapse') navbarCollapse!: ElementRef;
+  @ViewChild('navbarToggler') navbarToggler!: ElementRef;
+  
   constructor(public router:Router,public dialogService: DialogService, public messageService: MessageService) { }
 
   ngOnInit(): void {
@@ -75,5 +78,14 @@ export class HomeMenuComponent implements OnInit {
         this.ref.close();
     }
 }
+closeNavbar() {
+  const navbarToggler = document.querySelector('.navbar-toggler') as HTMLElement;
+  const navbarCollapse = document.querySelector('#navbarNav') as HTMLElement;
 
+  // Remove the 'show' class to collapse the navbar
+  if (navbarCollapse.classList.contains('show')) {
+    navbarCollapse.classList.remove('show');
+    navbarToggler.setAttribute('aria-expanded', 'false');
+  }
+}
 }

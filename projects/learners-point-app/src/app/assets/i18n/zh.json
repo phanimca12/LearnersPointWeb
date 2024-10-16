@@ -1,0 +1,108 @@
+{
+  "STRING ENCODE": "",
+  "STRING DECODE": "",
+  "URL ENCODE": "",
+  "MENU": {
+    "ENCODERS": "編碼器",
+    "CONVERTERS": "轉換器",
+    "FORMATTERS": "格式化程式",
+    "GENERATE": "產生",
+    "CONVERTPDF": "轉換PDF",
+    "MERGEPDF": "合併PDF",
+    "EDITPDF": "編輯PDF",
+    "REPORTISSUE": "報告問題"
+  },
+  "ENCODERS_TAB": {
+    "BASE64CONVERSION": "Base64 轉換",
+    "STRING_ENCODE": "字串編碼",
+    "STRING_DECODE": "字串解碼",
+    "URL_ENCODE": "網址編碼",
+    "URL_DECODE": "網址解碼",
+    "ENCODE": "編碼",
+    "DECODE": "解碼",
+    "ENCODE_STRING_TO_BASE64_FORMAT": "將字串編碼為 Base64 格式",
+    "DECODE_STRING_FROM_BASE64_FORMAT": "從 Base64 格式解碼",
+    "DECODE_URL_ENCODED_FORMAT": "從 URL 編碼格式解碼",
+    "ENCODE_URL_ENCODED_FORMAT": "編碼為 URL 編碼格式",
+    "SIMPLY_ENTER_YOUR_DATA": "只需輸入您的數據，然後按",
+    "BUTTON": "按鈕"
+  },
+  "CONVERTERS_TAB": {
+    "CONVERTERS": "轉換器",
+    "XSD_GENERATOR": "XSD 產生器",
+    "XML_JSON_CONVERTER": "XML 到 JSON 轉換器",
+    "JSON_XML_CONVERTER": "JSON 到 XML 轉換器",
+    "JSON_YAML_CONVERTER": "JSON 到 YAML 轉換器",
+    "YAML_JSON_CONVERTER": "YAML 到 JSON 轉換器",
+    "CSV_XML_CONVERTER": "CSV 到 XML 轉換器",
+    "CSV_JSON_CONVERTER": "CSV 到 JSON 轉換器",
+    "XSD_SCHEMA_GENERATOR": "XSD 架構產生器",
+    "GENERATE_XSD": "產生 XSD",
+    "CONVERT_XML_TO_JSON": "將 XML 轉換為 JSON",
+    "CONVERT_JSON_TO_XML": "將 JSON 轉換為 XML",
+    "CONVERT_JSON_TO_YAML": "將 JSON 轉換為 YAML",
+    "CONVERT_YAML_TO_JSON": "將 YAML 轉換為 JSON",
+    "CONVERT_CSV_FILE_TO_XML_FILE": "將 CSV 檔案轉換為 XML 文件",
+    "CONVERT_CSV_TO_JSON": "將 CSV 轉換為 JSON",
+    "SIMPLY_ENTER_YOUR_DATA": "只需輸入您的數據，然後按",
+    "BUTTON": "按鈕"
+  },
+  "FORMATTERS_TAB": {
+    "FORMATTERS": "格式化程式",
+    "XML_FORMATTER": "XML格式化程式",
+    "JSON_FORMATTER": "JSON 格式化程式",
+    "HTML_FORMATTER": "HTML 格式化程式",
+    "JSON_YAML_CONVERTER": "JSON 到 YAML 轉換器",
+    "SQL_FORMATTER": "SQL格式化程式",
+    "FORMAT_XML": "格式化XML",
+    "FORMAT_JSON": "格式化 JSON",
+    "FORMAT_SQL": "格式化 SQL",
+    "FORMAT_HTML": "HTML 格式"
+  },
+  "GENERATE_TAB": {
+    "GENERATE": "產生",
+    "GENERATE_JAVA_CLASS": "產生java類",
+    "XML_TO_JAVA_CLASS": "XML 到 Java 類",
+    "JSON_TO_JAVA_CLASS": "JSON 到 Java 類"
+  },
+  "CONVERT_PDF_TAB": {
+    "CONVERT_TO_PDF": "轉換為 PDF",
+    "CONVERT_FROM_PDF": "從 PDF 轉換",
+    "JPG_To_PDF": "JPG 轉 PDF",
+    "WORD_To_PDF": "文字轉PDF",
+    "POWERPOINT_To_PDF": "PowerPoint 轉 PDF",
+    "EXCEL_To_PDF": "Excel 轉 PDF",
+    "HTML_To_PDF": "HTML 轉 PDF",
+    "PDF_To_JPG": "PDF 轉 JPG",
+    "PDF_To_WORD": "PDF 到 WORD",
+    "PDF_To_POWERPOINT": "PDF 到 PowerPoint",
+    "PDF_To_EXCEL": "PDF 到 Excel",
+    "CONVERT_WORD_TO_PDF": "將 WORD 轉換為 PDF",
+    "CONVERT_POWERPOINT_TO_PDF": "將 POWERPOINT 轉換為 PDF",
+    "CONVERT_EXCEL_TO_PDF": "將 EXCEL 轉換為 PDF",
+    "HTML_TO_PDF": "HTML 到 PDF",
+    "PDF_TO_WORD_CONVERTER": "PDF 到 WORD 轉換器",
+    "CONVERT_PDF_TO_POWERPOINT": "將 PDF 轉換為 POWERPOINT",
+    "CONVERT_PDF_TO_EXCEL": "將 PDF 轉換為 EXCEL"
+  },
+  "MERGE_PDF_TAB": {
+    "TITLE": "若要變更 PDF 的順序，請根據需要拖放檔案",
+    "ATTACH_FILES": "附加文件"
+  },
+  "EDIT_PDF_TAB": {
+    "PDF_EDITOR": "PDF編輯器",
+    "TITLE_1": "透過新增文字、形狀、註釋和註釋來編輯 PDF。",
+    "TITLE_2": "您安全且簡單的 PDF 編輯工具",
+    "TITLE_3": "上傳 .pdf 文件進行編輯"
+  },
+  "REPORT_ISSUE_TAB": {
+    "REPORT_AN_ISSUE": "報告問題",
+    "REPORT_AN_ISSUE_TITLE": "請使用此表格告訴我們您遇到的問題。",
+    "NAME": "姓名",
+    "SUBJECT": "主題",
+    "CONTACT_EMAIL_ADDRESS": "聯絡電子郵件地址",
+    "ISSUE_DESCRIPTION": "問題描述",
+    "BROWSE": "瀏覽",
+    "SUBMIT": "提交"
+  }
+}

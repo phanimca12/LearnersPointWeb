@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <style>
+    .box {
+      fill: #3b8afd; /* Green */
+      rx: 4; /* Rounded corners */
+    }
+    .arrow {
+      fill: #FF9800; /* Orange */
+    }
+    .text {
+      fill: #2196F3; /* Blue */
+      font-family: Arial;
+      font-size: 8px;
+    }
+  </style>
+
+  <!-- Class box -->
+  <rect x="10" y="10" width="30" height="20" class="box" />
+
+  <!-- Arrow pointing to the class box -->
+  <path class="arrow" d="M25 30 L25 35 L20 32.5 Z" />
+  
+
+</svg>
